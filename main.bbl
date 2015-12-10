@@ -1,0 +1,211 @@
+\begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+  {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+  \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+  {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+
+\bibitem[\protect\citeauthoryear{{Allende Prieto}, {Beers}, {Wilhelm},
+  {Newberg}, {Rockosi}, {Yanny}  \& {Lee}}{{Allende Prieto}
+  et~al.}{2006}]{2006ApJ...636..804A}
+{Allende Prieto} C.,  {Beers} T.~C.,  {Wilhelm} R.,  {Newberg} H.~J.,
+  {Rockosi} C.~M.,  {Yanny} B.,   {Lee} Y.~S.,  2006, \mn@doi [The
+  Astrophysical Journal] {10.1086/498131}, \href
+  {http://adsabs.harvard.edu/abs/2006ApJ...636..804A} {636, 804}
+
+\bibitem[\protect\citeauthoryear{Alvarez \& Plez}{Alvarez \&
+  Plez}{1998}]{alvarez:98}
+Alvarez R.,  Plez B.,  1998, Astronomy and Astrophysics, 330, 1109
+
+\bibitem[\protect\citeauthoryear{Balasubramanian, Schwartz, Tenenbaum, {de
+  Silva}  \& Langford}{Balasubramanian et~al.}{2002}]{balasubramanianISOMAP:02}
+Balasubramanian M.,  Schwartz E.~L.,  Tenenbaum J.~B.,  {de Silva} V.,
+  Langford J.~C.,  2002, Science, 295(5552), 7
+
+\bibitem[\protect\citeauthoryear{Bell \& Sejnowski}{Bell \&
+  Sejnowski}{1995}]{bell:95}
+Bell A.,  Sejnowski T.~J.,  1995, Neural Computation, 7(6), 1129
+
+\bibitem[\protect\citeauthoryear{Bellman}{Bellman}{1961}]{bellman:61}
+Bellman R.,  1961, Adaptive Control Processes: A Guided Tour.
+Princeton University Press
+
+\bibitem[\protect\citeauthoryear{Belouchrani, Meraim, Cardoso  \&
+  Moulines}{Belouchrani et~al.}{1997}]{belouchrani:97}
+Belouchrani A.,  Meraim K.~A.,  Cardoso J.~F.,   Moulines E.,  1997, IEEE
+  Transaction on Signal Processing, 45(2), 434
+
+\bibitem[\protect\citeauthoryear{Bu, Chen  \& Pan}{Bu et~al.}{2014}]{bu:14}
+Bu Y.,  Chen F.,   Pan J.,  2014, New Astronomy, 28, 35
+
+\bibitem[\protect\citeauthoryear{Cardoso \& Souloumiac}{Cardoso \&
+  Souloumiac}{1993}]{cardoso:93}
+Cardoso J.~F.,  Souloumiac A.,  1993, IEEE Transactions on Signal Processing,
+  140(6), 362
+
+\bibitem[\protect\citeauthoryear{Coifman \& Lafon}{Coifman \&
+  Lafon}{2006}]{coifman:06}
+Coifman R.~R.,  Lafon S.,  2006, Applied and Computational Harmonic Analysis,
+  21(1), 5
+
+\bibitem[\protect\citeauthoryear{Comon}{Comon}{1994}]{comon:94}
+Comon P.,  1994, Signal Processing, 36, 287
+
+\bibitem[\protect\citeauthoryear{Daniel, Connolly, Schneider, Vanderplas  \&
+  Xiong}{Daniel et~al.}{2011}]{daniel:11}
+Daniel S.~F.,  Connolly A.,  Schneider J.,  Vanderplas J.,   Xiong L.,  2011,
+  The Astronomical Journal, 142, 203
+
+\bibitem[\protect\citeauthoryear{{Eisenstein} et~al.,}{{Eisenstein}
+  et~al.}{2011}]{2011AJ....142...72E}
+{Eisenstein} D.~J.,  et~al., 2011, \mn@doi [\aj] {10.1088/0004-6256/142/3/72},
+  \href {http://adsabs.harvard.edu/abs/2011AJ....142...72E} {142, 72}
+
+\bibitem[\protect\citeauthoryear{{Gilmore} et~al.,}{{Gilmore}
+  et~al.}{2012}]{2012Msngr.147...25G}
+{Gilmore} G.,  et~al., 2012, The Messenger, \href
+  {http://adsabs.harvard.edu/abs/2012Msngr.147...25G} {147, 25}
+
+\bibitem[\protect\citeauthoryear{Gustafsson, Edvardsson, Eriksson, Jørgensen,
+  Nordlund  \& Plez}{Gustafsson et~al.}{2008}]{gustafsson:08}
+Gustafsson B.,  Edvardsson B.,  Eriksson K.,  Jørgensen U.~G.,  Nordlund A.,
+  Plez B.,  2008, Astronomy and Astrophysics, 486(3), 951
+
+\bibitem[\protect\citeauthoryear{Hotelling}{Hotelling}{1933}]{hotelling:33}
+Hotelling H.,  1933, Journal of Educational Psychology, 24(6\&7), 447
+
+\bibitem[\protect\citeauthoryear{Hyv\"arinen \& Oja}{Hyv\"arinen \&
+  Oja}{2000}]{hyvarinen:00}
+Hyv\"arinen A.,  Oja E.,  2000, Neural Networks, 13(4-5), 411
+
+\bibitem[\protect\citeauthoryear{Jain, Duin  \& Mao}{Jain
+  et~al.}{2000}]{jain:00}
+Jain A.~K.,  Duin R.~P.,   Mao J.,  2000, IEEE Transactions on Pattern Analysis
+  and Machine Intelligence, 22(1), 4
+
+\bibitem[\protect\citeauthoryear{{Jordi} et~al.,}{{Jordi}
+  et~al.}{2006}]{2006MNRAS.367..290J}
+{Jordi} C.,  et~al., 2006, \mn@doi [\mnras] {10.1111/j.1365-2966.2005.09944.x},
+  \href {http://adsabs.harvard.edu/abs/2006MNRAS.367..290J} {367, 290}
+
+\bibitem[\protect\citeauthoryear{Jutten \& H\'erault}{Jutten \&
+  H\'erault}{1991}]{jutten:91}
+Jutten C.,  H\'erault J.,  1991, Signal Processing, 24, 1
+
+\bibitem[\protect\citeauthoryear{Li \& Adali}{Li \& Adali}{2008}]{li:08}
+Li H.,  Adali T.,  2008, IEEE Transactions on Neural Networks, 19(3), 408
+
+\bibitem[\protect\citeauthoryear{Li, Ma  \& Ogihara}{Li et~al.}{2010}]{li:10}
+Li T.,  Ma S.,   Ogihara M.,  2010, Data Mining and Knowledge Discovery
+  Handbook.
+Springer, pp 553--571
+
+\bibitem[\protect\citeauthoryear{Mallat}{Mallat}{1998}]{mallat:98}
+Mallat S.,  1998, A Wavelet Tour of Signal Processing.
+Academic Press
+
+\bibitem[\protect\citeauthoryear{Nadler, Lafon, Coifman  \& Kevrekidis}{Nadler
+  et~al.}{2006}]{nadler:06}
+Nadler B.,  Lafon S.,  Coifman R.~R.,   Kevrekidis I.~G.,  2006, Applied and
+  Computational Harmonic Analysis: Special Issue on Diffusion Maps and
+  Wavelets, 21, 113
+
+\bibitem[\protect\citeauthoryear{Navarro, Corradi  \& Mampaso}{Navarro
+  et~al.}{2012}]{navarro:12}
+Navarro S.~G.,  Corradi R.~L.~M.,   Mampaso A.,  2012, Astronomy and
+  Astrophysics, 538, A76, 1
+
+\bibitem[\protect\citeauthoryear{Ollila \& Koivunen}{Ollila \&
+  Koivunen}{2006}]{ollila:06}
+Ollila E.,  Koivunen V.,  2006, IEEE Transactions on Signal Processing, 89(4),
+  365
+
+\bibitem[\protect\citeauthoryear{Pearson}{Pearson}{1901}]{pearson:01}
+Pearson K.,  1901, Philosophical Magazine, 2(11), 559
+
+\bibitem[\protect\citeauthoryear{Plez}{Plez}{2012}]{plez:12}
+Plez B.,  2012, Turbospectrum: Code for spectral synthesis, record
+  ascl:1205.004, \url {http://adsabs.harvard.edu/abs/2012ascl.soft05004P}
+
+\bibitem[\protect\citeauthoryear{{Re Fiorentin}, Bailer-Jones, Beers  \&
+  Zwitter}{{Re Fiorentin} et~al.}{2008a}]{fiorentin:08b}
+{Re Fiorentin} P.,  Bailer-Jones C.,  Beers T.,   Zwitter T.,  2008a, in
+  Proceedings of the International Conference: "Classification and Discovery in
+  Large Astronomical Surveys". pp 76--82
+
+\bibitem[\protect\citeauthoryear{{Re Fiorentin}, Bailer-Jones, Lee, Beers,
+  Sivarani, Wilhelm, {Allende Prieto}  \& Norris}{{Re Fiorentin}
+  et~al.}{2008b}]{fiorentin:08a}
+{Re Fiorentin} P.,  Bailer-Jones C.~A.~L.,  Lee Y.~S.,  Beers T.~C.,  Sivarani
+  T.,  Wilhelm R.,  {Allende Prieto} C.,   Norris J.~E.,  2008b, Astronomy and
+  Astrophysics, 467(3), 1373
+
+\bibitem[\protect\citeauthoryear{Recio-Blanco, Bijaoui  \& {de
+  Laverny}}{Recio-Blanco et~al.}{2006}]{recio:06}
+Recio-Blanco A.,  Bijaoui A.,   {de Laverny} P.,  2006, Monthly Notices of the
+  Royal Astronomical Society, 370, 141
+
+\bibitem[\protect\citeauthoryear{Roweis \& Saul}{Roweis \&
+  Saul}{2000}]{roweisLLE:00}
+Roweis S.,  Saul L.,  2000, Science, 290(5500), 2323
+
+\bibitem[\protect\citeauthoryear{Saxena, Gupta  \& Mukerjee}{Saxena
+  et~al.}{2004}]{saxena:04}
+Saxena A.,  Gupta A.,   Mukerjee A.,  2004, in Pal N.,  Kasabov N.,  Mudi R.,
+  Pal S.,   Parui S.,  eds, Lecture Notes in Computer Science, Vol.~3316,
+  Neural Information Processing.
+Springer Berlin Heidelberg, pp 1038--1043
+
+\bibitem[\protect\citeauthoryear{Sch\"olkopf, Smola  \&
+  K.-R.Müller}{Sch\"olkopf et~al.}{1998}]{sholkopf:98}
+Sch\"olkopf B.,  Smola A.,   K.-R.Müller 1998, Neural Computation, 10(5), 1299
+
+\bibitem[\protect\citeauthoryear{Singh, Gulati  \& Gupta}{Singh
+  et~al.}{1998}]{singh:98}
+Singh H.,  Gulati R.,   Gupta R.,  1998, Monthly Notices of the Royal
+  Astronomical Society, 295(2), 312
+
+\bibitem[\protect\citeauthoryear{Snider, {Allende Prieto}, {von Hippel}, Beers,
+  Sneden, Qu  \& Rossi}{Snider et~al.}{2001}]{snider:01}
+Snider S.,  {Allende Prieto} C.,  {von Hippel} T.,  Beers T.,  Sneden C.,  Qu
+  Y.,   Rossi S.,  2001, The Astrophysical Journal, 562, 528
+
+\bibitem[\protect\citeauthoryear{{Steinmetz} et~al.,}{{Steinmetz}
+  et~al.}{2006}]{2006AJ....132.1645S}
+{Steinmetz} M.,  et~al., 2006, \mn@doi [\aj] {10.1086/506564}, \href
+  {http://adsabs.harvard.edu/abs/2006AJ....132.1645S} {132, 1645}
+
+\bibitem[\protect\citeauthoryear{Tenenbaum, {de Silva}  \& Langford}{Tenenbaum
+  et~al.}{2000}]{tenenbaum:00}
+Tenenbaum J.~B.,  {de Silva} V.,   Langford J.~C.,  2000, Science, 290(5500),
+  2319
+
+\bibitem[\protect\citeauthoryear{Vanderplas \& Connolly}{Vanderplas \&
+  Connolly}{2009}]{vanderplas:09}
+Vanderplas J.,  Connolly A.,  2009, The Astronomical Journal, 138, 1365
+
+\bibitem[\protect\citeauthoryear{Zarzoso \& Comon}{Zarzoso \&
+  Comon}{2010}]{zarzoso:10}
+Zarzoso V.,  Comon P.,  2010, IEEE Transactions on Neural Networks, 21(2), 248
+
+\bibitem[\protect\citeauthoryear{Zhang, Tao  \& Yang}{Zhang
+  et~al.}{2008}]{zhang:2008}
+Zhang T.,  Tao D.,   Yang J.,  2008, in Forsyth D.,  Torr P.,   Zisserman A.,
+  eds, Lecture Notes in Computer Science, Vol.~5302, Computer Vision - ECCV
+  2008.
+Springer Berlin Heidelberg, pp 725--738
+
+\makeatother
+\end{thebibliography}
