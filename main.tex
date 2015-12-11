@@ -45,7 +45,7 @@
 \usepackage{amssymb}	% Extra maths symbols
 
 \usepackage{multirow}
-\usepackage{todonotes}
+%\usepackage{todonotes}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -118,23 +118,23 @@ Dimensionality Reduction -- keyword2 -- keyword3
 
 The rapid evolution of astronomical instrumentation and the
 implementation of extensive surveys have permitted the acquisition of
-vast amounts of spectral data.  {The reduction and management of
-  large spectral databases collected by large-area or all-sky surveys
-  like Gaia/Gaia-ESO \citep{2006MNRAS.367..290J,2012Msngr.147...25G},
-  RAVE \citep{2006AJ....132.1645S}, or APOGEE
-  \citep{2011AJ....142...72E} require the use of automatic
-  techniques for the consistent, homogeneous, and efficient
-  extraction of physical properties from spectra. The availability
-  of these huge databases opens new possibilities to better understand
-  the stellar, Galactic, and extra-galactic astrophysics. Of
-  special importance is the determination of intrinsic stellar
-  physical properties, such as effective temperature ($T_{\rm eff}$),
-  surface gravity (log \textit{g}) and metallicity ([M/H]). However,
-  the difficulty that atmospheric parameter estimation poses comes
-  from the inherent size and dimensionality of the data. 
-  Regression from stellar spectra suffers the so-called {\sl curse
-  of dimensionality} problem because the number of variables
-  (wavelengths) is much higher than the number of training samples.
+vast amounts of spectral data.  The reduction and management of large
+spectral databases collected by large-area or all-sky surveys like
+Gaia/Gaia-ESO \citep{2006MNRAS.367..290J,2012Msngr.147...25G}, RAVE
+\citep{2006AJ....132.1645S}, or APOGEE \citep{2011AJ....142...72E}
+require the use of automatic techniques for the consistent,
+homogeneous, and efficient extraction of physical properties from
+spectra. The availability of these huge databases opens new
+possibilities to better understand the stellar, Galactic, and
+extra-galactic astrophysics. Of special importance is the
+determination of intrinsic stellar physical properties, such as
+effective temperature ($T_{\rm eff}$), surface gravity (log
+\textit{g}) and metallicity ([M/H]). However, the difficulty that
+atmospheric parameter estimation poses comes from the inherent size
+and dimensionality of the data.  Regression from stellar spectra
+suffers the so-called {\sl curse of dimensionality} problem because
+the number of variables (wavelengths) is much higher than the number
+of training samples. 
     
 The \textit{curse of dimensionality} \citep{bellman:61} relates to 
 the problem caused by the exponential increase in volume associated 
@@ -155,9 +155,31 @@ dimensional noisy vectors of real numbers and thus,
 regression models must be both computationally efficient and robust
 to noise.
 
+There are several ways to alleviate this so-called curse of
+dimensionality. It is evident that not all wavelength bins in an
+observed spectrum carry the same amount of information about the
+astrophysical parameters of the stellar atmosphere. One way to reduce
+the dimensionality of the space of independent variables is to
+concentrate on certain wavelength ranges that contain spectral lines
+sensitive to changes in the astrophysical parameters. Before the
+advent of the large-scale spectroscopic surveys, astronomers derived
+physical parameters by interactively synthesizing spectra until a
+subjective best fit of the observed spectrum in certain spectral lines
+was found. But the number of spectra made available to the community
+in the past decades have made this manual and subjective (thus
+irreproducible) fitting procedure impractical. Automatic regression
+techniques have therefore become a necessity.
 
-There are several ways to alleviate this so-called curse of dimensionality. It is evident that not all wavelength bins in an observed spectrum carry the same amount of information about the astrophysical parameters of the stellar atmosphere. Astronomers have historically used features of the spectrum such as flux ratios (be them in the wavelength regions of individual spectral lines or absorption bands) to infer temperatures, gravities or metallicities (citation needed). That way, they reduce the full vector of fluxes to one value that is used to infer the astrophysical parameter of interest via a previously assumed 
-calibration. Of course, there is no reason why one should restrict to one single value, and recent works based on machine learning techniques use several such spectral features to infer the astrophysical parameters (see e.g. \citep{2006ApJ...636..804A}).
+A next step consisted in using derived features of the spectrum such
+as flux ratios or equivalent widths to infer the parameters via
+multivariate regression techniques (\cite{2006ApJ...636..804A}, more
+citations needed). That way, we significantly reduce the full spectrum
+to a much smaller number of variables.
+
+In recent years, there seems to be a tendency to use the full spectrum
+rather than selected wavelength ranges (see
+e.g. \cite{2014A&A...567A...5R} and references therein,
+\cite{2015ApJ...808...16N} or \cite{})
 
 
 The most popular dimensionality reduction technique applied
@@ -513,27 +535,25 @@ these techniques against increasing SNR is evaluated, and the
 generalisation performance of training sets of varying SNRs is
 analysed.
 
-Our set of experiments proceeds in three stages: in the first
-  stage we aim at selecting the compression technique and final
-  dimension that minimizes the atmospheric parameter ($T_{\rm eff}$, 
-  log \textit{g} or [M/H]) estimation error; in the
-  second stage we analyse the estimation error for each compression
-  technique as a function of the SNR of the original spectrum; and
-  finally, we select the best performing compression technique and
-  study the generalisation performance of an SVM model trained with
-  different sets of spectra of various SNRs.
+Our set of experiments proceeds in three stages: in the first stage we
+aim at selecting the compression technique and final dimension that
+minimizes the atmospheric parameter ($T_{\rm eff}$, log \textit{g} or
+[M/H]) estimation error; in the second stage we analyse the estimation
+error for each compression technique as a function of the SNR of the
+original spectrum; and finally, we select the best performing
+compression technique and study the generalisation performance of an
+SVM model trained with different sets of spectra of various SNRs.
 
-Different machine learning models have been used for the
-  automatic estimation of atmospheric parameters from stellar
-  spectra}. Two of the most widely used techniques in practice are
-artificial neural networks (ANN) and support vector machines
-(SVM). Unlike ANN, SVM does not need a choice of architecture before
-training, but there are some parameters to adjust in the kernel
-functions of the SVM. We use SVMs with radial basis kernel
-  functions and adjust the SVM parameters by maximizing the quality of
-  the  atmospheric parameter ($T_{\rm eff}$, 
-  log \textit{g} or [M/H]) prediction as measured 
-  by the root mean squared error (RMSE) (equation~(\ref{eq:rmse})).
+Different machine learning models have been used for the automatic
+estimation of atmospheric parameters from stellar spectra. Two of the
+most widely used techniques in practice are artificial neural networks
+(ANN) and support vector machines (SVM). Unlike ANN, SVM does not need
+a choice of architecture before training, but there are some
+parameters to adjust in the kernel functions of the SVM. We use SVMs
+with radial basis kernel functions and adjust the SVM parameters by
+maximizing the quality of the atmospheric parameter ($T_{\rm eff}$,
+log \textit{g} or [M/H]) prediction as measured by the root mean
+squared error (RMSE) (equation~(\ref{eq:rmse})).
 
 \begin{equation}
 \label{eq:rmse}
