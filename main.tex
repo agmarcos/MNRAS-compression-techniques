@@ -155,13 +155,13 @@ dimensional noisy vectors of real numbers and thus,
 regression models must be both computationally efficient and robust
 to noise.
 
-There are several ways to alleviate this so-called curse of
-dimensionality. It is evident that not all wavelength bins in an
+There are several ways to alleviate this so-called \textit{curse of
+  dimensionality}. It is evident that not all wavelength bins in an
 observed spectrum carry the same amount of information about the
-astrophysical parameters of the stellar atmosphere. One way to reduce
-the dimensionality of the space of independent variables is to
-concentrate on certain wavelength ranges that contain spectral lines
-sensitive to changes in the astrophysical parameters. Before the
+physical parameters of the stellar atmosphere. One way to reduce the
+dimensionality of the space of independent variables is to concentrate
+on certain wavelength ranges that contain spectral lines that are
+sensitive to changes in the physical parameters. Before the
 advent of the large-scale spectroscopic surveys, astronomers derived
 physical parameters by interactively synthesizing spectra until a
 subjective best fit of the observed spectrum in certain spectral lines
@@ -170,17 +170,35 @@ in the past decades have made this manual and subjective (thus
 irreproducible) fitting procedure impractical. Automatic regression
 techniques have therefore become a necessity.
 
-A next step consisted in using derived features of the spectrum such
-as flux ratios or equivalent widths to infer the parameters via
-multivariate regression techniques (\cite{2006ApJ...636..804A}, more
-citations needed). That way, we significantly reduce the full spectrum
-to a much smaller number of variables.
+The next step consisted in using derived features of the spectrum such
+as fluxes, flux ratios or equivalent widths to infer the parameters
+via multivariate regression techniques (\cite{2006ApJ...636..804A},
+\cite{2012ApJ...750L..37M}). That way, we significantly reduce the
+full spectrum to a much smaller number of independent variables, at
+the expense of introducing a feature extraction process: defining a
+continuum level and normalizing the observed spectrum in the
+wavelength region that contains the sensitive spectral feature. This
+is potentially dangerous because, even in the best case that the
+continuum flux is Gaussian distributed around a value significantly
+different from zero, the ratio distribution is asymmetric and has a
+heavy right tail. In the cases of low signal-to-noise spectra, the
+situation can be catastrophic.
+
+The potential dangers associated with the feature extraction in
+restricted wavelength ranges via continuum normalization can be
+mitigated by projecting the observed spectra onto bases of functions
+spaces such as in the wavelet or Fourier decompositions (see
+\cite{2010PASP..122..608M} or \cite{2015ApJS..218....3L} for examples
+of the two approaches).
 
 In recent years, there seems to be a tendency to use the full spectrum
 rather than selected wavelength ranges (see
-e.g. \cite{2014A&A...567A...5R} and references therein,
-\cite{2015ApJ...808...16N} or \cite{})
-
+e.g. \cite{2014A&A...567A...5R}, \cite{2015ApJ...808...16N}, or
+\cite{2015arXiv151000111R}). In this work we focus in this latter
+approach, and attempt to assess the relative merits of various
+techiques to serve as a guide for future applications of machine
+learning techiques for regression of stellar atmospheric physical
+parameters.
 
 The most popular dimensionality reduction technique applied
 to stellar spectra is Principal Component Analysis (PCA). It has
