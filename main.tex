@@ -490,17 +490,17 @@ performance by fine tuning the inverse kernel width ($\sigma$).
 The synthetic spectra that form the basis of our study have been
 computed from MARCS model atmospheres \citep{gustafsson:08} and the
 turbospectrum code \citep{alvarez:98, plez:12} together with atomic \&
-molecular line lists. These were kindly provided by the Gaia-ESO team
-in charge of produncing the physical parameters for the survey.
+molecular line lists. These spectra were kindly provided by the
+Gaia-ESO team in charge of producing the physical parameters for the
+survey.
 
 The dataset contains a grid of 8780 synthetic high-resolution spectra
-(\textit{R} = 19800) between 5339 and 5619 {\AA}
-% $\mathring{\mathrm{A}}$ 
-with effective temperatures between 4000 and 8000 K (step 250 K),
-logarithmic surface gravities between 1.0 and 5.0 (step 0.5), mean
-metallicities between -3.0 and 1.0 (with a variable step of 0.5 or
-0.25 dex) and $\left[ \alpha/Fe \right]$ values varying between -0.4
-and +0.4 dex (step 0.2 dex) around the standard relation with the
+(\textit{R} = 19800) between 5339 and 5619 {\AA} (the nominal GIRAFFE
+HR10 setup) with effective temperatures between 4000 and 8000 K (step
+250 K), logarithmic surface gravities between 1.0 and 5.0 (step 0.5),
+mean metallicities between -3.0 and 1.0 (with a variable step of 0.5
+or 0.25 dex) and $\left[ \alpha/Fe \right]$ values varying between
+-0.4 and +0.4 dex (step 0.2 dex) around the standard relation with the
 following $\alpha$ enhancements: $\left[ \alpha/Fe \right]$ = +0.0 dex
 for [M/H] $\geqslant$ 0, $\left[ \alpha/Fe \right]$ = +0.4 dex for
 [M/H] = $\leqslant$ -1.0 and $\left[ \alpha/Fe \right]$ = -0.4[M/H]
@@ -508,7 +508,7 @@ for [M/H] between -1.0 and +0.0 (Fig.~\ref{fig:gridModelos}).
 Elements considered to be $\alpha$-elements are O, Ne, Mg, Si, S, Ar,
 Ca and Ti. The adopted solar abundances are those used by
 \citep{gustafsson:08}.  Fig.~\ref{fig:ejemplosEspectros} shows some
-example spectra from this dataset. 
+example spectra from this dataset.
 
 \begin{figure}
 \centering\includegraphics[width=\columnwidth]{grid_modelos.pdf}
@@ -550,7 +550,6 @@ atmospheric parameters regression models. The robustness of these
 techniques against increasing SNR is evaluated, and the generalisation
 performance of training sets of varying SNRs is analysed.
 
-% To be made clearer!
 Our set of experiments proceeds in three stages. In the first stage we
 aim at comparing the various compression techniques and compression
 rates in terms of the atmospheric parameter estimation errors. As a
@@ -620,7 +619,7 @@ selected dimensionality reduction techniques.}
 
 This procedure lead us to select ICA and a target space dimension of
 20 as the optimal compression technique for reasons that will be made
-explicit in Sect. \ref{}. 
+explicit in Sect. \ref{sec:results}. 
 
 \begin{table}
 \centering
@@ -651,8 +650,8 @@ In the second stage, the optimal compression method and rate (ICA and
 stage. Nine datasets were generated for a wider range of SNR levels
 ($\infty$, 150, 125, 100, 75, 50, 25, 10 and 5) and SVM models were
 trained to estimate the atmospheric parameter ($T_{\rm eff}$, log
-\textit{g} or [M/H]) and assess the consistency of the results as the
-test set SNR degrades. The model performances were evaluated using
+\textit{g} or [M/H]), and to assess the consistency of the results as
+the test set SNR degrades. The model performances were evaluated using
 10-fold cross validation as follows:
 
 \begin{enumerate}
@@ -719,35 +718,41 @@ In this section, we present the results of the experiments
 First, we compare the performance of the dimensionality reduction
 techniques described in section \ref{sec:dimred} using noise-free
 synthetic spectra as well as degraded spectra with SNR levels of 100,
-50, 25 and 10.  Fig.~\ref{fig:01} to \ref{fig:06} show the
-RMSE obtained with the evaluation set (the 34\% of the full set of
-spectra that was not not used to define the compression transformation
-or to train SVM models). Overall, wavelets combined with SVM
-models have the highest errors regardless of the number of retained
-dimensions, with the exception of [M/H] estimation where DLA performed 
-worse for noisy synthetic spectra. DLA achieved the lowest prediction 
-errors for the unrealistic noise-free data. Furthermore, the performance 
-of this technique was the best for the highest compression rates 
-(two or five dimensions) to estimate $T_{\rm eff}$ and 
-log \textit{g}. However, it was outperformed by the other techniques 
-in almost any other case. PCA and diffusion maps yielded similar 
-prediction errors in $T_{\rm eff}$ estimation. As for the estimation 
-of surface gravity and metallicity, results obtained with PCA 
-were better than results from diffusion maps. An important 
-characteristic of diffusion maps combined with SVM models is that 
-similar estimation errors were obtained regardless of the SNR of 
-the data.
+50, 25 and 10.  Figures \ref{fig:02} to \ref{fig:06} show the RMSE
+obtained with the evaluation set (the 34\% of the full set of spectra
+that was not not used to define the compression transformation or to
+train SVM models).
 
-Finally, the best strategies to compress the spectra are kernel PCA 
-and ICA, with ICA outperforming kernel PCA in most of the parameter
-space. RMSE errors increased only moderately down to a SNR of 10
-which seems to indicate that most of the examined compression
+Inspection of the figures reveals that the best strategies to compress
+the spectra are kernel PCA and ICA, with ICA outperforming kernel PCA
+in most of the parameter space, except sometimes for the lowest
+compression rate. RMSE errors increase only moderately down to a SNR
+of 10, which seems to indicate that most of the examined compression
 techniques serve well as noise filters.
 
 The performance comparison of the analysed dimensionality reduction
 techniques shows that although traditional PCA is not the most
 efficient method, it outperforms some of the nonlinear techniques used
-in this study, such as diffusion maps, DLA or wavelets.
+in this study, such as diffusion maps, DLA or wavelets. {\bf We need
+  to propose an explanation}. 
+
+Overall, wavelets combined with SVM models have the highest errors
+regardless of the number of retained dimensions, with the exception of
+the [M/H] estimation where DLA performed worse for noisy synthetic
+spectra. DLA achieved the lowest prediction errors for the unrealistic
+noise-free data (not shown here for the sake of
+conciseness). Furthermore, this technique yields the best performance
+for the highest compression rates (two or five dimensions) when
+estimating $T_{\rm eff}$ and log \textit{g}. However, it was
+outperformed by most other techniques for almost any other compression
+rate. PCA and diffusion maps yielded similar prediction errors in
+$T_{\rm eff}$ estimation.
+
+The results obtained with PCA in the estimation of surface gravities
+and metallicities were better than those from diffusion maps. An
+important characteristic of diffusion maps combined with SVM models is
+that the estimation errors are less sensitive to the SNR of the data
+than other alternatives.
 
 %\begin{figure}
 %\centering\includegraphics[width=\columnwidth]{flamesHR10_SNR=000_Teff_log_BestSVM_N-RMSE_test.pdf}
@@ -758,7 +763,7 @@ in this study, such as diffusion maps, DLA or wavelets.
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf}
-\caption{Temperature estimation error as a function of the number of
+\caption{Temperature estimation errors as a function of the number of
   dimensions used for data compression, for noisy synthetic
   spectra.}
 \label{fig:02}
@@ -773,7 +778,7 @@ in this study, such as diffusion maps, DLA or wavelets.
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{flamesHR10_Logg_log_BestSVM_N-RMSE_test.pdf}
-\caption{Surface gravity estimation error as a function of the number of
+\caption{Surface gravity estimation errors as a function of the number of
   dimensions used for data compression, for noisy synthetic
   spectra.}
 \label{fig:04}
@@ -788,28 +793,24 @@ in this study, such as diffusion maps, DLA or wavelets.
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{flamesHR10_Meta_log_BestSVM_N-RMSE_test.pdf}
-\caption{Metallicity estimation error as a function of the number of
+\caption{Metallicity estimation errors as a function of the number of
   dimensions used for data compression, for noisy synthetic
   spectra.}
 \label{fig:06}
 \end{figure*}
 
 Table~\ref{tab:01} quantifies the prediction errors of the best models
-trained for each SNR. It is interesting that ICA compression with 20
+for each SNR. It is interesting that ICA compression with 20
 independent components remains as the best option for any SNR, except
-for the unrealistic noise-free data. These results evidence that
-for a given sample size (the number of spectra in this particular 
-application)
-there is an optimal number of features beyond which the
-performance of the predictor will degrade rather than improve. 
-On the other hand, as expected, the quality of atmospheric parameter 
-($T_{\rm eff}$, log \textit{g} or [M/H]) predictions 
-  degrades for lower SNR (see Fig.~\ref{fig:methodsnrTeff}, 
-  \ref{fig:methodsnrLogg} and \ref{fig:methodsnrMeta}). However,
-RMSE errors were relatively low even for low SNR ($\sim$ 10).
-It is worth mentioning that diffusion maps and kernel PCA give 
-quite stable results regardless of the SNR of the spectra.
-
+for the unrealistic noise-free data. These results evidence that for a
+given sample size (the number of spectra in this particular
+application) there is an optimal number of features beyond which the
+performance of the predictor will degrade rather than improve.  On the
+other hand, as expected, the quality of atmospheric parameter ($T_{\rm
+  eff}$, log \textit{g} or [M/H]) predictions degrades for lower
+SNR. However, RMSE errors were relatively low even for low SNR ($\sim$
+10).  It is worth mentioning that diffusion maps and kernel PCA give
+stable results regardless of the SNR of the spectra.
 
 \begin{table*}
 \centering
@@ -826,8 +827,9 @@ Noise-free & DLA & 40 / 30$^1$ & 27.16 & 0.13 & 0.017\\
 25 & ICA & 20 & 60.59 & 0.18 & 0.043\\
 10 & ICA & 20 & 76.21 & 0.21 & 0.057\\
 \hline
-\multicolumn{6}{l}{$^1$ The best performance for [M/H]  
-was obtained with 30 dimensions instead of 40.}\\
+\multicolumn{6}{l}{$^1$ The best performance for $T_{\rm eff}$ and log
+  \textit{g} was obtained with 40 dimensions, while for [M/H] 40
+  dimensions were needed.}\\
 \end{tabular}
 }
 \end{table*}
@@ -875,21 +877,18 @@ was obtained with 30 dimensions instead of 40.}\\
 
 According to the results shown above, the best performing
 dimensionality reduction technique was ICA with 20 independent
-components. Thus, we selected
-this compression method to investigate the noise properties of
-  the training set in order to obtain the best generalization
-performance of the $T_{\rm eff}$, log \textit{g} and [M/H]
-estimators.  As described in section \ref{sec:modelling}, these
-experiments were carried out using 25 different noise
-  realisations for each SNR analysed (150, 125, 100, 75, 50, 25, 10
-and 5) in order to assess the consistency of the results.  Fig.~
-\ref{fig:snrtrain} shows mean RMSE results and the 95\% confidence
-interval for the mean as a function of the SNR of the evaluation
-set. The nine different lines correspond to the SNR of the
-training set used to generate both the projector and the atmospheric 
-parameter ($T_{\rm eff}$, log \textit{g} and [M/H]) predictor. 
-Main conclusions of the analysis of this figure are the
-following:
+components. Thus, we selected this compression method to investigate
+the optimal noise properties of the training set in order to obtain
+the best generalization performance.  As described in section
+\ref{sec:modelling}, these experiments were carried out using 9
+different noise realisations for each SNR analysed ($\infty$, 150,
+125, 100, 75, 50, 25, 10 and 5) in order to assess the consistency of
+the results.  Fig.~ \ref{fig:snrtrain} shows mean RMSE results and the
+95\% confidence interval for the mean as a function of the SNR of the
+evaluation set. The nine different lines correspond to the SNR of the
+training set used to generate both the projector and the atmospheric
+parameter ($T_{\rm eff}$, log \textit{g} and [M/H]) predictor.  Main
+conclusions of the analysis of this figure are the following:
 
 \begin{itemize}
 \item There are no large discrepancies amongst the estimations 
@@ -913,14 +912,14 @@ following:
   were obtained with the model trained with SNR equal to 25.
 \end{itemize}
 
-\begin{figure*}
+\begin{figure}
 \centering\includegraphics[width=\columnwidth]{snr_errors_log_global.pdf}
 \caption{Estimation errors as a function of the SNR of the evaluation
   set for $T_{\rm eff}$ (top), $\log(g)$ (middle) and [M/H]
   (bottom). Each line corresponds to a model trained with a specific
   SNR}
 \label{fig:snrtrain}
-\end{figure*}
+\end{figure}
 
 This analysis yields the very important consequence that models
 trained with noise-free spectra are not adequate to estimate
@@ -952,21 +951,21 @@ of these figures are the following:
 \end{itemize}
 
 
-\begin{figure*}
-\centering\includegraphics[height=0.95\textheight]{bestSVM_Teff_N-RMSE_HR10_pure_all.pdf}
-\caption{Temperature estimation error against the number of dimensions
-  used for data compression. Each line corresponds to a model trained
-  with a specific grid step (Noise-free spectra)}
-\label{fig:gridpure}
-\end{figure*}
+%\begin{figure*}
+%\centering\includegraphics[height=0.95\textheight]{bestSVM_Teff_N-RMSE_HR10_pure_all.pdf}
+%\caption{Temperature estimation error against the number of dimensions
+%  used for data compression. Each line corresponds to a model trained
+%  with a specific grid step (Noise-free spectra)}
+%\label{fig:gridpure}
+%\end{figure*}
 
-\begin{figure*}
-\centering\includegraphics[height=0.95\textheight]{bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf}
-\caption{Temperature estimation error against the number of dimensions
-  used for data compression. Each line corresponds to a model trained
-  with a specific grid step (SNR = 100)}
-\label{fig:grid100}
-\end{figure*}
+%\begin{figure*}
+%\centering\includegraphics[height=0.95\textheight]{bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf}
+%\caption{Temperature estimation error against the number of dimensions
+%  used for data compression. Each line corresponds to a model trained
+%  with a specific grid step (SNR = 100)}
+%\label{fig:grid100}
+%\end{figure*}
 
 \begin{figure*}
 \centering\includegraphics[height=0.95\textheight]{bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf}
@@ -976,13 +975,13 @@ of these figures are the following:
 \label{fig:grid50}
 \end{figure*}
 
-\begin{figure*}
-\centering\includegraphics[height=0.95\textheight]{bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf}
-\caption{Temperature estimation error against the number of dimensions
-  used for data compression. Each line corresponds to a model trained
-  with a specific grid step (SNR = 25)}
-\label{fig:grid25}
-\end{figure*}
+%\begin{figure*}
+%\centering\includegraphics[height=0.95\textheight]{bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf}
+%\caption{Temperature estimation error against the number of dimensions
+%  used for data compression. Each line corresponds to a model trained
+%  with a specific grid step (SNR = 25)}
+%\label{fig:grid25}
+%\end{figure*}
 
 \begin{figure*}
 \centering\includegraphics[height=0.95\textheight]{bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf}
