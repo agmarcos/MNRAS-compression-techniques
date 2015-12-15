@@ -112,9 +112,41 @@ Li T.,  Ma S.,   Ogihara M.,  2010, Data Mining and Knowledge Discovery
   Handbook.
 Springer, pp 553--571
 
+\bibitem[\protect\citeauthoryear{{Li}, {Lu}, {Comte}, {Luo}, {Zhao}  \&
+  {Wang}}{{Li} et~al.}{2015}]{2015ApJS..218....3L}
+{Li} X.,  {Lu} Y.,  {Comte} G.,  {Luo} A.,  {Zhao} Y.,   {Wang} Y.,  2015,
+  \mn@doi [\apjs] {10.1088/0067-0049/218/1/3}, \href
+  {http://adsabs.harvard.edu/abs/2015ApJS..218....3L} {218, 3}
+
+\bibitem[\protect\citeauthoryear{{Lu} \& {Li}}{{Lu} \&
+  {Li}}{2015}]{2015MNRAS.452.1394L}
+{Lu} Y.,  {Li} X.,  2015, \mn@doi [\mnras] {10.1093/mnras/stv1373}, \href
+  {http://adsabs.harvard.edu/abs/2015MNRAS.452.1394L} {452, 1394}
+
 \bibitem[\protect\citeauthoryear{Mallat}{Mallat}{1998}]{mallat:98}
 Mallat S.,  1998, A Wavelet Tour of Signal Processing.
 Academic Press
+
+\bibitem[\protect\citeauthoryear{{Manteiga}, {Ord{\'o}{\~n}ez}, {Dafonte}  \&
+  {Arcay}}{{Manteiga} et~al.}{2010}]{2010PASP..122..608M}
+{Manteiga} M.,  {Ord{\'o}{\~n}ez} D.,  {Dafonte} C.,   {Arcay} B.,  2010,
+  \mn@doi [\pasp] {10.1086/653039}, \href
+  {http://adsabs.harvard.edu/abs/2010PASP..122..608M} {122, 608}
+
+\bibitem[\protect\citeauthoryear{{Mishenina}, {Bienaym{\'e}}, {Gorbaneva},
+  {Charbonnel}, {Soubiran}, {Korotin}  \& {Kovtyukh}}{{Mishenina}
+  et~al.}{2006}]{2006A&A...456.1109M}
+{Mishenina} T.~V.,  {Bienaym{\'e}} O.,  {Gorbaneva} T.~I.,  {Charbonnel} C.,
+  {Soubiran} C.,  {Korotin} S.~A.,   {Kovtyukh} V.~V.,  2006, \mn@doi [\aap]
+  {10.1051/0004-6361:20065141}, \href
+  {http://adsabs.harvard.edu/abs/2006A%26A...456.1109M} {456, 1109}
+
+\bibitem[\protect\citeauthoryear{{Muirhead}, {Hamren}, {Schlawin},
+  {Rojas-Ayala}, {Covey}  \& {Lloyd}}{{Muirhead}
+  et~al.}{2012}]{2012ApJ...750L..37M}
+{Muirhead} P.~S.,  {Hamren} K.,  {Schlawin} E.,  {Rojas-Ayala} B.,  {Covey}
+  K.~R.,   {Lloyd} J.~P.,  2012, \mn@doi [\apjl] {10.1088/2041-8205/750/2/L37},
+  \href {http://adsabs.harvard.edu/abs/2012ApJ...750L..37M} {750, L37}
 
 \bibitem[\protect\citeauthoryear{Nadler, Lafon, Coifman  \& Kevrekidis}{Nadler
   et~al.}{2006}]{nadler:06}
@@ -126,6 +158,12 @@ Nadler B.,  Lafon S.,  Coifman R.~R.,   Kevrekidis I.~G.,  2006, Applied and
   et~al.}{2012}]{navarro:12}
 Navarro S.~G.,  Corradi R.~L.~M.,   Mampaso A.,  2012, Astronomy and
   Astrophysics, 538, A76, 1
+
+\bibitem[\protect\citeauthoryear{{Ness}, {Hogg}, {Rix}, {Ho}  \&
+  {Zasowski}}{{Ness} et~al.}{2015}]{2015ApJ...808...16N}
+{Ness} M.,  {Hogg} D.~W.,  {Rix} H.-W.,  {Ho} A.~Y.~Q.,   {Zasowski} G.,  2015,
+  \mn@doi [\apj] {10.1088/0004-637X/808/1/16}, \href
+  {http://adsabs.harvard.edu/abs/2015ApJ...808...16N} {808, 16}
 
 \bibitem[\protect\citeauthoryear{Ollila \& Koivunen}{Ollila \&
   Koivunen}{2006}]{ollila:06}
@@ -156,6 +194,17 @@ Plez B.,  2012, Turbospectrum: Code for spectral synthesis, record
   Laverny}}{Recio-Blanco et~al.}{2006}]{recio:06}
 Recio-Blanco A.,  Bijaoui A.,   {de Laverny} P.,  2006, Monthly Notices of the
   Royal Astronomical Society, 370, 141
+
+\bibitem[\protect\citeauthoryear{{Recio-Blanco} et~al.,}{{Recio-Blanco}
+  et~al.}{2014}]{2014A&A...567A...5R}
+{Recio-Blanco} A.,  et~al., 2014, \mn@doi [\aap] {10.1051/0004-6361/201322944},
+  \href {http://adsabs.harvard.edu/abs/2014A%26A...567A...5R} {567, A5}
+
+\bibitem[\protect\citeauthoryear{{Recio-Blanco} et~al.,}{{Recio-Blanco}
+  et~al.}{2015}]{2015arXiv151000111R}
+{Recio-Blanco} A.,  et~al., 2015, preprint, \href
+  {http://adsabs.harvard.edu/abs/2015arXiv151000111R} {} (\mn@eprint {arXiv}
+  {1510.00111})
 
 \bibitem[\protect\citeauthoryear{Roweis \& Saul}{Roweis \&
   Saul}{2000}]{roweisLLE:00}
@@ -196,9 +245,20 @@ Tenenbaum J.~B.,  {de Silva} V.,   Langford J.~C.,  2000, Science, 290(5500),
   Connolly}{2009}]{vanderplas:09}
 Vanderplas J.,  Connolly A.,  2009, The Astronomical Journal, 138, 1365
 
+\bibitem[\protect\citeauthoryear{{Walker}, {Olszewski}  \& {Mateo}}{{Walker}
+  et~al.}{2015}]{2015MNRAS.448.2717W}
+{Walker} M.~G.,  {Olszewski} E.~W.,   {Mateo} M.,  2015, \mn@doi [\mnras]
+  {10.1093/mnras/stv099}, \href
+  {http://adsabs.harvard.edu/abs/2015MNRAS.448.2717W} {448, 2717}
+
 \bibitem[\protect\citeauthoryear{Zarzoso \& Comon}{Zarzoso \&
   Comon}{2010}]{zarzoso:10}
 Zarzoso V.,  Comon P.,  2010, IEEE Transactions on Neural Networks, 21(2), 248
+
+\bibitem[\protect\citeauthoryear{{Zhang} \& {Zha}}{{Zhang} \&
+  {Zha}}{2002}]{2002cs.......12008Z}
+{Zhang} Z.,  {Zha} H.,  2002, eprint arXiv:cs/0212008, \href
+  {http://adsabs.harvard.edu/abs/2002cs.......12008Z} {}
 
 \bibitem[\protect\citeauthoryear{Zhang, Tao  \& Yang}{Zhang
   et~al.}{2008}]{zhang:2008}
