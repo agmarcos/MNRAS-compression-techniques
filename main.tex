@@ -749,12 +749,12 @@ techniques shows that although traditional PCA is not the most
 efficient method, it outperforms some of the nonlinear techniques used
 in this study, such as diffusion maps, DLA or wavelets.
 
-\begin{figure}
-\centering\includegraphics[width=\columnwidth]{flamesHR10_SNR=000_Teff_log_BestSVM_N-RMSE_test.pdf}
-\caption{Temperature estimation error as a function of the number of
-  dimensions used for data compression, for synthetic spectra}
-\label{fig:01}
-\end{figure}
+%\begin{figure}
+%\centering\includegraphics[width=\columnwidth]{flamesHR10_SNR=000_Teff_log_BestSVM_N-RMSE_test.pdf}
+%\caption{Temperature estimation error as a function of the number of
+%  dimensions used for data compression, for synthetic spectra}
+%\label{fig:01}
+%\end{figure}
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf}
@@ -764,12 +764,12 @@ in this study, such as diffusion maps, DLA or wavelets.
 \label{fig:02}
 \end{figure*}
 
-\begin{figure}
-\centering\includegraphics[width=\columnwidth]{flamesHR10_SNR=000_Logg_log_BestSVM_N-RMSE_test.pdf}
-\caption{Surface gravity estimation error as a function of the number of
-  dimensions used for data compression, for synthetic spectra}
-\label{fig:03}
-\end{figure}
+%\begin{figure}
+%\centering\includegraphics[width=\columnwidth]{flamesHR10_SNR=000_Logg_log_BestSVM_N-RMSE_test.pdf}
+%\caption{Surface gravity estimation error as a function of the number of
+%  dimensions used for data compression, for synthetic spectra}
+%\label{fig:03}
+%\end{figure}
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{flamesHR10_Logg_log_BestSVM_N-RMSE_test.pdf}
@@ -779,12 +779,12 @@ in this study, such as diffusion maps, DLA or wavelets.
 \label{fig:04}
 \end{figure*}
 
-\begin{figure}
-\centering\includegraphics[width=\columnwidth]{flamesHR10_SNR=000_Meta_log_BestSVM_N-RMSE_test.pdf}
-\caption{Metallicity estimation error as a function of the number of
-  dimensions used for data compression, for synthetic spectra}
-\label{fig:05}
-\end{figure}
+%\begin{figure}
+%\centering\includegraphics[width=\columnwidth]{flamesHR10_SNR=000_Meta_log_BestSVM_N-RMSE_test.pdf}
+%\caption{Metallicity estimation error as a function of the number of
+%  dimensions used for data compression, for synthetic spectra}
+%\label{fig:05}
+%\end{figure}
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{flamesHR10_Meta_log_BestSVM_N-RMSE_test.pdf}
@@ -849,29 +849,29 @@ was obtained with 30 dimensions instead of 40.}\\
 %\label{tab:01}
 %\end{table}
 
-\begin{figure*}
-\centering\includegraphics[height=0.95\textheight]{flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf}
-\caption{Temperature estimation error against the number of dimensions
-  used for data compression. Each line corresponds to a model trained
-  with a specific SNR}
-\label{fig:methodsnrTeff}
-\end{figure*}
+%\begin{figure*}
+%\centering\includegraphics[height=0.95\textheight]{flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf}
+%\caption{Temperature estimation error against the number of dimensions
+%  used for data compression. Each line corresponds to a model trained
+%  with a specific SNR}
+%\label{fig:methodsnrTeff}
+%\end{figure*}
 
-\begin{figure*}
-\centering\includegraphics[height=0.95\textheight]{flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf}
-\caption{Surface gravity estimation error against the number of dimensions
-  used for data compression. Each line corresponds to a model trained
-  with a specific SNR}
-\label{fig:methodsnrLogg}
-\end{figure*}
+%\begin{figure*}
+%\centering\includegraphics[height=0.95\textheight]{flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf}
+%\caption{Surface gravity estimation error against the number of dimensions
+%  used for data compression. Each line corresponds to a model trained
+%  with a specific SNR}
+%\label{fig:methodsnrLogg}
+%\end{figure*}
 
-\begin{figure*}
-\centering\includegraphics[height=0.95\textheight]{flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf}
-\caption{Metallicity estimation error against the number of dimensions
-  used for data compression. Each line corresponds to a model trained
-  with a specific SNR}
-\label{fig:methodsnrMeta}
-\end{figure*}
+%\begin{figure*}
+%\centering\includegraphics[height=0.95\textheight]{flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf}
+%\caption{Metallicity estimation error against the number of dimensions
+%  used for data compression. Each line corresponds to a model trained
+%  with a specific SNR}
+%\label{fig:methodsnrMeta}
+%\end{figure*}
 
 According to the results shown above, the best performing
 dimensionality reduction technique was ICA with 20 independent
@@ -913,11 +913,14 @@ following:
   were obtained with the model trained with SNR equal to 25.
 \end{itemize}
 
-\begin{figure}
+\begin{figure*}
 \centering\includegraphics[width=\columnwidth]{snr_errors_log_global.pdf}
-\caption{Temperature estimation error against the SNR of the evaluation set. Each line corresponds to a model trained with a specific SNR}
+\caption{Estimation errors as a function of the SNR of the evaluation
+  set for $T_{\rm eff}$ (top), $\log(g)$ (middle) and [M/H]
+  (bottom). Each line corresponds to a model trained with a specific
+  SNR}
 \label{fig:snrtrain}
-\end{figure}
+\end{figure*}
 
 This analysis yields the very important consequence that models
 trained with noise-free spectra are not adequate to estimate
@@ -925,10 +928,10 @@ atmospheric parameters of spectra with relatively high SNRs (up to
 75). Moreover, in order to improve the generalization performance of
 the models, there is no need to match the SNR of the training set to
 that of the real spectra. Based on this results, two ICA+SVM models
-would be enough to estimate $T_{\rm eff}$ and [M/H]: one for spectra 
-with SNR of about 25 or greater (model trained with SNR of 50) and 
-one for spectra with SNR of 10 or lower (model trained with SNR of 10).
-On the contrary, only one ICA+SVM model trained with SNR of 25 would 
+would be enough to estimate $T_{\rm eff}$ and [M/H]: one for spectra
+with SNR of about 25 or greater (model trained with SNR of 50) and one
+for spectra with SNR of 10 or lower (model trained with SNR of 10).
+On the contrary, only one ICA+SVM model trained with SNR of 25 would
 be enough to estimate the surface gravity.
 
 Finally, Fig.~\ref{fig:gridpure} to \ref{fig:grid10} present the
