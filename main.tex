@@ -822,15 +822,18 @@ analysis can be summarised as follows:
 
 This analysis yields the very important consequence that models
 trained with noise-free spectra are not adequate to estimate
-atmospheric parameters of spectra with relatively high SNRs (up to
-75). Moreover, in order to improve the generalization performance of
-the models, there is no need to match the SNR of the training set to
-that of the real spectra. Based on this results, two ICA+SVM models
-would be enough to estimate $T_{\rm eff}$ and [M/H]: one for spectra
-with SNR of about 25 or greater (model trained with SNR of 50) and one
-for spectra with SNR of 10 or lower (model trained with SNR of 10).
-On the contrary, only one ICA+SVM model trained with SNR of 25 would
-be enough to estimate the surface gravity.
+atmospheric parameters of spectra with SNRs up 75, and unnecessary for
+$T_{\rm eff}$ and log \textit{g} in contexts of higher SNRs. Models
+trained with noiseless spectra only seem an advantage for the
+prediction of [M/H] for the highest SNR regime (above
+SNR=75). Moreover, in order to improve the generalization performance
+of the models, there is no need to match the SNR of the training set
+to that of the real spectra: only two ICA+SVM models would be enough
+to estimate $T_{\rm eff}$ and [M/H], one for SNRs of about 25 or
+greater (model trained with SNR of 50) and one for spectra with SNR of
+10 or lower (model trained with SNR of 10).  On the contrary, only one
+ICA+SVM model trained with SNR of 25 would be enough to estimate the
+surface gravity for spectra of all SNRs.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
