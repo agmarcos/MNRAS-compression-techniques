@@ -45,6 +45,8 @@
 \usepackage{amssymb}	% Extra maths symbols
 
 \usepackage{multirow}
+\usepackage{lineno}
+\linenumbers
 %\usepackage{todonotes}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -821,7 +823,7 @@ The main conclusions of the analysis can be summarised as follows:
   differences in the precision achieved by models trained with spectra
   of SNR$\ge 50$ (except for the [M/H] models trained with noiseless
   spectra {\bf This needs an explanation!}).  
-\item For evaluation sets with $100\leSNR<10$, the best accuracy is
+\item For evaluation sets with $100\ge SNR > 10$, the best accuracy is
   obtained with the model constructed from spectra with SNR of 50
   (except in the case of log {\it g}, where the SNR=25 training set
   outperforms SNR=50 as noted above, but the difference is small).
@@ -861,7 +863,7 @@ train SVM models. The $T_{\rm eff}$ values varied between 4000 and
 8000 K with a variable step-size between 50 K and 250 K. The other
 grid parameters were established as follows: the log \textit{g} were
 regularly sampled from 1 to 5 in 0.5 steps and both [M/H] and $\left[
-  \alpha/Fe \right]$ were set equal zero for
+  \alpha/Fe \right]$ were set equal to zero for
 simplicity. Table~\ref{tab:grid} presents the step-sizes used in this
 study as well as the number of synthetic spectra available in each
 grid.  In addition to this, noisy replicates of these grids were
@@ -933,6 +935,13 @@ of the analysis of these figures are the following:
   were trimmed in a wavelength range: how is this range? Also compare
   our RMSE with those in the bibliography, for example, those of
   MATISSE, the Gaia-ESO results...}
+
+{\bf Discuss the impact of including other metallicities and alpha
+  abundances in the training set. To be analysed in a subsequent
+  paper.}
+
+{\bf Discuss the relationship between the methods tested here and
+  those in the bibliography.}
 
 \section*{Acknowledgements}
 This research was supported by the Spanish Ministry of Economy and
