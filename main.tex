@@ -186,7 +186,7 @@ heavy right tail. In the cases of low signal-to-noise spectra, the
 situation can be catastrophic.
 
 The potential dangers associated with the feature extraction in
-restricted wavelength ranges via continuum normalization can be
+restricted wavelength ranges via continuum normalisation can be
 mitigated by projecting the observed spectra onto bases of functions
 spaces such as in the wavelet or Fourier decompositions (see
 \cite{2010PASP..122..608M}, \cite{2015MNRAS.452.1394L}, or
@@ -750,65 +750,84 @@ $\infty$ & DLA & 40 / 30\protect\footnotemark & 27.16 & 0.13 & 0.017\\
 \section{Optimal training set SNR}
 \label{sec:comparison2}
 
-In the second stage, nine datasets were generated for a wider range of
-SNR levels ($\infty$, 150, 125, 100, 75, 50, 25, 10 and 5), and SVM
-models were trained to estimate the atmospheric parameter ($T_{\rm
+In the second stage, we study the optimal match between the training
+set SNR and that of the spectra for which the atmospheric parameter
+predictions are needed (in the following, the prediction set).
+
+In order to analyse the dependence of the predicition accuracy with
+the training set SNR, we generate 25 realisations of the noise for
+each of the following 8 finite SNR levels: 150, 125, 100, 75, 50, 25,
+10 and 5. This amounts to $25\times 8=200$ datasets, plus the
+noiseless dataset. We create the 25 noise realisation to estimate the
+variance of the results. For each of these datasets we trained an SVM
+model to estimate each of the atmospheric parameters ($T_{\rm
   eff}$, log \textit{g} or [M/H]), and to assess the consistency of
 the results as the test set SNR degrades. The model performances were
 evaluated using 10-fold cross validation as follows:
 
 \begin{enumerate}
-\item The full dataset is replicated 8 times by adding Gaussian white
-  noise such that the SNR of each replicate is 150, 125, 100, 75, 50,
-  25, 10, or 5. These 8 replicates together with the original
-  noiseless dataset forms the basis for the next steps.
-\item Each spectrum in the dataset is projected onto 20 independent
+\item The noiseless dataset is replicated $25\times 8$ times: 25
+  realisations of Gaussian white noise for each of the following SNRs:
+  150, 125, 100, 75, 50, 25, 10, and 5. These 200 replicates together
+  with the original noiseless dataset forms the basis for the next
+  steps.
+\item Each spectrum in each dataset is projected onto 20 independent
   components (as suggested by the experiments described in
   Section~\ref{sec:comparison1}).
-\item Each of the 9 compressed dataset (one for each SNR) is then
-  split into 10 subsets or \textit{folds}.
-\item \label{itemthree2} An SVM model is trained using 9 folds of the
-  same SNR.
+\item Each of the 201 compressed datasets is then split into 10
+  subsets or \textit{folds}. The splitting is unique for the 201
+  datasets, which means that each spectrum belongs to the same fold
+  across all 201 datasets.
+\item \label{itemthree2} An SVM model is trained using 9 folds of each
+  dataset (all characterized by the same SNR). This amounts to 201
+  models.
 \item \label{itemfour2} The model constructed in step \ref{itemthree2}
-  is used to predict physical parameters for the tenth fold in all of
-  its 9 SNR versions. The RMSE is calculated independently for each
-  value of the SNR.
+  is used to predict physical parameters for the tenth fold in all its
+  201 versions. The RMSE is calculated independently for each value of
+  the SNR and noise realisation.
 \item \label{itemfive2} Steps \ref{itemthree2} to \ref{itemfour2} are
   repeated 10 times (using each time a different fold for evaluation)
   and the performance measure is calculated by averaging the values
   obtained in the loop.
-\item Steps \ref{itemthree2} to \ref{itemfive2} are repeated 9 times,
-  one for each training set SNR.
 \end{enumerate}
 
 \subsection{Results}
 
-Fig.~ \ref{fig:snrtrain} shows the mean (averaged over folds) RMSE
-results and the 95\% confidence interval for the mean as a function of
-the SNR of the evaluation set. The nine different lines correspond to
-the SNR of the training set used to generate both the projector and
-the atmospheric parameters predictor.  The main conclusions of the
-analysis can be summarised as follows:
+Fig.~ \ref{fig:snrtrain} shows the mean (averaged over the 25 noise
+realisations) RMSE results and the 95\% confidence interval for the
+mean as a function of the SNR of the evaluation set. The nine
+different lines correspond to the SNR of the training set used to
+generate both the projector and the atmospheric parameters predictor.
+The main conclusions of the analysis can be summarised as follows:
 
 \begin{itemize}
-\item There are no large discrepancies amongst the estimations 
-	obtained applying the same model to different datasets.
-\item For spectra of SNR of about 100 or greater, there are minimal
-  differences in the precision achieved with models trained with
-  spectra of SNR of 50 or greater.
-\item The accuracy of the model trained with noise-free spectra
-  degrades exponentially for SNRs worse than 75.
-\item The overall performance is very similar when the SNR of the
-  evaluation spectra is between 50 and 75, except for the noise-free
-  model in the estimation of $T_{\rm eff}$. 
-\item For the evaluation sets with SNR values of 25, the best accuracy
-  is obtained with the model constructed from spectra with SNR of 50. 
-  In the prediction of log \textit{g}, the best model corresponds to 
-  that trained with SNR of 25.
-\item For SNR lower than 10, the model with best generalization
+\item This analysis yields the very important consequence that models
+  trained with noise-free spectra are not adequate to estimate
+  atmospheric parameters of spectra with SNRs up 50/75, and are
+  unnecessary for $T_{\rm eff}$ and log \textit{g} in contexts of even
+  higher SNRs. Only the [M/H] regression models benefit from training
+  with noiseless spectra if the test spectra are in the SNR$\ge 50$
+  regime. The accuracy of the model trained with noise-free spectra
+  degrades exponentially for SNR$<$50.
+\item There are no large discrepancies amongst the estimations
+  obtained by applying the 25 models trained with a given SNR to
+  different noise realisations, which translates into small confidence
+  intervals and error bars in the plot. This is so even for the lowest
+  SNR tested (SNR=5).
+\item Only one ICA+SVM model trained with SNR of 25 would be enough to
+  estimate the surface gravity for spectra of all SNRs with the best
+  performance.
+\item For evaluation spectra with SNR$\ge 100$, there are minimal
+  differences in the precision achieved by models trained with spectra
+  of SNR$\ge 50$ (except for the [M/H] models trained with noiseless
+  spectra {\bf This needs an explanation!}).  
+\item For evaluation sets with $100\leSNR<10$, the best accuracy is
+  obtained with the model constructed from spectra with SNR of 50
+  (except in the case of log {\it g}, where the SNR=25 training set
+  outperforms SNR=50 as noted above, but the difference is small).
+\item For SNR lower than 10, the model with best generalisation
   performance is that trained with SNR equal to 10 for $T_{\rm eff}$ 
-  and [M/H]. The lowest prediction errors for log \textit{g} estimation 
-  were obtained with the model trained with SNR equal to 25.
+  and [M/H]. 
 \end{itemize}
 
 \begin{figure}
@@ -820,37 +839,33 @@ analysis can be summarised as follows:
 \label{fig:snrtrain}
 \end{figure}
 
-This analysis yields the very important consequence that models
-trained with noise-free spectra are not adequate to estimate
-atmospheric parameters of spectra with SNRs up 75, and unnecessary for
-$T_{\rm eff}$ and log \textit{g} in contexts of higher SNRs. Models
-trained with noiseless spectra only seem an advantage for the
-prediction of [M/H] for the highest SNR regime (above
-SNR=75). Moreover, in order to improve the generalization performance
-of the models, there is no need to match the SNR of the training set
-to that of the real spectra: only two ICA+SVM models would be enough
-to estimate $T_{\rm eff}$ and [M/H], one for SNRs of about 25 or
-greater (model trained with SNR of 50) and one for spectra with SNR of
-10 or lower (model trained with SNR of 10).  On the contrary, only one
-ICA+SVM model trained with SNR of 25 would be enough to estimate the
-surface gravity for spectra of all SNRs.
-
+As a summary, models trained with noiseless spectra only seem an
+advantage for the prediction of [M/H] for the highest SNR regime
+(above SNR=75) and anywhere else they are either catastrophic choices
+or just equivalent to other models. Moreover, there is no need to
+match the SNR of the training set to that of the real spectra because
+only two ICA+SVM models would be enough to estimate $T_{\rm eff}$ and
+[M/H] in all SNR regimes: the one trained with SNR=50 for SNR$\ge$25
+and the one trained with SNR=10 for spectra with SNR$<$ 10. For the
+prediction of surface gravities, the SNR=25 model is sufficient for
+any spectrum of whatever SNR.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Training set density}
 \label{sec:comparison3}
-Finally, in the third stage we carry out an analysis of the effect of
-the training set grid density over the regression performance.  To do
-this, six new datasets of synthetic spectra were computed by
-considering different grid densities. The $T_{\rm eff}$ values
-varied between 4000 and 8000 K with a variable step-size between 50 K
-and 250 K. The other grid parameters were established as follows: the
-log \textit{g} were regularly sampled from 1 to 5 in 0.5 steps and
-both [M/H] and $\left[ \alpha/Fe \right]$ were equal
-zero. Table~\ref{tab:grid} presents the step-sizes used in this study
-as well as the number of synthetic spectra available in each grid.
-Furthermore, different SNR levels (100, 50, 25, 10) were added to the
-original synthetic spectra.
+
+Finally, we carry out an analysis of the effect of the training set
+grid density over the regression performance.  To do this, six new
+grids of synthetic spectra with different grid densities were used to
+train SVM models. The $T_{\rm eff}$ values varied between 4000 and
+8000 K with a variable step-size between 50 K and 250 K. The other
+grid parameters were established as follows: the log \textit{g} were
+regularly sampled from 1 to 5 in 0.5 steps and both [M/H] and $\left[
+  \alpha/Fe \right]$ were set equal zero for
+simplicity. Table~\ref{tab:grid} presents the step-sizes used in this
+study as well as the number of synthetic spectra available in each
+grid.  In addition to this, noisy replicates of these grids were
+generated of different SNR levels (100, 50, 25, 10).
 
 \begin{table}
 \centering
@@ -870,13 +885,12 @@ original synthetic spectra.
 \end{tabular}
 \end{table}
 
-We evaluated the performance of the $T_{\rm eff}$ models trained with
-the new datasets using 10-fold cross validation.
-
-Finally, Fig.~\ref{fig:gridpure} to \ref{fig:grid10} present the
-$T_{\rm eff}$ estimation errors that were obtained with different 
-grid densities and SNR levels. Main conclusions of the analysis 
-of these figures are the following:
+We evaluated the performance of the SVM regression models using
+10-fold cross validation. Figures \ref{fig:grid50} and
+\ref{fig:grid10} presents the $T_{\rm eff}$ estimation errors obtained
+with the different grid densities and the two optimal training set
+SNRs (50 and 10) found in the previous Section. The main conclusions
+of the analysis of these figures are the following:
 
 \begin{itemize}
 \item As expected, estimation errors increase when the grid 
@@ -884,10 +898,10 @@ of these figures are the following:
 \item Overall, the accuracy obtained against the grid density 
 	is more variable when the number of dimensions retained 
 	increases. 
-\item PCA and ICA show a similar behaviour to the grid density 
-	variation. 
-\item The grid density appeared to have less effect over the 
-	performance of Wavelets and diffusion maps.
+\item PCA and ICA show a similar behaviour with the grid density
+  variation.
+\item The grid density appears to have less effect over the
+  performance of Wavelets and diffusion maps.
 \end{itemize}
 
 \begin{figure*}
@@ -905,6 +919,8 @@ of these figures are the following:
   with a specific grid step (SNR = 10)}
 \label{fig:grid10}
 \end{figure*}
+
+
 
 
 \section{Conclusions}
