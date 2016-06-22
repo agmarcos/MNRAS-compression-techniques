@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.8)  22 JUN 2016 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.8)  22 JUN 2016 13:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -1152,15 +1152,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1003 
+l.1005 
         <./flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf>]
 <snr_errors_log_global_HR21.pdf, id=483, 389.455pt x 389.455pt>
 File: snr_errors_log_global_HR21.pdf Graphic file (type pdf)
 
 <use snr_errors_log_global_HR21.pdf>
-Package pdftex.def Info: snr_errors_log_global_HR21.pdf used on input line 1006
+Package pdftex.def Info: snr_errors_log_global_HR21.pdf used on input line 1008
 .
 (pdftex.def)             Requested size: 240.0pt x 239.99771pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1169,35 +1172,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1055 
+l.1032 
         <./flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf>]
-<bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf, id=505, 505.89pt x 794.97pt>
+<bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf, id=503, 505.89pt x 794.97pt>
 File: bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf Graphic file (type pdf)
 
 <use bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf>
 Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf used on input 
-line 1069.
+line 1071.
 (pdftex.def)             Requested size: 412.30827pt x 647.89792pt.
 
-<bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf, id=506, 505.89pt x 794.97pt>
+<bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf, id=504, 505.89pt x 794.97pt>
 File: bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf Graphic file (type pdf)
 
 <use bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf>
 Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf used on input 
-line 1077.
+line 1079.
 (pdftex.def)             Requested size: 412.30827pt x 647.89792pt.
  [14pdfTeX warning (ext4): destination with the same identifier (name{figure.10
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1101 
+l.1099 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1101 
+l.1099 
         <./snr_errors_log_global_2x2.pdf>] (main.bbl
 LaTeX Font Info:    Try loading font information for T1+aett on input line 182.
 
@@ -1217,7 +1220,7 @@ Package hyperref Warning: Suppressing empty link on input line 210.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.251 
+l.237 
        <./snr_errors_log_global_HR21.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1226,7 +1229,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.251 
+l.237 
        <./bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1235,7 +1238,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.251 
+l.237 
        <./bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf>]
 
 Package hyperref Warning: Suppressing empty link on input line 265.
@@ -1247,7 +1250,7 @@ File: flamesHR10_SNR=000_Teff_log_BestSVM_N-RMSE_test.pdf Graphic file (type pd
 f)
  <use flamesHR10_SNR=000_Teff_log_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_SNR=000_Teff_log_BestSVM_N-RMSE_test.pdf us
-ed on input line 1129.
+ed on input line 1131.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
 <flamesHR10_SNR=000_Logg_BestSVM_N-RMSE_test.pdf, id=595, 505.89pt x 505.89pt>
@@ -1255,7 +1258,7 @@ File: flamesHR10_SNR=000_Logg_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_SNR=000_Logg_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_SNR=000_Logg_BestSVM_N-RMSE_test.pdf used o
-n input line 1137.
+n input line 1139.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
 <flamesHR10_SNR=000_Meta_BestSVM_N-RMSE_test.pdf, id=596, 505.89pt x 505.89pt>
@@ -1263,7 +1266,7 @@ File: flamesHR10_SNR=000_Meta_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_SNR=000_Meta_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_SNR=000_Meta_BestSVM_N-RMSE_test.pdf used o
-n input line 1144.
+n input line 1146.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
 <flamesHR10_SNR=000_AlFe_BestSVM_N-RMSE_test.pdf, id=597, 505.89pt x 505.89pt>
@@ -1271,7 +1274,7 @@ File: flamesHR10_SNR=000_AlFe_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_SNR=000_AlFe_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_SNR=000_AlFe_BestSVM_N-RMSE_test.pdf used o
-n input line 1151.
+n input line 1153.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
 <flamesHR21_SNR=000_Teff_log_BestSVM_N-RMSE_test.pdf, id=598, 505.89pt x 505.89
@@ -1280,7 +1283,7 @@ File: flamesHR21_SNR=000_Teff_log_BestSVM_N-RMSE_test.pdf Graphic file (type pd
 f)
  <use flamesHR21_SNR=000_Teff_log_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR21_SNR=000_Teff_log_BestSVM_N-RMSE_test.pdf us
-ed on input line 1158.
+ed on input line 1160.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
 <flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf, id=599, 578.16pt x 867.24pt>
@@ -1288,7 +1291,7 @@ File: flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf used o
-n input line 1166.
+n input line 1168.
 (pdftex.def)             Requested size: 431.95157pt x 647.89792pt.
 
 <flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf, id=600, 578.16pt x 867.24pt>
@@ -1296,7 +1299,7 @@ File: flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf used o
-n input line 1174.
+n input line 1176.
 (pdftex.def)             Requested size: 431.95157pt x 647.89792pt.
 
 <flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf, id=601, 578.16pt x 867.24pt>
@@ -1304,7 +1307,7 @@ File: flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf used o
-n input line 1182.
+n input line 1184.
 (pdftex.def)             Requested size: 431.95157pt x 647.89792pt.
 
 <bestSVM_Teff_N-RMSE_HR10_pure_all.pdf, id=602, 505.89pt x 794.97pt>
@@ -1312,7 +1315,7 @@ File: bestSVM_Teff_N-RMSE_HR10_pure_all.pdf Graphic file (type pdf)
 
 <use bestSVM_Teff_N-RMSE_HR10_pure_all.pdf>
 Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_pure_all.pdf used on input li
-ne 1190.
+ne 1192.
 (pdftex.def)             Requested size: 412.30827pt x 647.89792pt.
 
 <bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf, id=603, 505.89pt x 794.97pt>
@@ -1320,7 +1323,7 @@ File: bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf Graphic file (type pdf)
 
 <use bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf>
 Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf used on input
- line 1198.
+ line 1200.
 (pdftex.def)             Requested size: 412.30827pt x 647.89792pt.
 
 <bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf, id=604, 505.89pt x 794.97pt>
@@ -1328,9 +1331,9 @@ File: bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf Graphic file (type pdf)
 
 <use bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf>
 Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf used on input 
-line 1206.
+line 1208.
 (pdftex.def)             Requested size: 412.30827pt x 647.89792pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1219.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1221.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1339,19 +1342,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1219 \end{document}
+l.1221 \end{document}
                      pdfTeX warning (ext4): destination with the same identifie
 r (name{figure.A1.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1219 \end{document}
+l.1221 \end{document}
                      pdfTeX warning (ext4): destination with the same identifie
 r (name{figure.A1.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1219 \end{document}
+l.1221 \end{document}
                       <./flamesHR10_SNR=000_Teff_log_BestSVM_N-RMSE_test.pdf> <
 ./flamesHR10_SNR=000_Logg_BestSVM_N-RMSE_test.pdf> <./flamesHR10_SNR=000_Meta_B
 estSVM_N-RMSE_test.pdf>]
@@ -1362,13 +1365,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1219 \end{document}
+l.1221 \end{document}
                      pdfTeX warning (ext4): destination with the same identifie
 r (name{figure.A1.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1219 \end{document}
+l.1221 \end{document}
                      
 
  <./flamesHR10_SNR=000_AlFe_BestSVM_N-RMSE_test.pdf> <./flamesHR21_SNR=000_Teff
@@ -1380,7 +1383,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1219 \end{document}
+l.1221 \end{document}
                       <./flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1389,7 +1392,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1219 \end{document}
+l.1221 \end{document}
                       <./flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1398,7 +1401,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1219 \end{document}
+l.1221 \end{document}
                       <./flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1407,7 +1410,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1219 \end{document}
+l.1221 \end{document}
                       <./bestSVM_Teff_N-RMSE_HR10_pure_all.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1416,7 +1419,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1219 \end{document}
+l.1221 \end{document}
                       <./bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1425,12 +1428,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1219 \end{document}
+l.1221 \end{document}
                       <./bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1219.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1221.
  (main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1219.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1219.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1221.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 99B3047CEBA987C70AC7490385F3DF87;1040.
@@ -1442,10 +1445,7 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1219.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1221.
  )
 (\end occurred inside a group at level 3)
 
@@ -1456,11 +1456,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1219.
 Here is how much of TeX's memory you used:
  10246 strings out of 493622
  144445 string characters out of 3147284
- 244612 words of memory out of 3000000
+ 244784 words of memory out of 3000000
  13177 multiletter control sequences out of 15000+200000
  107690 words of font info for 236 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 36i,15n,35p,944b,736s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,15n,35p,944b,730s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced bu
 t does not exist, replaced by a fixed one
 
@@ -1489,7 +1489,7 @@ e1/public/txfonts/rtxmi.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/newtx/rtxmi5
 C:/apps/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><C:/apps/MiKTeX 2.9/font
 s/type1/public/txfonts/txsy.pfb><C:/apps/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb><C:/apps/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (25 pages, 929052 bytes).
+Output written on main.pdf (25 pages, 929228 bytes).
 PDF statistics:
  872 PDF objects out of 1000 (max. 8388607)
  136 named destinations out of 1000 (max. 500000)
