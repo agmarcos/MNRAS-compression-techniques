@@ -456,7 +456,7 @@ Dimensionality reduction with wavelets consists of keeping a reduced
 number of wavelet coefficients. There are two common ways of
 coefficient selection: ({\textit i) to eliminate the high frequency
   coefficients that are assumed to reflect only random noise, and
-  ({\textit {ii}) to keep the $k$ most statistically significant
+  ({\textit ii) to keep the $k$ most statistically significant
     coefficients (which yields a representation of the signal with
     less variance) \citep{li:10}. There are more sophisticated ways to
     further reduce the number of coefficients using standard machine
@@ -499,9 +499,8 @@ molecular line lists. These spectra were kindly provided by the
 Gaia-ESO team in charge of producing the physical parameters for the
 survey.
 
-The dataset contains a grid of 8780 synthetic high-resolution spectra 
-(\textit{R} = 19800) between 5339 and 5619 {\AA} (the nominal GIRAFFE 
-HR10 setup) with effective temperatures between 4000 and 
+The datasets used in this work contain a grid of 8780 synthetic 
+high-resolution spectra with effective temperatures between 4000 and 
 8000 K (step 250 K), logarithmic surface gravities between 1.0 and 5.0 
 (step 0.5), mean metallicities between -3.0 and 1.0 (with a variable step 
 of 0.5 or 0.25 dex) and $\left[ \alpha/Fe \right]$ values varying between
@@ -512,14 +511,28 @@ for [M/H] $\geqslant$ 0, $\left[ \alpha/Fe \right]$ = +0.4 dex for
 for [M/H] between -1.0 and +0.0 (Fig.~\ref{fig:gridModelos}).
 Elements considered to be $\alpha$-elements are O, Ne, Mg, Si, S, Ar,
 Ca and Ti. The adopted solar abundances are those used by
-\citep{gustafsson:08}. Fig.~\ref{fig:ejemplosEspectros} shows some
-example spectra from this dataset.   
+\citep{gustafsson:08}.  
 
 \begin{figure}
 \centering\includegraphics[width=\columnwidth]{grid_modelos.pdf}
 \caption{Coverage in parameter space of the dataset}
 \label{fig:gridModelos}
 \end{figure}
+
+More specifically, we used two datasets covering two ranges in 
+wavelength: (1) a dataset containing high-resolution spectra 
+(\textit{R} = 19800) between 5339 and 5619 {\AA} (the nominal GIRAFFE 
+HR10 setup) and (2) a dataset containing high-resolution spectra
+(\textit{R} = 16200) between 8484 and 9001 {\AA} (the nominal GIRAFFE 
+HR21 setup). Fig.~\ref{fig:ejemplosEspectros} shows some
+example spectra from this dataset.
+
+%For each selected setup, the grid of spectra span the parameter ranges
+%[4000, 8000] K in effective temperature (step 250 K), 
+%[1.0, 5.0] in logarithmic surface gravities (step 0.5), 
+%[-3.0, 1.0] in mean metallicities (with a variable step of 0.5
+%or 0.25 dex), and 
+%[-0.4, 0.4] dex in $\left[ \alpha/Fe \right]$ (step 0.2 dex). 
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{espectros01.pdf}
@@ -528,33 +541,24 @@ HR10 setup).}
 \label{fig:ejemplosEspectros}
 \end{figure*}
 
-The sample size of our dataset (8780 spectra) is relatively
-small compared to the input dimension (2798 flux measurements 
-per spectrum). For example, with an amount of 
-information about 10 samples per dimension --a rule of thumb 
-is to have at least 10 training samples per feature dimension 
-\citep{jain:00}, the dataset should contain $10^{2798}$ spectra.
-In most real case applications, the ratio of sample size to input 
-dimensions is much lower and thus, the \textit{curse of dimensionality} 
-problem is expected to affect even more severely the inference process. 
-
-With a view to analyze the validity of the results obtained with the 
-selected dataset, we used a second dataset which is based on the same 
-grid but covering a different wavelength. This new dataset contains 
-high-resolution spectra (\textit{R} = 16200) between 8484 and 9001 
-{\AA} (the nominal GIRAFFE HR21 setup). 
-Fig.~\ref{fig:ejemplosEspectros21} shows some example spectra from 
-this dataset. In this validity analysis, efforts were focused on the 
-effective temperature.
-
-
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{espectros02.pdf}
 \caption{Example spectra from the second dataset (the nominal GIRAFFE 
 HR21 setup).}
-\label{fig:ejemplosEspectros21}
+\label{fig:ejemplosEspectros}
 \end{figure*}
 
+
+The sample size of our datasets (8780 spectra) is relatively
+small compared to the input dimension (2798 and 5168 flux 
+measurements per spectrum, respectively). For example, with an 
+amount of information about 10 samples per dimension --a rule of 
+thumb is to have at least 10 training samples per feature dimension 
+\citep{jain:00}, the dataset should contain $10^{2798}$ and 
+$10^{5168}$ spectra, respectively.
+In most real case applications, the ratio of sample size to input 
+dimensions is much lower and thus, the \textit{curse of dimensionality} 
+problem is expected to affect even more severely the inference process. 
 
 The conclusions drawn from the set of experiments described below
 depend on the restricted range of physical parameters, wavelengths,
@@ -646,12 +650,12 @@ dimensionality reduction techniques.}
 \label{tab:parameters}
 \begin{tabular}{l c c c}
 \hline
-\textbf{Technique} & \textbf{Parameter} & \textbf{Analysed range} & \textbf{Best value} \\
+\textbf{Technique} & \textbf{Parameter} & \textbf{analysed range} & \textbf{Best value} \\
 \hline
 \multirow{2}{*}{DLA} 
 	& $k_1$ & [2 - 8]  & 2 \\\cline{2-4}
 	& $k_2$ & [2 - 8]  & 3 \\\hline
-DM & eps.val & [0.01 - 700] & 600 \\\hline
+DMAP & eps.val & [0.01 - 700] & 600 \\\hline
 KPCA & $\sigma$ & [0.0001 - 0.01] & 0.001 \\
 \hline
 \end{tabular}
@@ -668,13 +672,13 @@ synthetic spectra.
 First, we compare the performance of the dimensionality reduction
 techniques described in section \ref{sec:dimred} using noise-free
 synthetic spectra as well as degraded spectra with SNR levels of 100,
-50, 25 and 10. Figures \ref{fig:02} to \ref{fig:07} show the RMSE
-obtained with the evaluation set of the first dataset (the 34\% 
-of the full set of spectra that was not not used to define the 
-compression transformation or to train SVM models).
+50, 25 and 10.  Figures \ref{fig:02} to \ref{fig:07} show the RMSE
+obtained with the evaluation set (the 34\% of the full set of spectra
+that was not not used to define the compression transformation or to
+train SVM models).
 
 \begin{figure*}
-\centering\includegraphics[width=.9\textwidth]{flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf}
+\centering\includegraphics[width=\textwidth]{flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf}
 \caption{Temperature estimation errors as a function of the number of
   dimensions used for data compression, for noisy synthetic
   spectra.}
@@ -682,7 +686,7 @@ compression transformation or to train SVM models).
 \end{figure*}
 
 \begin{figure*}
-\centering\includegraphics[width=.9\textwidth]{flamesHR10_Logg_BestSVM_N-RMSE_test.pdf}
+\centering\includegraphics[width=\textwidth]{flamesHR10_Logg_BestSVM_N-RMSE_test.pdf}
 \caption{Surface gravity estimation errors as a function of the number of
   dimensions used for data compression, for noisy synthetic
   spectra.}
@@ -690,7 +694,7 @@ compression transformation or to train SVM models).
 \end{figure*}
 
 \begin{figure*}
-\centering\includegraphics[width=.9\textwidth]{flamesHR10_Meta_BestSVM_N-RMSE_test.pdf}
+\centering\includegraphics[width=\textwidth]{flamesHR10_Meta_BestSVM_N-RMSE_test.pdf}
 \caption{Metallicity estimation errors as a function of the number of
   dimensions used for data compression, for noisy synthetic
   spectra.}
@@ -698,7 +702,7 @@ compression transformation or to train SVM models).
 \end{figure*}
 
 \begin{figure*}
-\centering\includegraphics[width=.9\textwidth]{flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf}
+\centering\includegraphics[width=\textwidth]{flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf}
 \caption{$\left[ \alpha/Fe \right]$  estimation errors as a function of the number of
   dimensions used for data compression, for noisy synthetic
   spectra.}
@@ -715,15 +719,8 @@ techniques serve well as noise filters.
 The performance comparison of the analysed dimensionality reduction
 techniques shows that although traditional PCA is not the most
 efficient method, it outperforms some of the nonlinear techniques used
-in this study, such as DM or wavelets. %{\bf We need to propose an explanation}. 
-The lower performance of DM compared to that of PCA --or even to other 
-dimensionality reduction techniques-- could be explained by the 
-tuning process that was carried out to determine the optimal DM 
-parameter values. Thus, a smaller grid size of tuning parameters 
-would improve the DM performance.
-In the case of wavelets, it seems that we are eliminating valuable 
-spectra information instead of additive noise by removing the high 
-frequency coefficients. % because they are attributable to noise.
+in this study, such as diffusion maps or wavelets. {\bf We need
+  to propose an explanation}. 
 
 Overall, wavelets combined with SVM models have the highest errors
 regardless of the number of retained dimensions, with the exception of
@@ -734,8 +731,8 @@ conciseness). Furthermore, this technique yields the best performance
 for the highest compression rates (two or five dimensions) when
 estimating $T_{\rm eff}$ and log \textit{g}. However, it was
 outperformed by most other techniques for almost any other compression
-rate. PCA and DMs yield similar $T_{\rm eff}$ prediction
-errors in the high SNR regime, but DMs are more robust against noise
+rate. PCA and diffusion maps yield similar $T_{\rm eff}$ prediction
+errors in the high SNR regime, but DMs is more robust against noise
 specially for the lowest compression rates examined.
 
 It is interesting to note that compression techniques can be grouped
@@ -746,7 +743,7 @@ RMSE curves for SNRs below 25 and target dimensionalities greater than
 25, indicating that components beyond this limit are increasingly
 sensitive to noise. 
 
-The relative merit of DM with respect to the best
+The relative merit of Diffusion Maps with respect to the best
 performing compression techniques (ICA and kernel PCA) improves as the
 SNR diminishes until it becomes almost comparable for SNR=10, while at
 the same time rendering the SVM regression module insensitive to the
@@ -762,13 +759,12 @@ size (the number of spectra in this particular application) there is
 an optimal number of features beyond which the performance of the
 predictor will degrade rather than improve.  On the other hand, as
 expected, the quality of atmospheric parameter ($T_{\rm eff}$, log
-\textit{g}, [M/H] or  $\left[ \alpha/Fe \right]$) predictions degrades 
-for lower SNR. However, RMSE errors were relatively low even for 
-low SNR ($\sim$ 10).  
+\textit{g} or [M/H]) predictions degrades for lower SNR. However, RMSE
+errors were relatively low even for low SNR ($\sim$ 10).  
 
 \begin{table*}
 \centering
-\caption{RMSE on the evaluation set of 2986 spectra for the best SVM trained models (HR10).}
+\caption{RMSE on the evaluation set of 2986 spectra for the best SVM trained models.}
 \label{tab:01}
 %\resizebox{0.99\textwidth}{!}{%
 \begin{tabular}{l c c c c c c}
@@ -794,68 +790,6 @@ $\infty$ & DLA / ICA\protect\footnotemark[1] & 40 / 30 / 20\protect\footnotemark
   $\left[ \alpha/Fe \right]$, 30 and 20 dimensions were needed,
   respectively.}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% HR21
-\subsubsection{Second dataset analysis}
-The same analysis was carried out by using a dataset that contains 
-a wider wavelength range (almost twice as wide than the first dataset). 
-Figure \ref{fig:02hr21} and table \ref{tab:hr21} show the results 
-obtained for $T_{\rm eff}$ with the evaluation set.
-
-Some of our previous conclusions are confirmed by these results:
-\begin{itemize}
-\item Kernel PCA and ICA are revealed to be the best compression 
-	techniques for stellar spectra.  
-\item Wavelets combined with SVM models have the highest errors and 
-	they are outperformed by PCA in most of the parameter space.  
-\item DLA performed best for both noise-free data and the highest 
-	compression rates (two to five dimensions).
-\end{itemize}
-
-However, there are also some differences: 
-\begin{itemize}
-\item For lower SNR data, the optimality criterion translates into
-	retaining fewer components. This fact was identified by 
-	\citep{Bailer-Jones1998} in the case of compression of spectra 
-	with PCA. Our results extend this conclusion to other compression 
-	techniques when the wavelength range is higher than 300 {\AA}.
-\item In the high SNR regimes, RMSE errors were lower than those 
-	obtained with the first dataset. However, the performance is 
-	considerably worsened for the lowest SNR explored in this work 
-	(SNR=10).
-\end{itemize}
-
-
-\begin{figure*}
-\centering\includegraphics[width=.9\textwidth]{flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf}
-\caption{Temperature estimation errors as a function of the number of
-  dimensions used for data compression, for noisy synthetic
-  spectra.}
-\label{fig:02hr21}
-\end{figure*}
-
-
-\begin{table}
-\centering
-\caption{RMSE on the evaluation set of 2986 spectra for the best SVM trained models (HR21).}
-\label{tab:hr21}
-%\resizebox{0.99\textwidth}{!}{%
-\begin{tabular}{l c c c}
-\hline
-\multirow{2}{*}{\textbf{SNR}} & \multirow{2}{*}{\textbf{Method}} & \multirow{2}{*}{\textbf{Nr. Dim.}} & {\bf RMSE}\\
- &  &  & \textbf{$T_{\rm eff}$ (K)}\\
-\hline
-$\infty$ & DLA & 15 & 12.58\\
-100 & ICA & 20 & 32.69\\
-50 & ICA & 20 & 49.18\\
-25 & ICA & 15 & 82.36\\
-10 & ICA & 10 & 202.39\\
-\hline
-%\multicolumn{6}{l}{$^1$ }\\
-\end{tabular}
-%}
-\end{table}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Optimal training set SNR}
 \label{sec:comparison2}
@@ -871,10 +805,9 @@ each of the following 8 finite SNR levels: 150, 125, 100, 75, 50, 25,
 noiseless dataset. We create the 25 noise realisation to estimate the
 variance of the results. For each of these datasets we trained an SVM
 model to estimate each of the atmospheric parameters ($T_{\rm
-  eff}$, log \textit{g}, [M/H] or $\left[ \alpha/Fe \right]$), and to 
-assess the consistency of the results as the test set SNR degrades. 
-The model performances were evaluated using 10-fold cross validation 
-as follows:
+  eff}$, log \textit{g} or [M/H]), and to assess the consistency of
+the results as the test set SNR degrades. The model performances were
+evaluated using 10-fold cross validation as follows:
 
 \begin{enumerate}
 \item The noiseless dataset is replicated $25\times 8$ times: 25
@@ -904,7 +837,7 @@ as follows:
 
 \subsection{Results}
 
-Fig.~\ref{fig:snrtrain} shows the mean (averaged over the 25 noise
+Fig.~ \ref{fig:snrtrain} shows the mean (averaged over the 25 noise
 realisations) RMSE results and the 95\% confidence interval for the
 mean as a function of the SNR of the evaluation set. The nine
 different lines correspond to the SNR of the training set used to
@@ -958,57 +891,10 @@ there is no need to match the SNR of the training set to that of the
 real spectra because only two ICA+SVM models would be enough to 
 estimate $T_{\rm eff}$ and [M/H] in all SNR regimes: the one trained 
 with SNR=50 for SNR$\ge$25 and the one trained with SNR=10 for spectra 
-with SNR$\le$ 10. For the prediction of surface gravities, the SNR=25 model 
+with SNR$<$ 10. For the prediction of surface gravities, the SNR=25 model 
 is sufficient for any spectrum of whatever SNR. For the prediction of 
 the ratio between the alpha-elements and iron, the SNR=50 model is 
 sufficient for any spectrum of whatever SNR.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% HR21
-\subsubsection{Second dataset analysis}
-The optimal training SNR was also evaluated with the dataset that 
-contains a wider wavelength range. In a similar way to 
-Fig.~\ref{fig:snrtrain}, Fig.~\ref{fig:snrtrainhr21} 
-shows the results obtained for the prediction of $T_{\rm eff}$.
-
-Again, it is possible to observe that there is no need to match 
-the SNR of the training set to that of the real spectra:
-\begin{itemize}
-\item Models trained with noise-free spectra are only adequate to 
-	estimate $T_{\rm eff}$ of noise-free spectra, and completely 
-	useless in any other SNR regime. This effect is much more evident 
-	with this dataset than with the first one.
-\item Also, it is clear that, if the test spectra are in the SNR>25 
-	regime, the $T_{\rm eff}$ regression models do not benefit at all 
-	from training with SNR$\le$25.
-\item In this case, for evaluation spectra with SNR$\ge$100, differences 
-	in the precision achieved by models trained with spectra of 
-	SNR$\le$50 are easier to notice. The best 
-	option is one ICA+SVM model trained with SNR of 125.
-\end{itemize}
-
-In summary, a model trained with SNR=50 would be enough to 
-estimate $T_{\rm eff}$ of spectra with 100$\ge$SNR$\ge$25. A 
-second model trained with SNR=10 would be adequate for spectra 
-with SNR$\le$10. And, differently to the previous results, a third 
-model trained with SNR=125 would be necessary for SNR$\ge$100. 
-
-Finally, it is noteworthy that RMSE errors are slightly lower than those 
-from the first dataset in the high SNR regime, and that RMSE errors are 
-higher than those form the first dataset in the low SNR regime. This 
-results illustrate the effect of the additive noise introduced in spectra 
-on the the \textit{denoising} ability of the investigated compression 
-techniques.
-
-
-\begin{figure}
-\centering\includegraphics[width=\columnwidth]{snr_errors_log_global_HR21.pdf}
-\caption{Estimation errors as a function of the SNR of the second 
-	dataset evaluation set for $T_{\rm eff}$. Each line corresponds 
-	to a model trained with a specific SNR}
-\label{fig:snrtrainhr21}
-\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1152,14 +1038,6 @@ Competitiveness through grant AyA2011-24052.
 \caption{$\left[  \alpha/Fe \right]$ estimation error as a function of the 
 number of dimensions used for data compression, for synthetic spectra}
 \label{fig:noiseless-alfe}
-\end{figure}
-
-\begin{figure}
-\centering\includegraphics[width=\columnwidth]{flamesHR21_SNR=000_Teff_log_BestSVM_N-RMSE_test.pdf}
-\caption{Temperature estimation error as a function of the number of
-  dimensions used for data compression, for synthetic spectra from 
-  the second dataset}
-\label{fig:noiseless-teff-hr21}
 \end{figure}
 
 \begin{figure*}
