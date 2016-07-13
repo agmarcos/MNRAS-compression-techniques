@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.8)  12 JUL 2016 20:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.8)  13 JUL 2016 16:53
 entering extended mode
 **./main.tex
 (main.tex
@@ -1023,37 +1023,37 @@ Overfull \hbox (6.78941pt too wide) in paragraph at lines 638--649
  [][] 
  []
 
-<flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf, id=342, 650.43pt x 542.025pt>
+<flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf, id=342, 592.2125pt x 361.35pt>
 File: flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf used on in
 put line 668.
-(pdftex.def)             Requested size: 504.0pt x 420.00713pt.
+(pdftex.def)             Requested size: 504.0pt x 307.53491pt.
 
-<flamesHR10_Logg_BestSVM_N-RMSE_test.pdf, id=343, 650.43pt x 542.025pt>
+<flamesHR10_Logg_BestSVM_N-RMSE_test.pdf, id=343, 592.2125pt x 361.35pt>
 File: flamesHR10_Logg_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_Logg_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_Logg_BestSVM_N-RMSE_test.pdf used on input 
 line 676.
-(pdftex.def)             Requested size: 504.0pt x 420.00713pt.
+(pdftex.def)             Requested size: 504.0pt x 307.53491pt.
 
-<flamesHR10_Meta_BestSVM_N-RMSE_test.pdf, id=344, 650.43pt x 542.025pt>
+<flamesHR10_Meta_BestSVM_N-RMSE_test.pdf, id=344, 592.2125pt x 361.35pt>
 File: flamesHR10_Meta_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_Meta_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_Meta_BestSVM_N-RMSE_test.pdf used on input 
 line 684.
-(pdftex.def)             Requested size: 504.0pt x 420.00713pt.
+(pdftex.def)             Requested size: 504.0pt x 307.53491pt.
 
-<flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf, id=345, 650.43pt x 542.025pt>
+<flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf, id=345, 592.2125pt x 361.35pt>
 File: flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf used on input 
 line 692.
-(pdftex.def)             Requested size: 504.0pt x 420.00713pt.
+(pdftex.def)             Requested size: 504.0pt x 307.53491pt.
  [6pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
 has been already used, duplicate ignored
 
@@ -1063,102 +1063,99 @@ l.746
       ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [7pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.746 
+l.795 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.746 
+l.795 
        <./flowchart.pdf> <./flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf>]
-
-LaTeX Warning: Reference `fig:01' on page 8 undefined on input line 750.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
- has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.802 \item D
-             LA performed best for both noise-free data and the highest <./flam
-esHR10_Logg_BestSVM_N-RMSE_test.pdf>]
-<flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf, id=413, 505.89pt x 567.11874pt>
+<flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf, id=394, 592.2125pt x 361.35pt>
 File: flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf used on in
 put line 821.
-(pdftex.def)             Requested size: 453.59692pt x 508.50703pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+(pdftex.def)             Requested size: 453.59692pt x 276.77922pt.
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.826 \end{figure*}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{table.2}) has been already used, duplicate ignored
+l.857 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.2
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.826 \end{figure*}
-                    <./flamesHR10_Meta_BestSVM_N-RMSE_test.pdf>] [10pdfTeX warn
-ing (ext4): destination with the same identifier (name{figure.7}) has been alre
-ady used, duplicate ignored
+l.857 
+       <./flamesHR10_Logg_BestSVM_N-RMSE_test.pdf>] [9pdfTeX warning (ext4): de
+stination with the same identifier (name{figure.6}) has been already used, dupl
+icate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.883 \item \label
-                  {itemthree2} An SVM model is trained using 9 folds of eachpdf
-TeX warning (ext4): destination with the same identifier (name{table.3}) has be
-en already used, duplicate ignored
+l.904 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.3
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.883 \item \label
-                  {itemthree2} An SVM model is trained using 9 folds of each <.
-/flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf>]
+l.904 
+       <./flamesHR10_Meta_BestSVM_N-RMSE_test.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.904 
-       <./flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf>]
-<snr_errors_log_global_2x2.pdf, id=470, 542.025pt x 433.62pt>
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.904 
+       <./flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf> <./flamesHR21_Teff_log_BestS
+VM_N-RMSE_test.pdf>]
+<snr_errors_log_global_2x2.pdf, id=463, 592.2125pt x 361.35pt>
 File: snr_errors_log_global_2x2.pdf Graphic file (type pdf)
 
 <use snr_errors_log_global_2x2.pdf>
 Package pdftex.def Info: snr_errors_log_global_2x2.pdf used on input line 938.
-(pdftex.def)             Requested size: 504.0pt x 403.21611pt.
+(pdftex.def)             Requested size: 504.0pt x 307.53491pt.
 
-<snr_errors_log_global_HR21.pdf, id=473, 389.455pt x 389.455pt>
+<snr_errors_log_global_HR21.pdf, id=466, 389.455pt x 389.455pt>
 File: snr_errors_log_global_HR21.pdf Graphic file (type pdf)
 
 <use snr_errors_log_global_HR21.pdf>
 Package pdftex.def Info: snr_errors_log_global_HR21.pdf used on input line 999.
 
 (pdftex.def)             Requested size: 240.0pt x 239.99771pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{table.4})
+ [11pdfTeX warning (ext4): destination with the same identifier (name{table.4})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1057 \item T
               he grid density appears to have less effect over the]
-<bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf, id=489, 505.89pt x 794.97pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf, id=482, 505.89pt x 794.97pt>
 File: bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf Graphic file (type pdf)
 
 <use bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf>
@@ -1166,20 +1163,45 @@ Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf used on input
 line 1062.
 (pdftex.def)             Requested size: 412.30827pt x 647.89792pt.
 
-<bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf, id=490, 505.89pt x 794.97pt>
+<bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf, id=483, 505.89pt x 794.97pt>
 File: bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf Graphic file (type pdf)
 
 <use bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf>
 Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf used on input 
 line 1070.
 (pdftex.def)             Requested size: 412.30827pt x 647.89792pt.
- (main.bbl [13pdfTeX warning (ext4): destination with the same identifier (name
+ (main.bbl [12pdfTeX warning (ext4): destination with the same identifier (name
 {figure.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.44 
-      <./snr_errors_log_global_2x2.pdf>]
+l.1 \begin{thebibliography}{}
+                             pdfTeX warning (ext4): destination with the same i
+dentifier (name{figure.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \begin{thebibliography}{}
+                              <./snr_errors_log_global_2x2.pdf> <./snr_errors_l
+og_global_HR21.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \begin{thebibliography}{}
+                              <./bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.12
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \begin{thebibliography}{}
+                              <./bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf>]
 LaTeX Font Info:    Try loading font information for T1+aett on input line 182.
 
 
@@ -1197,7 +1219,7 @@ Package hyperref Warning: Suppressing empty link on input line 210.
 Package hyperref Warning: Suppressing empty link on input line 265.
 
 )
-<flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf, id=535, 578.16pt x 867.24pt>
+<flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf, id=560, 578.16pt x 867.24pt>
 File: flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf>
@@ -1205,7 +1227,7 @@ Package pdftex.def Info: flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf used o
 n input line 1122.
 (pdftex.def)             Requested size: 431.95157pt x 647.89792pt.
 
-<flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf, id=536, 578.16pt x 867.24pt>
+<flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf, id=561, 578.16pt x 867.24pt>
 File: flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf>
@@ -1213,7 +1235,7 @@ Package pdftex.def Info: flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf used o
 n input line 1130.
 (pdftex.def)             Requested size: 431.95157pt x 647.89792pt.
 
-<flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf, id=537, 578.16pt x 867.24pt>
+<flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf, id=562, 578.16pt x 867.24pt>
 File: flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf>
@@ -1221,7 +1243,7 @@ Package pdftex.def Info: flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf used o
 n input line 1138.
 (pdftex.def)             Requested size: 431.95157pt x 647.89792pt.
 
-<bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf, id=538, 505.89pt x 794.97pt>
+<bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf, id=563, 505.89pt x 794.97pt>
 File: bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf Graphic file (type pdf)
 
 <use bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf>
@@ -1229,7 +1251,7 @@ Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf used on input
  line 1146.
 (pdftex.def)             Requested size: 412.30827pt x 647.89792pt.
 
-<bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf, id=539, 505.89pt x 794.97pt>
+<bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf, id=564, 505.89pt x 794.97pt>
 File: bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf Graphic file (type pdf)
 
 <use bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf>
@@ -1237,34 +1259,10 @@ Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf used on input
 line 1154.
 (pdftex.def)             Requested size: 412.30827pt x 647.89792pt.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1167.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.10
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1167 \end{document}
-                      <./snr_errors_log_global_HR21.pdf>]
+ [15]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15pdfTeX warning (ext4): destination with the same identifier (name{figure.11
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1167 \end{document}
-                      <./bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16pdfTeX warning (ext4): destination with the same identifier (name{figure.12
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1167 \end{document}
-                      <./bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1273,7 +1271,7 @@ l.1167 \end{document}
                       <./flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
 .2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1282,7 +1280,7 @@ l.1167 \end{document}
                       <./flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
 .3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1291,7 +1289,7 @@ l.1167 \end{document}
                       <./flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
 .4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1300,7 +1298,7 @@ l.1167 \end{document}
                       <./bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
 .5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1323,9 +1321,6 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1167.
@@ -1337,13 +1332,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1167.
 ### simple group (level 1) entered at line 380 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10194 strings out of 493622
- 142732 string characters out of 3147284
- 246754 words of memory out of 3000000
- 13143 multiletter control sequences out of 15000+200000
+ 10192 strings out of 493622
+ 142717 string characters out of 3147284
+ 248818 words of memory out of 3000000
+ 13142 multiletter control sequences out of 15000+200000
  107690 words of font info for 236 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 36i,15n,35p,944b,639s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,15n,35p,944b,627s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced bu
 t does not exist, replaced by a fixed one
 
@@ -1372,9 +1367,9 @@ e1/public/txfonts/rtxmi.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/newtx/rtxmi5
 C:/apps/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><C:/apps/MiKTeX 2.9/font
 s/type1/public/txfonts/txsy.pfb><C:/apps/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb><C:/apps/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (21 pages, 867197 bytes).
+Output written on main.pdf (20 pages, 865587 bytes).
 PDF statistics:
- 779 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 500000)
+ 773 PDF objects out of 1000 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
