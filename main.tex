@@ -690,7 +690,7 @@ compression transformation or to train SVM models).
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf}
-\caption{$\left[ \alpha/Fe \right]$  estimation errors as a function of the number of
+\caption{$\left[ \alpha/Fe \right]$ estimation errors as a function of the number of
   dimensions used for data compression, for noisy synthetic
   spectra from the nominal GIRAFFE HR10 setup.}
 \label{fig:07}
@@ -1116,10 +1116,10 @@ Competitiveness through grant AyA2011-24052.
 
 \appendix
 
-\section{Additional figures}
+\section{Additional figures for comparison of spectrum compression techniques}
 \label{app}
 \begin{figure*}
-\centering\includegraphics[height=0.95\textheight]{flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf}
+\centering\includegraphics[width=\textwidth]{flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf}
 \caption{Temperature estimation error against the number of dimensions
   used for data compression. Each line corresponds to a model trained
   with a specific SNR}
@@ -1127,7 +1127,7 @@ Competitiveness through grant AyA2011-24052.
 \end{figure*}
 
 \begin{figure*}
-\centering\includegraphics[height=0.95\textheight]{flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf}
+\centering\includegraphics[width=\textwidth]{flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf}
 \caption{Surface gravity estimation error against the number of dimensions
   used for data compression. Each line corresponds to a model trained
   with a specific SNR}
@@ -1135,12 +1135,22 @@ Competitiveness through grant AyA2011-24052.
 \end{figure*}
 
 \begin{figure*}
-\centering\includegraphics[height=0.95\textheight]{flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf}
+\centering\includegraphics[width=\textwidth]{flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf}
 \caption{Metallicity estimation error against the number of dimensions
   used for data compression. Each line corresponds to a model trained
   with a specific SNR}
 \label{fig:methodsnrMeta}
 \end{figure*}
+
+\begin{figure*}
+\centering\includegraphics[width=\textwidth]{flamesHR10_AlFe_log_BestSVM_N-SNR-RMSE_test.pdf}
+\caption{$\left[ \alpha/Fe \right]$ estimation error against the number of dimensions
+  used for data compression. Each line corresponds to a model trained
+  with a specific SNR}
+\label{fig:methodsnrMeta}
+\end{figure*}
+
+\section{Additional figures for training set density results}
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf}
