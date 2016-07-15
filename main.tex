@@ -69,15 +69,16 @@
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
 \author[K. T. Smith et al.]{
-Keith T. Smith,$^{1}$\thanks{E-mail: mn@ras.org.uk (KTS)}
-A. N. Other,$^{2}$
-Third Author$^{2,3}$
-and Fourth Author$^{3}$
+A. Gonz\'alez-Marcos ,$^{1}$\thanks{Contact e-mail: \href{mailto:}{}}
+L. M. Sarro,$^{2}$
+J. Ordieres,$^{3}$
+and A. Bello$^{4}$
 \\
 % List of institutions
-$^{1}$Royal Astronomical Society, Burlington House, Piccadilly, London W1J 0BQ, UK\\
-$^{2}$Department, Institution, Street Address, City Postal Code, Country\\
-$^{3}$Another Department, Different Institution, Street Address, City Postal Code, Country
+$^{1}$ Department of Mechanical Engineering, University of La Rioja, c/ San Jos\'e de Calasanz, 31, 26004 Logroño, Spain  \\
+$^{2}$ Dpto. de Inteligencia Artificial, ETSI Inform\'atica, UNED, c/ Juan del Rosal, 16, 28040 Madrid, Spain \\
+$^{3}$ PMQ Research Team; ETSII; Universidad Polit\'ecnica de Madrid, José Guti\'errez Abascal 2, 28016 Madrid, Spain\\
+$^{4}$ Dept. of Construction and Industrial Manufacturing, University of Oviedo, 33203 Gij\'on, Spain\\
 }
 
 % These dates will be filled out by the publisher
@@ -663,7 +664,9 @@ synthetic spectra as well as degraded spectra with SNR levels of 100,
 50, 25 and 10. Figures \ref{fig:02} to \ref{fig:07} show the RMSE
 obtained with the evaluation set of the {\bf HR10 spectra} (the 34\% 
 of the full set of spectra that was not not used to define the 
-compression transformation or to train SVM models).
+compression transformation or to train SVM models) grouped by SNR. 
+Equivalent figures grouped by compression technique are included in 
+Appendix \ref{a1} 
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf}
@@ -1041,7 +1044,8 @@ We evaluated the performance of the SVM regression models using
 10-fold cross validation. Figures \ref{fig:grid50} and
 \ref{fig:grid10} present the $T_{\rm eff}$ estimation errors obtained
 with the different grid densities and the two optimal training set
-SNRs (50 and 10) found in the previous Section. 
+SNRs (50 and 10) found in the previous Section. Similar 
+figures for SNR=25 and 100 are shown in Appendix \ref{a2}.
 
 {\bf As expected, the estimation errors increase when the grid 
 	density decreases. Overall, the accuracy obtained against 
@@ -1075,6 +1079,74 @@ SNRs (50 and 10) found in the previous Section.
 \section{Conclusions}
 \label{sec:conclusions}
 
+In this work we have carried out a complete set of experiments to 
+guide users of spectral archives to overcome the problems associated 
+with the curse-of-dimensionality, when inferring 
+astrophysical parameters from stellar spectra. 
+
+In Section \ref{sec:comparison1} we demostrate that, taken globally 
+(that is, including the four stellar atmospheric parameters, a 
+range of SNRs, and a range of compression ratios),
+Independent Component Analysis outperforms all other techniques, followed  
+by Kernel Principal Component Analysis. The comparative advantage of 
+using ICA is clearer for the $T_{\rm eff}$ and $\left[ \alpha/Fe \right]$ 
+regression models, and less evident for $\log g$ and [M/H]. Furthermore, 
+we prove that this advantage holds too for a completely different wavelength range 
+and wavelength coverage twice as large. This is not enough to recommend 
+ICA compression of high resolution spectra for any spectrograph observations, but it 
+is a good indication that our results are not strongly dependent on the 
+actual characteristics of the spectra. 
+
+In Section \ref{sec:comparison2} we show that there is no need to match 
+the SNR of unlabelled spectra (the spectra for which we want to predict 
+astrophysical parameters) with a regression model trained with the same SNR. 
+On the contrary, only two models are needed to achieve optimal performance 
+in $T_{\rm eff}$ and $\left[ \alpha/Fe \right]$ regression models (one trained 
+with SNR=50 examples for SNR > 10 spectra and one trained with SNR=10 examples 
+for the lowest SNR regime), and only one model is needed for the prediction 
+of $\log g$ and [M/H] (trained with SNR=25 and 50 examples respectively). 
+The $T_{\rm eff}$ result holds also for the HR21 setup regression, although the  
+model trained with SNR=125 is marginally better than the SNR=50 one.
+
+In Section \ref{sec:comparison3} we demostrate in a very simplified setup with 
+no metallicity or alpha-enhancement effects incorporated in the training set,
+the importance of dense training sets in reducing the cross-validation errors, 
+even in the context of compressed data spaces. We emphasize that this is only 
+applicable to cross-validation errors (that is, errors estimated from spectra 
+entirely equivalent to those used for training). These cross-validation errors 
+are often known as internal errors as they do not take into account systematic 
+differences between the training and prediction sets. In our case, we have used 
+MARCS model atmospheres, not observed spectra of real stars. In practical 
+applications of the results presented above, the mismatch between the training 
+set and the observed spectra inevitably leads to additional errors.
+It seems a reasonable working hypothesis to assume that there is a limit beyond 
+which the total errors are dominated by this mismatch and further increasing the 
+training grid density will not significantly decrease the total errors.  
+ 
+There are other reasons that may limit the applicability of the results 
+presented in this work. Extending the applicability analysis to prove our 
+conclusions universally valid is beyond the scope of this article.
+
+In the first place, we have used the most standard or general versions of 
+the techniques evaluated here. In the case of wavelet compression, for example, 
+there are approaches to coefficient shrinkage other than simply removing 
+the smallest spatial scales. The bibliography is endless and it would be 
+impossible to test each and every proposed variation of the techniques 
+presented here. In any case, it is important to note that the validity of 
+our conclusions is limited to the standard versions tested here. 
+
+Another source of limitation is due to the use of a single regression model to 
+assess the prediction errors. Again, Support Vector Machines and empirical 
+risk minimization are very standard and robust statistical learning techniques 
+amongst the top performing models for a very wide range of real life problems 
+\cite{vanGestel2004}. Of course, the no-free-lunch theorem \citep[see][and 
+references therein for a formal statement of the theorem]{Igel2005} always 
+allows for the existence of algorithms that perform better than SVMs for this 
+particular problem. But in the absence of free lunches, SVMs are a very reasonable choice.
+
+{\bf TODO: the Cannon and similar empirical approaches}
+
+
 {\bf Here we should discuss the validity of our conclusions. The
   validity depends on our assumptions and the experiments carried
   out. For example, they are based on SVM models with radial kernel
@@ -1107,8 +1179,8 @@ Competitiveness through grant AyA2011-24052.
 
 \appendix
 
-\section{Additional figures for comparison of spectrum compression techniques}
-\label{app}
+\section{Regression errors for the GIRAFFE HR10 setup grouped by compression technique.}
+\label{a1}
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf}
 \caption{Temperature estimation error against the number of dimensions
@@ -1141,15 +1213,8 @@ Competitiveness through grant AyA2011-24052.
 \label{fig:methodsnrAlpha}
 \end{figure*}
 
-\section{Additional figures for training set density results}
-
-\begin{figure*}
-\centering\includegraphics[width=\textwidth]{bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf}
-\caption{Temperature estimation error against the number of dimensions
-  used for data compression. Each line corresponds to a model trained
-  with a specific grid step (SNR = 100)}
-\label{fig:grid100}
-\end{figure*}
+\section{Effective temperature regression errors grouped by compression technique for SNR=25 and 100}
+\label{a2}
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf}
@@ -1158,6 +1223,15 @@ Competitiveness through grant AyA2011-24052.
   with a specific grid step (SNR = 25)}
 \label{fig:grid25}
 \end{figure*}
+
+\begin{figure*}
+	\centering\includegraphics[width=\textwidth]{bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf}
+	\caption{Temperature estimation error against the number of dimensions
+		used for data compression. Each line corresponds to a model trained
+		with a specific grid step (SNR = 100)}
+	\label{fig:grid100}
+\end{figure*}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
