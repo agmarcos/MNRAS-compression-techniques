@@ -277,6 +277,71 @@ density over the regression performance. Finally, in Sect.
 \ref{sec:conclusions} we summarize the most relevant findings from 
 the experiments and discuss their validity and limitations.
 
+\section{The dataset}
+\label{sec:dataset}
+The synthetic spectra that form the basis of our study have been
+computed from MARCS model atmospheres \citep{gustafsson:08} and the
+turbospectrum code \citep{alvarez:98, plez:12} together with atomic \&
+molecular line lists. These spectra were kindly provided by the
+Gaia-ESO team in charge of producing the physical parameters for the
+survey {\bf \citep[see][for further details]{2012A&A...544A.126D}.}
+
+The dataset contains a grid of 8780 synthetic high-resolution spectra 
+(\textit{R} = 19800) between 5339 and 5619 {\AA} (the nominal GIRAFFE 
+HR10 setup) with effective temperatures between 4000 and 
+8000 K (step 250 K), logarithmic surface gravities between 1.0 and 5.0 
+(step 0.5), mean metallicities between -3.0 and 1.0 (with a variable step 
+of 0.5 or 0.25 dex) and $\left[ \alpha/Fe \right]$ values varying between
+-0.4 and +0.4 dex (step 0.2 dex) around the standard relation with the
+following $\alpha$ enhancements: $\left[ \alpha/Fe \right]$ = +0.0 dex
+for [M/H] $\geqslant$ 0, $\left[ \alpha/Fe \right]$ = +0.4 dex for
+[M/H] = $\leqslant$ -1.0 and $\left[ \alpha/Fe \right]$ = -0.4[M/H]
+for [M/H] between -1.0 and +0.0 (Fig.~\ref{fig:gridModelos}).
+Elements considered to be $\alpha$-elements are O, Ne, Mg, Si, S, Ar,
+Ca and Ti. The adopted solar abundances are those used by
+\citep{gustafsson:08}. Fig.~\ref{fig:ejemplosEspectros} (left) shows some
+example spectra from this dataset.   
+
+\begin{figure}
+	\centering\includegraphics[width=\columnwidth]{fig01_grid_modelos.pdf}
+	\caption{Coverage in parameter space of the dataset}
+	\label{fig:gridModelos}
+\end{figure}
+
+\begin{figure*}
+	\centering\includegraphics[width=\textwidth]{fig02_espectros_HR10_HR21.pdf}
+	\caption{Example spectra from the nominal GIRAFFE 
+		HR10 setup (left) and the nominal GIRAFFE HR21 setup (right).}
+	\label{fig:ejemplosEspectros}
+\end{figure*}
+
+The sample size of our dataset (8780 spectra) is relatively
+small compared to the input dimension (2798 flux measurements 
+per spectrum). {\bf With the rule of thumb of a minimum of 10 samples per dimension  
+	\citep{jain:00}, our} dataset should contain {\bf at least} $10^{2798}$ spectra.
+In most real case applications {\bf in astronomy}, the ratio of sample size to input 
+dimensions is much lower and thus, the \textit{curse of dimensionality} 
+problem is expected to affect even more severely the inference process. 
+
+With a view to analyze the {\bf dependence of the} validity of the results obtained with the 
+selected dataset, we used a second dataset which is based on the same 
+grid {\bf of atmospheric parameters} but covering a different wavelength {\bf range}. This new dataset contains 
+high-resolution spectra (\textit{R} = 16200) between 8484 and 9001 
+{\AA} (the nominal GIRAFFE HR21 setup). 
+Fig.~\ref{fig:ejemplosEspectros} (right) shows some example spectra from 
+this dataset. In this validity analysis, efforts were focused on the 
+effective temperature.
+
+The conclusions drawn from the set of experiments described below
+depend on the restricted range of physical parameters, wavelengths,
+and spectral resolution adopted in the dataset, but we hope that they
+still hold for datasets of similar characteristics (different
+wavelength ranges but similar resolutions and parameter subspaces). In
+completely different scenarios such as the {\bf coolest} regions of the
+Hertzsprung-Russell diagram, where spectra are dominated by molecular
+absoption bands, the validity of our results still remains to be proved.
+
+
 \section{Dimensionality reduction}
 \label{sec:dimred}
 
@@ -490,71 +555,7 @@ Kernel PCA is that the size of the kernel matrix is proportional to
 the square of the number of instances in the dataset.
 
 In this work we used the Gaussian kernel and optimized the predictive
-performance by fine tuning the inverse kernel width ($\sigma$).
- 
-\section{The dataset}
-\label{sec:dataset}
-The synthetic spectra that form the basis of our study have been
-computed from MARCS model atmospheres \citep{gustafsson:08} and the
-turbospectrum code \citep{alvarez:98, plez:12} together with atomic \&
-molecular line lists. These spectra were kindly provided by the
-Gaia-ESO team in charge of producing the physical parameters for the
-survey {\bf \citep[see][for further details]{2012A&A...544A.126D}.}
-
-The dataset contains a grid of 8780 synthetic high-resolution spectra 
-(\textit{R} = 19800) between 5339 and 5619 {\AA} (the nominal GIRAFFE 
-HR10 setup) with effective temperatures between 4000 and 
-8000 K (step 250 K), logarithmic surface gravities between 1.0 and 5.0 
-(step 0.5), mean metallicities between -3.0 and 1.0 (with a variable step 
-of 0.5 or 0.25 dex) and $\left[ \alpha/Fe \right]$ values varying between
--0.4 and +0.4 dex (step 0.2 dex) around the standard relation with the
-following $\alpha$ enhancements: $\left[ \alpha/Fe \right]$ = +0.0 dex
-for [M/H] $\geqslant$ 0, $\left[ \alpha/Fe \right]$ = +0.4 dex for
-[M/H] = $\leqslant$ -1.0 and $\left[ \alpha/Fe \right]$ = -0.4[M/H]
-for [M/H] between -1.0 and +0.0 (Fig.~\ref{fig:gridModelos}).
-Elements considered to be $\alpha$-elements are O, Ne, Mg, Si, S, Ar,
-Ca and Ti. The adopted solar abundances are those used by
-\citep{gustafsson:08}. Fig.~\ref{fig:ejemplosEspectros} (left) shows some
-example spectra from this dataset.   
-
-\begin{figure}
-\centering\includegraphics[width=\columnwidth]{fig01_grid_modelos.pdf}
-\caption{Coverage in parameter space of the dataset}
-\label{fig:gridModelos}
-\end{figure}
-
-\begin{figure*}
-\centering\includegraphics[width=\textwidth]{fig02_espectros_HR10_HR21.pdf}
-\caption{Example spectra from the nominal GIRAFFE 
-HR10 setup (left) and the nominal GIRAFFE HR21 setup (right).}
-\label{fig:ejemplosEspectros}
-\end{figure*}
-
-The sample size of our dataset (8780 spectra) is relatively
-small compared to the input dimension (2798 flux measurements 
-per spectrum). {\bf With the rule of thumb of a minimum of 10 samples per dimension  
-\citep{jain:00}, our} dataset should contain {\bf at least} $10^{2798}$ spectra.
-In most real case applications {\bf in astronomy}, the ratio of sample size to input 
-dimensions is much lower and thus, the \textit{curse of dimensionality} 
-problem is expected to affect even more severely the inference process. 
-
-With a view to analyze the {\bf dependence of the} validity of the results obtained with the 
-selected dataset, we used a second dataset which is based on the same 
-grid {\bf of atmospheric parameters} but covering a different wavelength {\bf range}. This new dataset contains 
-high-resolution spectra (\textit{R} = 16200) between 8484 and 9001 
-{\AA} (the nominal GIRAFFE HR21 setup). 
-Fig.~\ref{fig:ejemplosEspectros} (right) shows some example spectra from 
-this dataset. In this validity analysis, efforts were focused on the 
-effective temperature.
-
-The conclusions drawn from the set of experiments described below
-depend on the restricted range of physical parameters, wavelengths,
-and spectral resolution adopted in the dataset, but we hope that they
-still hold for datasets of similar characteristics (different
-wavelength ranges but similar resolutions and parameter subspaces). In
-completely different scenarios such as the {\bf coolest} regions of the
-Hertzsprung-Russell diagram, where spectra are dominated by molecular
-absoption bands, the validity of our results still remains to be proved.
+performance by fine tuning the inverse kernel width ($\sigma$). 
 
 \section{Comparison of spectrum compression techniques and optimal rates}
 \label{sec:comparison1}
@@ -607,13 +608,14 @@ following steps {\bf illustrated in Fig.~ \ref{fig:flowchart}}:
   the data using the training set. Because some of the techniques used
   to reduce the dimensionality depend on the setting of one or more
   parameters, a tuning process was performed in order to determine the
-  optimal parameter values. Table~\ref{tab:parameters} presents the
+  optimal parameter values (see below). Table~\ref{tab:parameters} presents the
   values that were evaluated, as well as the best parameter value
   obtained in each case.
 \item \label{itemtwo} Construct SVM models using the training set, and a varying
   number of dimensions (2, 5, 10, 15, 20, 25, 30 and 40) of the
   reduced space. The SVM parameters (kernel size and soft-margin
-  width) are fine-tuned to minimize the prediction error of the
+  width) and the compression parameters (where applicable; see 
+  Table~\ref{tab:parameters}) are fine-tuned to minimize the prediction error of the
   atmospheric parameter ($T_{\rm eff}$, log \textit{g}, [M/H] or 
   $\left[ \alpha/Fe \right]$).
 \item \label{itemthree} Project the evaluation spectra onto the
@@ -808,9 +810,12 @@ However, there are also some differences:
 \begin{itemize}
 \item For lower SNR data, the optimality criterion translates into
 	retaining fewer components. This fact was identified by 
-	\cite{Bailer-Jones1998} in the case of {\bf PCA compression of spectra.} 
-	Our results extend this conclusion to other compression 
-	techniques when the wavelength coverage is {\bf greater} than 300 {\AA}.
+	\cite{Bailer-Jones1998} in the context of {\bf PCA compression of 
+		relatively low resolution spectra.} 
+	We confirm this conclusion for other compression 
+	techniques in the HR21 setup where the wavelength coverage is 
+	{\bf greater} than 300 {\AA}, but not for the smaller 
+	coverage characteristic of the HR10 setup.
 \item In the high SNR regimes, RMSE errors were lower than those 
 	obtained with HR10 setup. However, the performance is 
 	considerably worsened for the lowest SNR explored in this work 
@@ -1009,6 +1014,8 @@ be necessary for SNR$\ge$100.
 \section{Training set density}
 \label{sec:comparison3}
 
+First, only 137 spectra were recovered from the 8780 spectra contained in HR10 setup dataset, according to the selected criterion ([M/H] and [alpha/Fe] equal to zero). These spectra were irregulary distributed in the Teff/Logg space. Our interpolation method, which only works inside the known space, uses a linear interpolation between two/four neighbours. That is, interpolation was obtained as a linear combination of spectra in the original grid, weighted by the inverse square of the normalized euclidean distance. This way, we were able to complete the original set from 137 to 143 spectra (step-size equal to 250K). Also, we generated new grids with a variable step-size between 50 and 200K.
+
 Finally, we carry out an analysis of the effect of the training set
 grid density over the regression performance.  To do this, six new
 grids of synthetic spectra with different grid densities were used to
@@ -1021,6 +1028,9 @@ simplicity. Table~\ref{tab:grid} presents the step-sizes used in this
 study as well as the number of synthetic spectra available in each
 grid.  In addition to this, noisy replicates of these grids were
 generated of different SNR levels (100, 50, 25, 10).
+
+{\bf The interpolation procedure started from the 137 HR10 original spectra with solar metallicities and  $\left[
+\alpha/Fe \right]$ ratios. These 137 spectra are situated at the nodes of a regular grid except for a few gaps that were interpolated bilinearly as a weighted linear combination four nearest neighbours (TBC). Thereafter, succesive grid refinements were obtained by recursively interpolating spectra at the mid points between grid nodes. These interpolated spectra were obtained again as weighted linear combinations of the bracketing spectra, with weights given by the inverse square of the normalized euclidean distance to the nearest neighbours.}
 
 \begin{table}
 \centering
@@ -1052,13 +1062,15 @@ figures for SNR=25 and 100 are shown in Appendix \ref{a2}.
 	the grid density has a wider spread when the number of dimensions 
 	retained increases (that is, the relative gain in accuracy due to 
 	the densification of the training grid tends to be larger when the 
-	input dimension is larger).} 
-%{\bf PCA and ICA show a similar behaviour 
-%	with the grid density variation. The grid density appears to have less effect over the
-%    performance of Wavelets and diffusion maps.
-%}
+	input dimension is larger).
 
-{\bf TO BE DONE: compare with Fig. \ref{fig:02} and explain the different conclusions. See email to ana.}
+We see how ICA remains as a winning alternative in this second scenario (a simplified training set with no variation in metallicity or $\left[ \alpha/Fe \right]$) where, kernel PCA becomes non optimal, and another linear technique takes over its place amongst the best performing techniques: PCA. The underlying assumptions of ICA are maybe not fulfilled to their full extent, but certainly we have reasonable hints that they apply in the context of stellar spectra. Our working hypothesis is that the independent components reflect groupings of spectral lines of various atomic elements with similar behaviours, such that the strengths and shapes of the lines pertaining to a given component respond in the same way to changes in the atmospheric parameters. Any such component would certainly have a non gaussian distribution across our training set (assumption one), albeit the fulfillment of the statistical independence assumption is, however, less clear under our interpretation of the ICA components. JADE maximizes non-gaussianity (rather than minimizing mutual information as in other flavours of ICA) via the fourth order moment of the distribution, and this turns out to result in the best projection amongst those tested in our regression models. This is certainly a result that holds for the synthetic spectra that constitute our working data set, but we have hints that this holds too for observed spectra \citep{2013A&A...550A.120S}.
+
+The prevalence of our conclusion for ICA as a winning alternative regardless of the grid spacing is reassuring. However, the fact that the non linear version of PCA lost its place amongst the best performing compression techniques deserves further analysis. It is evident from the comparison of Figs. \ref{fig:methodsnrTeff} and \ref{fig:grid50} that, although at the largest grid spacings (250 K) the non linear version of PCA performs better than the linear version (consistent with the results declared in Section \ref{sec:comparison1}), the latter improves faster due to the grid refinement. This is probably due to the reduction in complexity of the training set due to the removal of the non solar metallicities and  $\left[ \alpha/Fe \right]$ ratios. This simplification probably brings the distribution of examples in feature space closer to a gaussian distribution where indeed the first principal components are effectively more correlated with the effective temperature.
+
+It is very surprising that the (non linear) compression with Diffusion Maps benefits much less from the grid refinement than the linear compression techniques PCA and ICA. Given the extremely high dimensionality of the input space, it may be the case that much finer grid spacings are needed for the benefits of Diffusion Maps to become apparent. More experiments are needed to confirm this hypothesis, but insofar as the grid spacings are constrained to the values tested here, Diffusion Maps remain suboptimal choices.
+
+	} 
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf}
@@ -1139,7 +1151,7 @@ Another source of limitation is due to the use of a single regression model to
 assess the prediction errors. Again, Support Vector Machines and empirical 
 risk minimization are very standard and robust statistical learning techniques 
 amongst the top performing models for a very wide range of real life problems 
-\cite{vanGestel2004}. Of course, the no-free-lunch theorem \citep[see][and 
+\citep{vanGestel2004}. Of course, the no-free-lunch theorem \citep[see][and 
 references therein for a formal statement of the theorem]{Igel2005} always 
 allows for the existence of algorithms that perform better than SVMs for this 
 particular problem. But in the absence of free lunches, SVMs are a very reasonable choice.
@@ -1213,7 +1225,8 @@ Competitiveness through grant AyA2011-24052.
 \label{fig:methodsnrAlpha}
 \end{figure*}
 
-\section{Effective temperature regression errors grouped by compression technique for SNR=25 and 100}
+\section{Effective temperature regression errors as a function of the grid spacing and 
+	grouped by compression technique for SNR=25 and 100}
 \label{a2}
 
 \begin{figure*}
