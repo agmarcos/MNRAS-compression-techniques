@@ -43,6 +43,7 @@
 \usepackage{graphicx}	% Including figure files
 \usepackage{amsmath}	% Advanced maths commands
 \usepackage{amssymb}	% Extra maths symbols
+\usepackage{siunitx}
 
 \usepackage{multirow}
 \usepackage{lineno}
@@ -68,11 +69,11 @@
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
-\author[K. T. Smith et al.]{
+\author[A. Gonz\'alez-Marcos et al.]{
 A. Gonz\'alez-Marcos ,$^{1}$\thanks{Contact e-mail: \href{mailto:}{}}
 L. M. Sarro,$^{2}$
-J. Ordieres,$^{3}$
-and A. Bello$^{4}$
+J. Ordieres-Mer\'e,$^{3}$
+and A. Bello-Garc\'i$^{4}$
 \\
 % List of institutions
 $^{1}$ Department of Mechanical Engineering, University of La Rioja, c/ San Jos\'e de Calasanz, 31, 26004 Logroño, Spain  \\
@@ -494,6 +495,11 @@ In this work, the results were optimised by controlling the degree of
 locality in the diffusion weight matrix ({\bf referred to below with 
 the parameter name \textit{eps.val}}).
 
+Finally, the classical Nystr\"{o}m formula \citep{NIPS2000_1866} was used
+to extend the diffusion coordinates computed on a subsample (the training 
+set) to other spectra (the test set).
+
+
 \subsection{Wavelets}
 
 Wavelets \citep{mallat:98} are a set of mathematical functions used to
@@ -627,7 +633,7 @@ following steps {\bf illustrated in Fig.~ \ref{fig:flowchart}}:
   obtained on the evaluation set.
 \end{enumerate}
 
-\begin{figure*}[htb]
+\begin{figure*}
 \centering\includegraphics[width=0.8\textwidth]{flowchart.pdf}
 \caption{Process flow chart for investigating the performance of the 
 selected dimensionality reduction techniques.}
@@ -668,7 +674,7 @@ obtained with the evaluation set of the {\bf HR10 spectra} (the 34\%
 of the full set of spectra that was not not used to define the 
 compression transformation or to train SVM models) grouped by SNR. 
 Equivalent figures grouped by compression technique are included in 
-Appendix \ref{a1} 
+Appendix \ref{a1}.
 
 \begin{figure*}
 \centering\includegraphics[width=\textwidth]{flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf}
@@ -714,10 +720,15 @@ techniques shows that although traditional PCA is not the most
 efficient method, it outperforms some of the nonlinear techniques used
 in this study, such as DM or wavelets. %{\bf We need to propose an explanation}. 
 The lower performance of DM compared to that of PCA --or even to other 
-dimensionality reduction techniques-- could be explained by the 
-tuning process that was carried out to determine the optimal DM 
-parameter values. Thus, a smaller grid size of tuning parameters 
-would improve the DM performance.
+dimensionality reduction techniques-- could be partially explained by the 
+Nystr\"{o}m extension. Although this method allows to obtain very similar 
+results than the true diffusion coordinates, it leads to a small loss of 
+prediction accuracy to that achieved with the diffusion coordinates computed 
+on the whole dataset. For example, when comparing the RMSE obtained for the 
+$T_{\rm eff}$ in the high SNR regime (SNR=100), we observed an improvement 
+in the prediction accuracy around {0.5}--{1.5}\% if the diffusion 
+coordinates were computed on the whole dataset instead of applying the 
+out-of-sample extension.
 In the case of wavelets, it seems {\bf clear that even at the lowest 
 compression rates of 40 components} we are eliminating
 spectral information that is relevant for the subsequent regression task. 

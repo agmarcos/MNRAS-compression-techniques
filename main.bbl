@@ -94,6 +94,11 @@ Hotelling H.,  1933, Journal of Educational Psychology, 24(6\&7), 447
   Oja}{2000}]{hyvarinen:00}
 Hyv\"arinen A.,  Oja E.,  2000, Neural Networks, 13(4-5), 411
 
+\bibitem[\protect\citeauthoryear{Igel \& Toussaint}{Igel \&
+  Toussaint}{2005}]{Igel2005}
+Igel C.,  Toussaint M.,  2005, \mn@doi [Journal of Mathematical Modelling and
+  Algorithms] {10.1007/s10852-005-2586-y}, 3, 313
+
 \bibitem[\protect\citeauthoryear{Jain, Duin  \& Mao}{Jain
   et~al.}{2000}]{jain:00}
 Jain A.~K.,  Duin R.~P.,   Mao J.,  2000, IEEE Transactions on Pattern Analysis
@@ -112,8 +117,8 @@ Jutten C.,  H\'erault J.,  1991, Signal Processing, 24, 1
 Li H.,  Adali T.,  2008, IEEE Transactions on Neural Networks, 19(3), 408
 
 \bibitem[\protect\citeauthoryear{Li, Ma  \& Ogihara}{Li et~al.}{2010}]{li:10}
-Li T.,  Ma S.,   Ogihara M.,  2010, Data Mining and Knowledge Discovery
-  Handbook.
+Li T.,  Ma S.,   Ogihara M.,  2010, in Maimon O.,  Rokach L.,  eds, , Data
+  Mining and Knowledge Discovery Handbook.
 Springer, pp 553--571
 
 \bibitem[\protect\citeauthoryear{{Li}, {Lu}, {Comte}, {Luo}, {Zhao}  \&
@@ -214,6 +219,11 @@ Recio-Blanco A.,  Bijaoui A.,   {de Laverny} P.,  2006, Monthly Notices of the
   Saul}{2000}]{roweisLLE:00}
 Roweis S.,  Saul L.,  2000, Science, 290(5500), 2323
 
+\bibitem[\protect\citeauthoryear{{Sarro} et~al.,}{{Sarro}
+  et~al.}{2013}]{2013A&A...550A.120S}
+{Sarro} L.~M.,  et~al., 2013, \mn@doi [\aap] {10.1051/0004-6361/201220184},
+  \href {http://adsabs.harvard.edu/abs/2013A%26A...550A.120S} {550, A120}
+
 \bibitem[\protect\citeauthoryear{Saxena, Gupta  \& Mukerjee}{Saxena
   et~al.}{2004}]{saxena:04}
 Saxena A.,  Gupta A.,   Mukerjee A.,  2004, in Pal N.,  Kasabov N.,  Mudi R.,
@@ -255,6 +265,12 @@ Vanderplas J.,  Connolly A.,  2009, The Astronomical Journal, 138, 1365
   {10.1093/mnras/stv099}, \href
   {http://adsabs.harvard.edu/abs/2015MNRAS.448.2717W} {448, 2717}
 
+\bibitem[\protect\citeauthoryear{Williams \& Seeger}{Williams \&
+  Seeger}{2001}]{NIPS2000_1866}
+Williams C. K.~I.,  Seeger M.,  2001, in Leen T.~K.,  Dietterich T.~G.,   Tresp
+  V.,  eds, , Advances in Neural Information Processing Systems 13.
+MIT Press, pp 682--688
+
 \bibitem[\protect\citeauthoryear{Zarzoso \& Comon}{Zarzoso \&
   Comon}{2010}]{zarzoso:10}
 Zarzoso V.,  Comon P.,  2010, IEEE Transactions on Neural Networks, 21(2), 248
@@ -270,6 +286,19 @@ Zhang T.,  Tao D.,   Yang J.,  2008, in Forsyth D.,  Torr P.,   Zisserman A.,
   eds, Lecture Notes in Computer Science, Vol.~5302, Computer Vision - ECCV
   2008.
 Springer Berlin Heidelberg, pp 725--738
+
+\bibitem[\protect\citeauthoryear{{de Laverny}, {Recio-Blanco}, {Worley}  \&
+  {Plez}}{{de Laverny} et~al.}{2012}]{2012A&A...544A.126D}
+{de Laverny} P.,  {Recio-Blanco} A.,  {Worley} C.~C.,   {Plez} B.,  2012,
+  \mn@doi [\aap] {10.1051/0004-6361/201219330}, \href
+  {http://adsabs.harvard.edu/abs/2012A%26A...544A.126D} {544, A126}
+
+\bibitem[\protect\citeauthoryear{van Gestel, Suykens, Baesens, Viaene,
+  Vanthienen, Dedene, de Moor  \& Vandewalle}{van Gestel
+  et~al.}{2004}]{vanGestel2004}
+van Gestel T.,  Suykens J.~A.,  Baesens B.,  Viaene S.,  Vanthienen J.,  Dedene
+  G.,  de Moor B.,   Vandewalle J.,  2004, \mn@doi [Machine Learning]
+  {10.1023/B:MACH.0000008082.80494.e0}, 54, 5
 
 \makeatother
 \end{thebibliography}
