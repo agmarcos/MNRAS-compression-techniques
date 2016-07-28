@@ -76,9 +76,9 @@ J. Ordieres-Mer\'e,$^{3}$
 and A. Bello-Garc\'ia$^{4}$
 \\
 % List of institutions
-$^{1}$ Department of Mechanical Engineering, University of La Rioja, c/ San Jos\'e de Calasanz, 31, 26004 Logroño, Spain  \\
+$^{1}$ Department of Mechanical Engineering, University of La Rioja, c/ San Jos\'e de Calasanz, 31, 26004 Logro\~no, Spain  \\
 $^{2}$ Dpto. de Inteligencia Artificial, ETSI Inform\'atica, UNED, c/ Juan del Rosal, 16, 28040 Madrid, Spain \\
-$^{3}$ PMQ Research Team; ETSII; Universidad Polit\'ecnica de Madrid, José Guti\'errez Abascal 2, 28016 Madrid, Spain\\
+$^{3}$ PMQ Research Team; ETSII; Universidad Polit\'ecnica de Madrid, Jos\'e Guti\'errez Abascal 2, 28016 Madrid, Spain\\
 $^{4}$ Dept. of Construction and Industrial Manufacturing, University of Oviedo, 33203 Gij\'on, Spain\\
 }
 
@@ -597,7 +597,7 @@ where $k$ indexes the atmospheric parameter
 	(${\theta}_{k}$ is one of $T_{\rm eff}$, log \textit{g}, 
 	[M/H] or $\left[ \alpha/Fe \right]$), $\hat{\theta}_{k;i}$ and $\theta_{k;i}$
 	are the predicted and target values of ${\theta}_{k}$ for the $i$-th 
-	sample spectrum, and $n$ represents the total number of spectra in our training set.
+	sample spectrum, and $n$ represents the total number of spectra in our evaluation set.
   
 The datasets were randomly split into two subsets, one for training
 (66\% of the available spectra) and one for evaluation (the remaining
@@ -973,7 +973,7 @@ alpha to iron ratios.
 
 The same evaluation procedure described above was applied to the 
 HR21 setup spectra in order to check for the applicability of our 
-conclusions in different wavelength ranges and coverages. Figure ~\ref{fig:snrtrainhr21} 
+conclusions in different wavelength ranges and coverages. Figure~\ref{fig:snrtrainhr21} 
 shows the results obtained for the prediction of $T_{\rm eff}$.
 
 \begin{figure}
@@ -999,7 +999,7 @@ in the precision achieved by models trained with spectra of
 SNR$\le$50 are easier to notice than in the HR10 setup. There, the best 
 option is one ICA+SVM model trained with SNR of 125.
 
-In summary, our conclusions for the HR10setup remain valid, except 
+In summary, our conclusions for the HR10 setup remain valid, except 
 that a third model a model trained with SNR=125 examples would be marginally 
 better than the SNR=50 one in the highest SNR regime (that is, above 100). 
 
