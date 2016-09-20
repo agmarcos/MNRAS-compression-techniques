@@ -170,8 +170,9 @@ observed spectrum carry the same amount of information about the
 physical parameters of the stellar atmosphere. One way to reduce the
 dimensionality of the space of independent variables is to concentrate
 on certain wavelength ranges that contain spectral lines that are
-sensitive to changes in the physical parameters. Before the
-advent of the large-scale spectroscopic surveys, astronomers derived
+sensitive to changes in the physical parameters. Before {\bf large-scale 
+	spectroscopic surveys and the fast computers needed to analyse them 
+	became available}, astronomers derived
 physical parameters by interactively synthesizing spectra until a
 subjective best fit of the observed spectrum in certain spectral lines
 was found. But the number of spectra made available to the community
@@ -187,12 +188,21 @@ via multivariate regression techniques (see
 full spectrum to a much smaller number of independent variables, at
 the expense of introducing a feature extraction process: defining a
 continuum level and normalizing the observed spectrum in the
-wavelength region that contains the sensitive spectral feature. This
-is potentially dangerous because, even in the best case that the
-continuum flux is Gaussian distributed around a value significantly
-different from zero, the ratio distribution is asymmetric and has a
-heavy right tail. In the cases of low signal-to-noise spectra, the
-situation can be catastrophic.
+wavelength region that contains the sensitive spectral feature. 
+{\bf The normalization process effectively consists in dividing two 
+	random variables: the observed flux and the estimated continuum 
+	level. The simplest hypothesis consists in assuming that both 
+	quantities are Gaussian distributed. Under these conditions, the normalized 
+	spectrum will be a collection of random variables (one per 
+	wavelength) each one distributed according to the ratio 
+	distribution \citep[see e.g.][]{10.2307/2342070, 
+		doi:10.1080/01621459.1965.10480783}. E}ven in the best case 
+that the continuum flux is Gaussian distributed around a value significantly
+different from zero, the ratio distribution is asymmetric {\bf (thus 
+systematically biasing the result)} and has a heavy right tail 
+{(\bf meaning that values significantly larger than the mode of the 
+	distribution can occur with non-negligible probabilities)}. In the 
+cases of low signal-to-noise spectra, the situation can be catastrophic.
 
 The potential dangers associated with the feature extraction in
 restricted wavelength ranges via continuum normalisation can be
@@ -203,7 +213,7 @@ spaces such as in the wavelet or Fourier decompositions (see
 
 In recent years, there seems to be a tendency to use the full spectrum
 rather than selected wavelength ranges (see
-e.g. \cite{2014A&A...567A...5R}, \cite{2015ApJ...808...16N},
+e.g. \cite{2012ApJ...757..161T}, \cite{2014A&A...567A...5R}, \cite{2015ApJ...808...16N},
 \cite{2015MNRAS.448.2717W}, or \cite{2015arXiv151000111R}). In this
 work we focus in this latter approach, and attempt to assess the
 relative merits of various techiques to serve as a guide for future
