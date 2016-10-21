@@ -100,10 +100,10 @@ We evaluate the utility of several data compression techniques
   for alleviating the curse-of-dimensionality problem in regression
   tasks where the objective is to estimate stellar atmospheric
   parameters from high resolution spectra in the 4000-8000 K range. We
-  conclude that ICA performs better than the rest of the
+  conclude that Independent Component Analysis (ICA) performs better than the rest of the
   techniques evaluated for all compression ratios. We also assess the
   necessity to adapt the signal-to-noise ratio (SNR) of the training
-  set examples to the SNR of each test spectrum and conclude that
+  set examples to the SNR of each evaluation spectrum and conclude that
   within the conditions of our experiments, at most only two such models are
   needed (in the case of regression models for effective temperatures, 
   those corresponding to SNR=50 and 10) to cover the entire range. Finally, we also 
@@ -131,29 +131,39 @@ spectral databases collected by large-area or all-sky surveys like
 Gaia/Gaia-ESO \citep{2006MNRAS.367..290J,2012Msngr.147...25G}, RAVE
 \citep{2006AJ....132.1645S}, or APOGEE \citep{2011AJ....142...72E}
 require the use of automatic techniques for the consistent,
-homogeneous, and efficient extraction of physical properties from
+homogeneous, and efficient extraction of physical parameters from
 spectra. The availability of these huge databases opens new
 possibilities to better understand the stellar, Galactic, and
 extra-galactic astrophysics. Of special importance is the
-determination of intrinsic stellar physical properties, such as
+determination of intrinsic stellar physical parameters, such as
 effective temperature ($T_{\rm eff}$), surface gravity (log
 \textit{g}), metallicity ([M/H]) and alpha to iron ratio 
 ($\left[ \alpha/Fe \right]$). However, the difficulty that
 atmospheric parameter estimation poses comes from the inherent size
-and dimensionality of the data.  Regression from stellar spectra
-suffers the so-called {\sl curse of dimensionality} problem because
-the number of variables (wavelengths) is much higher than the number
-of training samples. 
+and dimensionality of the data. {\bf That is, the number of measured
+wavelengths in a single spectrum, which is the number of variables 
+or dimensions of a dataset, is high as compared to the number of 
+spectra or set of instances in the dataset. Thus,} regression from 
+stellar spectra suffers the so-called {\sl curse of dimensionality} 
+problem because the number of variables is much higher than the 
+number of {\bf instances used to fit a regression model}. 
     
 The \textit{curse of dimensionality} \citep{bellman:61} relates to 
 the problem caused by the exponential increase in volume associated 
-with adding extra dimensions to Euclidean space. 
-When the dimensionality increases, the volume of the space increases so 
-fast that the available data become sparse. Because this sparsity is 
+with adding extra dimensions to a mathematical space. 
+{\bf When the number of data instances (set of spectra) is finite and 
+the dimensionality (number of measured wavelengths in a single spectrum) 
+increases, the volume of the space of independent variables increases so 
+fast that it is not possible to ensure that there are several instances 
+(spectra) with each combination of possible values that each dimension 
+(measured wavelength) could have. That is, the density of data instances 
+in the space decreases exponentially as the dimensionality increases. 
+In other words, }
+the available data become sparse. Because this sparsity is 
 problematic for any method that requires statistical significance, the 
-amount of data needed to support the result often grows exponentially 
-with the dimensionality in order to obtain a statistically sound and 
-reliable outcome.
+amount of data instances needed to support the result often grows 
+exponentially with the dimensionality in order to obtain a statistically 
+sound and reliable outcome.
 
 Furthermore, typical spectra obtained in many surveys do not 
 regularly reach the high signal-to-noise ratios (SNR) --about
@@ -182,9 +192,9 @@ techniques have therefore become a necessity.
 
 The next step consisted in using derived features of the spectrum such
 as fluxes, flux ratios or equivalent widths to infer the parameters
-via multivariate regression techniques (see
-\cite{2006ApJ...636..804A}, \cite{2012ApJ...750L..37M}, \cite{2010MNRAS.405.1907B} or
-\cite{2006A&A...456.1109M}). That way, we significantly reduce the
+via multivariate regression techniques (see \citealt{2006ApJ...636..804A,
+2010ApJ...720L.113R,2012ApJ...748...93R,2010MNRAS.405.1907B}; or \citealt{2006A&A...456.1109M}). 
+That way, we significantly reduce the
 full spectrum to a much smaller number of independent variables, at
 the expense of introducing a feature extraction process: defining a
 continuum level and normalizing the observed spectrum in the
@@ -207,23 +217,24 @@ cases of low signal-to-noise spectra, the situation can be catastrophic.
 The potential dangers associated with the feature extraction in
 restricted wavelength ranges via continuum normalisation can be
 mitigated by projecting the observed spectra onto bases of functions
-spaces such as in the wavelet or Fourier decompositions (see
-\cite{2010PASP..122..608M}, \cite{2015MNRAS.452.1394L}, or
-\cite{2015ApJS..218....3L} for examples of the two approaches).
+spaces such as in the wavelet or Fourier decompositions 
+(see \citealt{2010PASP..122..608M,2015MNRAS.452.1394L}; or 
+\citealt{2015ApJS..218....3L}, for examples of the two approaches).
+%\citep[see][for examples of the two approaches]{2010PASP..122..608M,2015MNRAS.452.1394L,2015ApJS..218....3L}.
+{\bf In essence, the goal is to change the representation of the spectra,
+originally involving a large number of variables (measured wavelengths),
+into a low-dimensional description using only a small number of 
+variables (dimensions). The new representation should preserve essentially 
+all of the useful information within the high dimensional space.
+Thus, by retaining only the most significant variables (dimensions) 
+to represent the spectra, we achieve a data compression that can be 
+of great benefit for estimating atmospheric parameters as it reduces 
+the dimensionality of the space required to describe the data.}
 
-In recent years, there seems to be a tendency to use {\bf the spectrum
-rather than fluxes or equivalent widths derived from it} 
-(see e.g. \cite{2012ApJ...757..161T}, \cite{2014A&A...567A...5R} and references therein, \cite{2015ApJ...808...16N},
-\cite{2015MNRAS.448.2717W}, or \cite{2015arXiv151000111R}). In this
-work we focus in this latter approach, and attempt to assess the
-relative merits of various techiques to serve as a guide for future
-applications of machine learning techiques for regression of stellar
-atmospheric physical parameters.
-
-The most popular dimensionality reduction technique applied to stellar
+The most popular data compression technique applied to stellar
 spectra is Principal Component Analysis (PCA). It has been widely
 applied in spectral classification combined with artificial neural
-networks (ANNs) \citep{singh:98} or support vector machines (SVM)
+networks (ANN) \citep{singh:98} or support vector machines (SVM)
 \citep{fiorentin:08b}. For continuum emission, PCA has a proven record
 in representing the variation in the spectral properties of
 galaxies. However, it does not perform well when reconstructing
@@ -231,8 +242,8 @@ high-frequency structure within a spectrum \citep{vanderplas:09}. To
 overcome this difficulty, other methods have been used in the spectral
 feature extraction procedure. Locally linear embedding (LLE)
 \citep{roweisLLE:00} and Isometric feature map (Isomap)
-\citep{tenenbaum:00} are two widely used nonlinear dimensionality
-reduction techniques. Some studies found that LLE is efficient in
+\citep{tenenbaum:00} are two widely used nonlinear data
+compression techniques. Some studies found that LLE is efficient in
 classifying galaxy spectra \citep{vanderplas:09} and stellar spectra
 \citep{daniel:11}. Other authors concluded that Isomap performs better
 than PCA, except on spectra with low SNR (between 5 and 10)
@@ -245,11 +256,11 @@ parameters estimators, experience shows that it is advantageous to
 match the noise properties of the synthetic training sample to that of
 the real sample because it acts as a regulariser in the training phase
 \citep{fiorentin:08a}.  The impact of the SNR on the parameter
-estimation ($T_{\rm eff}$, log \textit{g} and [Fe/H]) with artificial
-neural networks (ANNs) is explored in \cite{snider:01}. They found
+estimation ($T_{\rm eff}$, log \textit{g} and [Fe/H]) with ANN 
+is explored in \cite{snider:01}. They found
 that reasonably accurate estimates can be obtained when networks are
 trained with spectra --not derived parameters-- with similar SNR as
-those of the unlabelled data, for ratios as low as 13.
+those of the unlabelled data, for {\bf SNR} as low as 13.
 
 \cite{recio:06} determined three atmospheric parameters
 ($T_{\rm eff}$, log \textit{g} and [M/H]) and individual chemical
@@ -257,25 +268,34 @@ abundances from stellar spectra using the MATISSE (MATrix
 Inversion for Spectral SynthEsis) algorithm. They introduced Gaussian
 white noise to yield five values of SNR between 25 and 200 and found
 that errors increased considerably for SNR lower than $\sim$ 25.  In
-\cite{navarro:12} authors present a system based on ANNs trained with
+\cite{navarro:12} authors present a system based on ANN trained with
 a set of line-strength indices selected among the spectral lines more
 sensitive to temperature and the best luminosity tracers. They
 generated spectra with a range of SNR between 6 and 200 by adding
-Poissonian noise to each spectrum. Their scheme allows to classify
-spectra of SNR as low as 20 with an accuracy better than two spectral
+Poissonian noise to each spectrum. Their scheme {\bf allows classification
+of} spectra of SNR as low as 20 with an accuracy better than two spectral
 subtypes. For SNR $\sim$ 10, classification is still possible but at a
 lower precision.
 
+In recent years, there seems to be a tendency to use {\bf the spectrum
+rather than fluxes or equivalent widths derived from it} 
+(see e.g. \citealt{2012ApJ...757..161T,2014A&A...567A...5R} and references therein; 
+\citealt{2015ApJ...808...16N,2015MNRAS.448.2717W}; or \citealt{2015arXiv151000111R}). 
+In this work we focus in this latter approach, and attempt to assess the
+relative merits of various techniques to serve as a guide for future
+applications of machine learning techniques for regression of stellar
+atmospheric physical parameters.
+
 This paper presents a comparative study of the most popular
-dimensionality reduction technique applied to stellar spectra (PCA)
+data compression technique applied to stellar spectra (PCA)
 and five alternatives (two linear and three nonlinear techniques). The
 aims of the paper are (1) to investigate to what extent novel
-dimensionality reduction techniques outperform the traditional PCA on
+data compression techniques outperform the traditional PCA on
 stellar spectra datasets, (2) to test the robustness of these
 techniques and their performance in atmospheric parameters estimation
 for different SNRs, (3) to investigate the number of regression models
 of different SNRs needed to obtain the best generalisation performance
-for any reasonable SNR of the test data, and (4) to analyse the effect
+for any reasonable SNR of the evaluation dataset, and (4) to analyse the effect
 of the grid density over the regression performance in atmospheric
 parameters estimation.  The investigation is performed by an empirical
 evaluation of the selected techniques on specifically designed
@@ -286,7 +306,7 @@ Sect. \ref{sec:comparison1} presents our results when comparing the
 compression techniques and compression rates in terms of the atmospheric 
 parameter estimation errors. In Sect. \ref{sec:comparison2} we evaluate 
 the optimal match between the SNR of the training set examples to the SNR 
-of the prediction set, and in Sect. \ref{sec:comparison3} we present 
+of the evaluation set, and in Sect. \ref{sec:comparison3} we present 
 the main results from the analysis of the effect of the training set grid 
 density over the regression performance. Finally, in Sect. 
 \ref{sec:conclusions} we summarize the most relevant findings from 
@@ -295,14 +315,30 @@ the experiments and discuss their validity and limitations.
 \section{The dataset}
 \label{sec:dataset}
 
+{\bf Spectra used in our experiments are divided into two groups:
+\begin{itemize}
+\item The training set, which refers to the portion of spectra used to 
+	fit the atmospheric parameters models.
+\item The evaluation set, which refers to that portion of the spectra 
+	used only at the end of the model building to assess how well each 
+	final model might perform on additional spectra.
+\end{itemize}
+}
+
 The synthetic spectra that form the basis of our study have been
 computed from MARCS model atmospheres \citep{gustafsson:08} and the
 turbospectrum code \citep{alvarez:98, plez:12} together with atomic \&
 molecular line lists. These spectra were kindly provided by the
 Gaia-ESO team in charge of producing the physical parameters for the
 survey \citep[see][for further details]{2012A&A...544A.126D}.
+{\bf More specifically, our analyses were performed using spectra 
+simulated with two different setups from the high-resolution (HR) 
+mode of the GIRAFFE spectrograph, which was used to carry out the 
+observations of the survey: the HR10 setup (534-562 nm) and the HR21 
+setup (848-900 nm).}
 
-The dataset contains a grid of 8780 synthetic high-resolution spectra 
+The {\bf complete dataset (including training and evaluation data)} 
+contains a grid of 8780 synthetic high-resolution spectra 
 (\textit{R} = 19800) between 5339 and 5619 {\AA} (the nominal GIRAFFE 
 HR10 setup) with effective temperatures between 4000 and 
 8000 K (step 250 K), logarithmic surface gravities between 1.0 and 5.0 
@@ -342,38 +378,39 @@ In most real case applications in astronomy, the ratio of sample size to input
 dimensions is much lower and thus, the \textit{curse of dimensionality} 
 problem is expected to affect even more severely the inference process. 
 
-With a view to analyze the dependence of the validity of the results obtained with the 
-selected dataset, we used a second dataset which is based on the same 
-grid of atmospheric parameters but covering a different wavelength range. This new dataset contains 
-high-resolution spectra (\textit{R} = 16200) between 8484 and 9001 
-{\AA} (the nominal GIRAFFE HR21 setup). 
+With a view to analyze the dependence of the validity of the results obtained 
+with the selected dataset, we used a second dataset which is based on the same 
+grid of atmospheric parameters but covering a different wavelength range. 
+This new dataset contains high-resolution spectra (\textit{R} = 16200) between 
+8484 and 9001 {\AA} (the nominal GIRAFFE HR21 setup). 
 Fig.~\ref{fig:ejemplosEspectros} (right) shows some example spectra from 
 this dataset. In this validity analysis, efforts were focused on the 
 effective temperature.
 
-\section{Dimensionality reduction}
+\section{Data compression}
 \label{sec:dimred}
 
-For the sake of computational efficiency in a dynamic environment
-where a complete rerun of a dimensionality reduction algorithm becomes
-prohibitively time and memory consuming, the selection of the dimensionality
-reduction techniques tested in our experiments was done amongst those
+{\bf In a dynamic environment, a complete rerun of a data compression 
+algorithm becomes prohibitively time and memory consuming. 
+For the sake of computational efficiency, the selection of the data
+compression techniques tested in our experiments was done amongst those
 capable of projecting new data onto the reduced dimensional space
 defined by the training set without having to re-apply the algorithm
-(process also known as out-of-sample extension). Thus, in this work,
-we investigated three linear dimensionality reduction techniques such
-as PCA, independent component analysis (ICA) and discriminative
-locality alignment (DLA), as well as three nonlinear reduction
-techniques that do not lack generalisation to new data: wavelets,
+(process also known as out-of-sample extension).}
+Thus, in this work, we investigated three linear data compression 
+techniques such as PCA, independent component analysis (ICA) and 
+discriminative locality alignment (DLA), as well as three nonlinear 
+reduction techniques that {\bf can be generalised} to new data: wavelets,
 Kernel PCA and diffusion maps (DM).  We aimed at minimizing the
 regression error in estimating stellar atmospheric parameters with no
 consideration of the physicality of the compression
 coefficients. Physicality of the coefficients is sometimes required,
 for example, when trying to interpret galactic spectra as a
-combination of non-negative components.
+combination of non-negative components{\bf, which closely resembles the
+physical process of emission in the mid-infrared}.
 
-Other linear and nonlinear techniques could be used for dimensionality
-reduction, such as linear discriminant analysis (LDA), locally linear
+Other linear and nonlinear techniques could be used for data
+compression, such as linear discriminant analysis (LDA), locally linear
 embedding (LLE), Isomap, etc. When the number of variables is much
 higher than that of training samples, classical LDA cannot be directly
 applied because all scatter matrices are singular and this method
@@ -397,9 +434,8 @@ cannot be extended out-of-sample.
 
 \subsection{Principal Component Analysis (PCA)}
 
-Principal Components Analysis (PCA) \citep{hotelling:33,pearson:01} is
-by far the most popular (unsupervised) linear technique for
-dimensionality reduction. The aim of the method is to reduce the
+PCA \citep{hotelling:33,pearson:01} is by far the most popular linear 
+technique for data compression. The aim of the method is to reduce the
 dimensionality of multivariate data whilst preserving as much of the
 relevant information (assumed to be related to the variance in the
 data) as possible. This is done by finding a linear basis of reduced
@@ -421,13 +457,12 @@ are computed, and sorted according to decreasing eigenvalue.
 
 \subsection{Independent Component Analysis (ICA)}
 
-Independent Component Analysis (ICA) \citep{comon:94} is very closely
-related to the method called blind source separation (BSS) or blind
-signal separation \citep{jutten:91}. It is the identification and
-separation of mixtures of sources with little prior information. The
-goal of the method is to find a linear representation of non-Gaussian
-data so that the components are statistically independent, or as
-independent as possible \citep{hyvarinen:00}.
+ICA \citep{comon:94} is very closely related to the method called blind 
+source separation (BSS) or blind signal separation \citep{jutten:91}. 
+It is the identification and separation of mixtures of sources with 
+little prior information. The goal of the method is to find a linear 
+representation of non-Gaussian data so that the components are 
+statistically independent, or as independent as possible \citep{hyvarinen:00}.
 
 Several algorithms have been developed for performing ICA
 \citep{bell:95,belouchrani:97,ollila:06,li:08}. A large widely used
@@ -446,58 +481,101 @@ we selected the JADE algorithm for projecting the original spectra in
 the space of independent components.
 
 \subsection{Discriminative Locality Alignment (DLA)}
-Discriminative Locality Alignment (DLA) \citep{zhang:2008} is a
-supervised manifold learning algorithm which can be divided into three
-stages: part optimisation, sample weighting and whole alignment. In
-the first stage, for each sample (each spectrum in our case) a patch
-is defined by the given sample and its neighbours. On each patch, DLA
-preserves the local discriminative information through integrating the
-two criteria that {\textit{i}) the distances between intra-class
-  samples are as small as possible and \textit{ii}) the distance
-  between the inter-class samples is as large as possible. In the
+DLA \citep{zhang:2008} is a supervised manifold learning algorithm {\bf that 
+performs data compression by utilizing the class label information of the 
+data instances. A class is a collection of data instances with common 
+characteristics and DLA uses this information to transform 
+the dataset from a high dimensional space to a low dimensional space.
+In our case, the values that each atmosphere parameter ($T_{\rm eff}$, 
+log \textit{g}, [M/H] and $\left[ \alpha/Fe \right]$) could have are used 
+as class labels. It is possible to apply this technique to our set of spectra 
+because the number of possible values that each atmosphere parameter could 
+have is limited.
+}
+
+The learning algorithm can be divided into three stages: part optimisation, 
+sample weighting and whole alignment. In the first stage, {\bf for each 
+spectrum a patch (region of the space of independent variables) is defined 
+by the given spectrum and its nearest spectra based on a similarity (distance) 
+measure.} On each patch, DLA preserves the local discriminative information 
+through integrating the two criteria that {\textit{i}) the distances between 
+intra-class spectra are as small as possible and \textit{ii}) the distance
+  between the inter-class spectra is as large as possible. In the
   second stage, each part optimisation is weighted by the
   \textit{margin degree}, a measure of the importance of a given
-  sample for classification. Finally, DLA integrates all the weighted
+  spectrum for classification. Finally, DLA integrates all the weighted
   part optimisations to form a global subspace structure through an
   alignment operation \citep{2002cs.......12008Z}. The projection
   matrix can be obtained by solving a standard eigendecomposition
   problem.
-
+  
+{\bf
 DLA requires the selection of the following two parameters:
 \begin{itemize}
 \item Neighbour samples from an identical class ($k_1$): 
-	the number of nearest neighbours with respect to $x_i$
-	from samples in the same class with $x_i$
+	the number of nearest spectra with respect to $x_i$
+	from spectra in the same class with $x_i$
 \item Neighbour samples from different classes ($k_2$): 
-	the number of nearest neighbours with respect to $x_i$
-	from samples in different classes with $x_i$
+	the number of nearest spectra with respect to $x_i$
+	from spectra in different classes with $x_i$
 \end{itemize}
-
+}
 This method obtains robust classification performance under the
 condition of small sample size. Furthermore, it does not need to
 compute the inverse of a matrix, and thus it does not face the matrix
-singularity problem that makes linear discriminant analysis (LDA) and
-quadratic discriminant analysis (QDA) not directly applicable to
-stellar spectral data.
+singularity problem that makes LDA and quadratic discriminant analysis 
+(QDA) not directly applicable to stellar spectral data.
 
-\subsection{Diffusion Maps}
+\subsection{Diffusion Maps (DM)}
 
-Diffusion maps (DM) \citep{coifman:06,nadler:06} are a non linear
-dimensionality reduction technique for finding the feature
-representation of the datasets even if observed samples are
-non-uniformly distributed.
+DM \citep{coifman:06,nadler:06} are a non linear data compression 
+technique for finding the feature representation of the datasets even 
+if observed samples are non-uniformly distributed, {\bf i.e., the 
+density of data instances (set of spectra in our case) in the space of 
+independent variables is not uniform. The non-uniform data distribution 
+leads to a reduction in the performance of an algorithm.
 
-DMs achieve dimensionality reduction by re-organizing data according
-to parameters of its underlying geometry. DM are based on defining a
-Markov random walk on the data. By performing the random walk for a
-number of time steps, a measure for the proximity of the data points
-is obtained (\textit{diffusion distance}). In the low-dimensional
-representation of the data, DMs attempt to retain the pairwise
-diffusion distances as faithfully as possible (under a squared error
-criterion). The key idea behind the diffusion distance is that it is
-based on integrating over all paths through the graph. This makes the
-diffusion distance more robust to short-circuiting than, e.g., the
-geodesic distance that is employed in Isomap \citep{tenenbaum:00}.
+DM are based on the assumption that there exist a low-dimensional 
+manifold or topological space embedded in the high-dimension space 
+of independent variables. Thus, this technique aims to uncover the 
+manifold structure in the data.
+We conjecture that the spectra sharing the same atmospheric parameters 
+must lie on some manifold. Therefore, we employ DM to discover the 
+low-dimensional space that adequately represents such manifolds without
+loss of information.
+ 
+Graph representation is an effective mechanism to represent 
+complex relationships between data points (spectra). Thus, the DM 
+embedding begins with the construction of a graph. 
+Each data point (spectrum) is represented by a collection of numerical 
+variables (measured wavelenghts), and the condition for two nodes to be 
+connected in the graph is based on the proximity of the corresponding 
+data points (spectra) in the space of independent variables.
+Subsequently, the data modeled as a graph is combined with Markov chain
+techniques. In particular, random walks on the graph are used to obtain
+a measure for the proximity of the data points (\textit{diffusion 
+distance}), i.e., a measure of similarity between data points.
+The remarkable idea is that eigenvectors of Markov matrices can be thought 
+of as coordinates. Thus, the data, originally modeled as a graph, can be 
+represented (embedded) as a cloud of points in a Euclidean space. 
+The hope is that this new representation will capture the main structures 
+of the data in a few dimensions.
+In the low-dimensional representation of the data, DM attempt to retain 
+the relationship between pairs of data points (spectra) as faithfully as 
+possible.
+}
+
+%DM achieve data compression by re-organizing data according
+%to parameters of its underlying geometry. DM are based on defining a
+%Markov random walk on the data. By performing the random walk for a
+%number of time steps, a measure for the proximity of the data points
+%is obtained (\textit{diffusion distance}). In the low-dimensional
+%representation of the data, DM attempt to retain the pairwise
+%diffusion distances as faithfully as possible (under a squared error
+%criterion). The key idea behind the diffusion distance is that it is
+%based on integrating over all paths through the graph. This makes the
+%diffusion distance more robust to short-circuiting than, e.g., the
+%geodesic distance that is employed in Isomap \citep{tenenbaum:00}.
 
 In this work, the results were optimised by controlling the degree of
 locality in the diffusion weight matrix (referred to below with 
@@ -505,7 +583,7 @@ the parameter name \textit{eps.val}).
 
 Finally, the classical Nystr\"{o}m formula \citep{NIPS2000_1866} was used
 to extend the diffusion coordinates computed on a subsample (the training 
-set) to other spectra (the test set).
+set) to other spectra (the evaluation set).
 
 
 \subsection{Wavelets}
@@ -523,34 +601,52 @@ considered better than Fourier analysis for modelling because they
 maintain the original space information while including information
 from the frequency domain.
 
-Wavelets can be constructed from a function (named \textit{mother
-  wavelet}), which is confined to a finite interval in the original
+Wavelets can be constructed from a function (named \textit{mother 
+wavelet}), which is confined to a finite interval in the original
 space. This function is used to generate a set of functions through
 the operation of scaling and dilation applied to the mother
 wavelet. The orthogonal or biorthogonal bases formed by this set
 allows the decomposition of any given signal using inner products,
-like in Fourier analysis. This method offers multi-resolution analysis
-in the original space and its frequency transformed domain, and it can
-be useful to reveal trends, breakdown points or discontinuities.
+like in Fourier analysis. {\bf That is, wavelet and Fourier analyses
+are similar in the sense that both of them break a signal down into its 
+constituent parts for analysis. However, whereas the Fourier transform 
+decomposes a signal into a series of sine waves of different 
+frequencies, the wavelet transform decomposes the signal into 
+its \textit{wavelets} (scaled and shifted versions of the \textit{mother 
+wavelet)}.
 
-Dimensionality reduction with wavelets consists of keeping a reduced
+In particular, wavelet transform breaks a spectrum into subsequences at
+different resolution scales, i.e., it decomposes a spectrum at different 
+dilations to obtain (\textit {i}) those approximation coefficients that 
+represent the high-scale and low-frequency components of the spectrum and 
+(\textit {ii}) the detail coefficients that represent the low-scale and 
+high-frequency components of the spectrum. 
+%At high frequency (shorter time intervals), the wavelets can capture 
+%discontinuities, ruptures and singularities in the original spectrum. 
+%At low frequency (longer time intervals), the wavelet characterizes the 
+%coarse structure of the spectrum to identify the long-term trends. 
+Thus,} wavelet analysis offers multi-resolution analysis 
+in the original space and its frequency transformed domain, and it can be 
+useful to reveal trends, breakdown points or discontinuities.
+
+Data compression with wavelets consists of keeping a reduced
 number of wavelet coefficients. There are two common ways of
-coefficient selection: ({\textit i) to eliminate the high frequency
-  coefficients that are assumed to reflect only random noise, and
-  ({\textit {ii}) to keep the $k$ most statistically significant
-    coefficients (which yields a representation of the signal with
-    less variance) \citep{li:10}. There are more sophisticated ways to
-    further reduce the number of coefficients using standard machine
-    learning techniques for feature selection, such as the LASSO
-    (Least Absolute Shrinkage and Selection Operator) used in
-    \cite{2015MNRAS.452.1394L}, wrapper approaches, information theory
-    measures, etc. A full analysis of all these alternatives is out of
-    the scope of this paper and we will only apply the first reduction
-    mentioned above.
+coefficient selection: (\textit i) to eliminate the {\bf detail}
+coefficients that are assumed to reflect only random noise, 
+and (\textit {ii}) to keep the $k$ most statistically significant
+wavelet coefficients (which yields a representation of the signal with
+less variance) \citep{li:10}. There are more sophisticated ways to
+further reduce the number of wavelet coefficients using standard machine
+learning techniques for feature selection, such as the LASSO
+(Least Absolute Shrinkage and Selection Operator) used in
+\cite{2015MNRAS.452.1394L}, wrapper approaches, information theory
+measures, etc. A full analysis of all these alternatives is out of
+the scope of this paper and we will only apply the first reduction
+mentioned above.
 
 \subsection{Kernel PCA}
 
-Kernel PCA (KPCA) is the reformulation of traditional linear PCA in a
+Kernel PCA is the reformulation of traditional linear PCA in a
 high-dimensional space that is constructed using a kernel function
 \citep{sholkopf:98}. This method computes the principal eigenvectors
 of the kernel matrix, rather than those of the covariance matrix. The
@@ -574,7 +670,7 @@ performance by fine tuning the inverse kernel width ($\sigma$).
 \section{Comparison of spectrum compression techniques and optimal rates}
 \label{sec:comparison1}
 
-We investigate the utility of six dimensionality reduction techniques
+We investigate the utility of six data compression techniques
 for feature extraction with a view to improving the performance of
 atmospheric parameters regression models. The robustness of these
 techniques against increasing SNR is evaluated, and the generalisation
@@ -582,16 +678,17 @@ performance of training sets of varying SNRs is analysed.
 
 Our set of experiments proceeds in three stages. In the first stage we
 aim at comparing the various compression techniques and compression
-rates in terms of the atmospheric parameter estimation errors. As a
-result of these experiments, we select an optimal compression approach
-and rate (dimensionality of the reduced space).
+rates {\bf for different SNR regimes} in terms of the atmospheric 
+parameter estimation errors. As a result of these experiments, we select 
+an optimal compression approach and rate (dimensionality of the reduced 
+space).
 
 Different machine learning models have been used for the automatic
 estimation of atmospheric parameters from stellar spectra. Two of the
-most widely used techniques in practice are artificial neural networks
-(ANN) and support vector machines (SVM). Unlike ANN, SVM does not need
+most widely used techniques in practice are ANN and support vector 
+machines (SVM). Unlike ANN, SVM does not need
 a choice of architecture before training, but there are some
-parameters to adjust in the kernel functions of the SVM. We use SVMs
+parameters to adjust in the kernel functions of the SVM. We use SVM
 with radial basis kernel functions and adjust the SVM parameters by
 maximizing the quality of the atmospheric parameter ($T_{\rm eff}$,
 log \textit{g}, [M/H] or $\left[ \alpha/Fe \right]$) prediction as 
@@ -609,7 +706,11 @@ where $k$ indexes the atmospheric parameter
 	are the predicted and target values of ${\theta}_{k}$ for the $i$-th 
 	sample spectrum, and $n$ represents the total number of spectra in our evaluation set.
   
-The datasets were randomly split into two subsets, one for training
+{\bf In order to study the dependency of the estimation performance on the
+noise level of the input spectra, Gaussian white noise of different
+variances (SNRs equal to 100, 50, 25 and 10) was added to the original
+synthetic spectra.} 
+Then, the datasets were randomly split into two subsets, one for training
 (66\% of the available spectra) and one for evaluation (the remaining
 34\%). Since the goal of these first experiments is to compare the
 compression techniques rather than obtaining the best predictor,
@@ -636,46 +737,41 @@ following steps illustrated in Fig.~ \ref{fig:flowchart}:
 \item \label{itemthree} Project the evaluation spectra onto the
   low-dimensional space computed in step \ref{itemone}.
 \item Obtain atmospheric parameter predictions by applying the SVM
-  models trained in step \ref{itemtwo} to the test cases obtained in
+  models trained in step \ref{itemtwo} to the evaluation set obtained in
   step \ref{itemthree}.
 \item Calculate the performance of the predictor based on the RMSE
   obtained on the evaluation set.
 \end{enumerate}
 
 \begin{figure*}
-\centering\includegraphics[width=0.8\textwidth]{flowchart.pdf}
+\centering\includegraphics[width=0.85\textwidth]{flowchart.pdf}
 \caption{Process flow chart for investigating the performance of the 
-selected dimensionality reduction techniques.}
+selected data compression techniques.}
 \label{fig:flowchart}
 \end{figure*}
 
 \begin{table}
 \centering
 \caption{Summary of the parameters analysed for the 
-dimensionality reduction techniques.}
+data compression techniques.}
 \label{tab:parameters}
 \begin{tabular}{l c c c}
 \hline
-\textbf{Technique} & \textbf{Parameter} & \textbf{Analysed range} & \textbf{Best value} \\
+\multirow{2}{*}{\textbf{Technique}} & \multirow{2}{*}{\textbf{Parameter}} & \textbf{Analysed} &  \textbf{Best} \\
+  	&   & \textbf{range} & \textbf{value} \\
 \hline
 \multirow{2}{*}{DLA} 
 	& $k_1$ & [2 - 8]  & 2 \\\cline{2-4}
 	& $k_2$ & [2 - 8]  & 3 \\\hline
 DM & eps.val & [0.01 - 700] & 600 \\\hline
-KPCA & $\sigma$ & [0.0001 - 0.01] & 0.001 \\
+Kernel PCA & $\sigma$ & [0.0001 - 0.01] & 0.001 \\
 \hline
 \end{tabular}
 \end{table}
 
-The procedure described above is repeated for different SNR regimes in
-order to study the dependency of the estimation performace on the
-noise level of the input spectra. Gaussian white noise of different
-variances (SNRs equal to 100, 50, 25 and 10) was added to the original
-synthetic spectra. 
-
 \subsection{Results}
 
-First, we compare the performance of the dimensionality reduction
+First, we compare the performance of the data compression
 techniques described in section \ref{sec:dimred} using noise-free
 synthetic spectra as well as degraded spectra with SNR levels of 100,
 50, 25 and 10. Figures \ref{fig:02} to \ref{fig:07} show the RMSE
@@ -724,7 +820,7 @@ compression rate. RMSE errors increase only moderately down to a SNR
 of 10, which seems to indicate that most of the examined compression
 techniques serve well as noise filters.
 
-The performance comparison of the analysed dimensionality reduction
+The performance comparison of the analysed data compression
 techniques shows that although traditional PCA is not the most
 efficient method, it outperforms some of the nonlinear techniques used
 in this study, such as DM or wavelets. %{\bf We need to propose an explanation}. 
@@ -748,8 +844,8 @@ compression) for almost any compression rate and SNR. However,
 it achieved the lowest prediction errors for the hardly useful scenarios of noise-free data 
 (not shown here for the sake of conciseness) or the highest compression 
 rates (two or five dimensions) when estimating $T_{\rm eff}$ and 
-log \textit{g}. PCA and DMs yield similar $T_{\rm eff}$ prediction
-errors in the high SNR regime, but DMs are more robust against noise
+log \textit{g}. PCA and DM yield similar $T_{\rm eff}$ prediction
+errors in the high SNR regime, but DM are more robust against noise
 specially for the lowest compression rates examined.
 
 It is interesting to note that compression techniques can be grouped
@@ -872,7 +968,7 @@ $\infty$ & DLA & 15 & 12.58\\
 
 In this Section we analyse the optimal match between the SNR of the training
 set and that of the spectra for which the atmospheric parameter
-predictions are needed (in the following, the prediction set).
+predictions are needed (in the following, the evaluation set).
 
 In order to analyse the dependence of the predicition accuracy with
 the training set SNR, we generate 25 realisations of the noise for
@@ -887,7 +983,7 @@ dimensionality was dictated by the results presented in the previous
 Section. For each of these datasets we trained an SVM
 model to estimate each of the atmospheric parameters ($T_{\rm
   eff}$, log \textit{g}, [M/H] or $\left[ \alpha/Fe \right]$), and to 
-assess the consistency of the results as the test set SNR degrades. 
+assess the consistency of the results as the evaluation set SNR degrades. 
 The model performances were evaluated using 10-fold cross validation 
 as follows:
 
@@ -932,7 +1028,7 @@ trained with noise-free spectra are the worst choice for spectra
 with SNRs up 50/75, and are unnecessary for $T_{\rm eff}$, 
 log \textit{g} and $\left[ \alpha/Fe \right]$ in contexts of higher 
 SNRs. Only the [M/H] regression models slightly benefit from training 
-with noiseless spectra if the test spectra are in the SNR$\ge 50$ regime. 
+with noiseless spectra if the evaluation spectra are in the SNR$\ge 50$ regime. 
 The accuracy of the model trained with noise-free spectra degrades 
 exponentially for SNR$<$50.
 
@@ -950,7 +1046,7 @@ the best accuracy is obtained with the model constructed from spectra
 with SNR of 50. For SNR lower than 10, the model with best generalisation
 performance is that trained with SNR=10. Hence, two models suffice to 
 obtain the best performance across the entire SNR range explored in 
-this set of experiments: one trained with SNR=50 examples for test 
+this set of experiments: one trained with SNR=50 examples for evaluation 
 spectra of any SNR above 10, and one trained with SNR = 10 examples 
 for lower SNRs. 
 
@@ -1001,7 +1097,7 @@ estimate $T_{\rm eff}$ of noise-free spectra, and completely
 useless in any other SNR regime. This effect is much more evident 
 here than in the case of the HR10 setup. 
 
-It is also clear that again, if the test spectra 
+It is also clear that again, if the evaluation spectra 
 are in the SNR>25 regime, the $T_{\rm eff}$ 
 regression models have to be trained with SNR$\ge$50 examples.
 For evaluation spectra with SNR$\ge$100, the differences 
@@ -1171,7 +1267,7 @@ even in the context of compressed data spaces. We emphasize that this is only
 applicable to cross-validation errors (that is, errors estimated from spectra 
 entirely equivalent to those used for training). These cross-validation errors 
 are often known as internal errors as they do not take into account systematic 
-differences between the training and prediction sets. In our case, we have used 
+differences between the training and evaluation sets. In our case, we have used 
 MARCS model atmospheres, not observed spectra of real stars. In practical 
 applications of the results presented above, the mismatch between the training 
 set and the observed spectra inevitably leads to additional errors.

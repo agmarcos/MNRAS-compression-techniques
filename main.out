@@ -1,17 +1,17 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Dimensionality reduction}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Principal Component Analysis \(PCA\)}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Independent Component Analysis \(ICA\)}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Discriminative Locality Alignment \(DLA\)}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Diffusion Maps}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.5}{Wavelets}{section.2}% 7
-\BOOKMARK [2][-]{subsection.2.6}{Kernel PCA}{section.2}% 8
-\BOOKMARK [1][-]{section.3}{The dataset}{}% 9
+\BOOKMARK [1][-]{section.2}{The dataset}{}% 2
+\BOOKMARK [1][-]{section.3}{Data compression}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Principal Component Analysis \(PCA\)}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Independent Component Analysis \(ICA\)}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Discriminative Locality Alignment \(DLA\)}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Diffusion Maps \(DM\)}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{Wavelets}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.6}{Kernel PCA}{section.3}% 9
 \BOOKMARK [1][-]{section.4}{Comparison of spectrum compression techniques and optimal rates}{}% 10
 \BOOKMARK [2][-]{subsection.4.1}{Results}{section.4}% 11
 \BOOKMARK [1][-]{section.5}{Optimal training set SNR}{}% 12
 \BOOKMARK [2][-]{subsection.5.1}{Results}{section.5}% 13
 \BOOKMARK [1][-]{section.6}{Training set density}{}% 14
 \BOOKMARK [1][-]{section.7}{Conclusions}{}% 15
-\BOOKMARK [1][-]{section.A1}{Additional figures for comparison of spectrum compression techniques}{}% 16
-\BOOKMARK [1][-]{section.A2}{Additional figures for training set density results}{}% 17
+\BOOKMARK [1][-]{section.A1}{Regression errors for the GIRAFFE HR10 setup grouped by compression technique.}{}% 16
+\BOOKMARK [1][-]{section.A2}{Effective temperature regression errors as a function of the grid spacing and grouped by compression technique for SNR=25 and 100}{}% 17

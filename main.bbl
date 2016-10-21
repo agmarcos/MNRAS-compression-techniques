@@ -51,6 +51,12 @@ Princeton University Press
 Belouchrani A.,  Meraim K.~A.,  Cardoso J.~F.,   Moulines E.,  1997, IEEE
   Transaction on Signal Processing, 45(2), 434
 
+\bibitem[\protect\citeauthoryear{{Bruntt} et~al.,}{{Bruntt}
+  et~al.}{2010}]{2010MNRAS.405.1907B}
+{Bruntt} H.,  et~al., 2010, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2010.16575.x}, \href
+  {http://adsabs.harvard.edu/abs/2010MNRAS.405.1907B} {405, 1907}
+
 \bibitem[\protect\citeauthoryear{Bu, Chen  \& Pan}{Bu et~al.}{2014}]{bu:14}
 Bu Y.,  Chen F.,   Pan J.,  2014, New Astronomy, 28, 35
 
@@ -76,6 +82,9 @@ Daniel S.~F.,  Connolly A.,  Schneider J.,  Vanderplas J.,   Xiong L.,  2011,
   et~al.}{2011}]{2011AJ....142...72E}
 {Eisenstein} D.~J.,  et~al., 2011, \mn@doi [\aj] {10.1088/0004-6256/142/3/72},
   \href {http://adsabs.harvard.edu/abs/2011AJ....142...72E} {142, 72}
+
+\bibitem[\protect\citeauthoryear{Geary}{Geary}{1930}]{10.2307/2342070}
+Geary R.~C.,  1930, Journal of the Royal Statistical Society, 93, 442
 
 \bibitem[\protect\citeauthoryear{{Gilmore} et~al.,}{{Gilmore}
   et~al.}{2012}]{2012Msngr.147...25G}
@@ -142,6 +151,10 @@ Academic Press
   \mn@doi [\pasp] {10.1086/653039}, \href
   {http://adsabs.harvard.edu/abs/2010PASP..122..608M} {122, 608}
 
+\bibitem[\protect\citeauthoryear{Marsaglia}{Marsaglia}{1965}]{doi:10.1080/01621459.1965.10480783}
+Marsaglia G.,  1965, \mn@doi [Journal of the American Statistical Association]
+  {10.1080/01621459.1965.10480783}, 60, 193
+
 \bibitem[\protect\citeauthoryear{{Mishenina}, {Bienaym{\'e}}, {Gorbaneva},
   {Charbonnel}, {Soubiran}, {Korotin}  \& {Kovtyukh}}{{Mishenina}
   et~al.}{2006}]{2006A&A...456.1109M}
@@ -149,13 +162,6 @@ Academic Press
   {Soubiran} C.,  {Korotin} S.~A.,   {Kovtyukh} V.~V.,  2006, \mn@doi [\aap]
   {10.1051/0004-6361:20065141}, \href
   {http://adsabs.harvard.edu/abs/2006A%26A...456.1109M} {456, 1109}
-
-\bibitem[\protect\citeauthoryear{{Muirhead}, {Hamren}, {Schlawin},
-  {Rojas-Ayala}, {Covey}  \& {Lloyd}}{{Muirhead}
-  et~al.}{2012}]{2012ApJ...750L..37M}
-{Muirhead} P.~S.,  {Hamren} K.,  {Schlawin} E.,  {Rojas-Ayala} B.,  {Covey}
-  K.~R.,   {Lloyd} J.~P.,  2012, \mn@doi [\apjl] {10.1088/2041-8205/750/2/L37},
-  \href {http://adsabs.harvard.edu/abs/2012ApJ...750L..37M} {750, L37}
 
 \bibitem[\protect\citeauthoryear{Nadler, Lafon, Coifman  \& Kevrekidis}{Nadler
   et~al.}{2006}]{nadler:06}
@@ -215,6 +221,18 @@ Recio-Blanco A.,  Bijaoui A.,   {de Laverny} P.,  2006, Monthly Notices of the
   {http://adsabs.harvard.edu/abs/2015arXiv151000111R} {} (\mn@eprint {arXiv}
   {1510.00111})
 
+\bibitem[\protect\citeauthoryear{{Rojas-Ayala}, {Covey}, {Muirhead}  \&
+  {Lloyd}}{{Rojas-Ayala} et~al.}{2010}]{2010ApJ...720L.113R}
+{Rojas-Ayala} B.,  {Covey} K.~R.,  {Muirhead} P.~S.,   {Lloyd} J.~P.,  2010,
+  \mn@doi [\apjl] {10.1088/2041-8205/720/1/L113}, \href
+  {http://adsabs.harvard.edu/abs/2010ApJ...720L.113R} {720, L113}
+
+\bibitem[\protect\citeauthoryear{{Rojas-Ayala}, {Covey}, {Muirhead}  \&
+  {Lloyd}}{{Rojas-Ayala} et~al.}{2012}]{2012ApJ...748...93R}
+{Rojas-Ayala} B.,  {Covey} K.~R.,  {Muirhead} P.~S.,   {Lloyd} J.~P.,  2012,
+  \mn@doi [\apj] {10.1088/0004-637X/748/2/93}, \href
+  {http://adsabs.harvard.edu/abs/2012ApJ...748...93R} {748, 93}
+
 \bibitem[\protect\citeauthoryear{Roweis \& Saul}{Roweis \&
   Saul}{2000}]{roweisLLE:00}
 Roweis S.,  Saul L.,  2000, Science, 290(5500), 2323
@@ -254,6 +272,13 @@ Snider S.,  {Allende Prieto} C.,  {von Hippel} T.,  Beers T.,  Sneden C.,  Qu
   et~al.}{2000}]{tenenbaum:00}
 Tenenbaum J.~B.,  {de Silva} V.,   Langford J.~C.,  2000, Science, 290(5500),
   2319
+
+\bibitem[\protect\citeauthoryear{{Torres}, {Fischer}, {Sozzetti}, {Buchhave},
+  {Winn}, {Holman}  \& {Carter}}{{Torres} et~al.}{2012}]{2012ApJ...757..161T}
+{Torres} G.,  {Fischer} D.~A.,  {Sozzetti} A.,  {Buchhave} L.~A.,  {Winn}
+  J.~N.,  {Holman} M.~J.,   {Carter} J.~A.,  2012, \mn@doi [\apj]
+  {10.1088/0004-637X/757/2/161}, \href
+  {http://adsabs.harvard.edu/abs/2012ApJ...757..161T} {757, 161}
 
 \bibitem[\protect\citeauthoryear{Vanderplas \& Connolly}{Vanderplas \&
   Connolly}{2009}]{vanderplas:09}
