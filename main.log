@@ -1,31 +1,33 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.7.13)  13 JUL 2016 23:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.5)  24 OCT 2016 15:54
 entering extended mode
-**./main.tex
-(main.tex
-LaTeX2e <2016/03/31>
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-(mnras.cls
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 5 languages loaded.
+(./mnras.cls
 Document Class: mnras 2015/05/22\ v3.0\ LaTeX2e MNRAS document class
 MNRAS document style v3.0, released 2015/05/22
 
 Package mnras Warning: Unknown option `a4paper' on input line 113.
 
-("C:\apps\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\apps\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\apps\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\apps\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\apps\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count79
@@ -40,26 +42,21 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen108
 \Gm@layoutvoffset=\dimen109
 \Gm@dimlist=\toks15
-
-("C:\apps\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\apps\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
-Package: fixltx2e 2015/06/22 v2.0b fixes to LaTeX (obsolete)
-
-
-Package fixltx2e Warning: fixltx2e is not required with releases after 2015
-(fixltx2e)                All fixes are now in the LaTeX kernel.
-(fixltx2e)                See the latexrelease package for details.
-
-) ("C:\apps\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2014/09/29 v1.1s fixes to LaTeX
+LaTeX Info: Redefining \em on input line 430.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\apps\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\apps\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -88,7 +85,7 @@ Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
@@ -96,22 +93,22 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\apps\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\apps\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen110
 \Hy@linkcounter=\count82
 \Hy@pagecounter=\count83
 
-("C:\apps\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count84
 
-("C:\apps\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -123,7 +120,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count85
 
-("C:\apps\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -152,12 +149,12 @@ Package hyperref Warning: Option `pdfpagelabels' is turned off
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\apps\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count89
 \c@bookmark@seq@number=\count90
 
-("C:\apps\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -182,7 +179,7 @@ LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 \@footindent=\skip45
 \@leftskip=\skip46
 
-("C:\apps\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip47
 \bibsep=\skip48
@@ -192,42 +189,41 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@table=\count98
 \c@figure=\count99
 )
-("C:\apps\MiKTeX 2.9\tex\latex\newtx\newtxtext.sty"
-Package: newtxtext 2016/03/27 v1.466
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxtext.sty
+Package: newtxtext 2014/09/28 v1.29
 
-`newtxtext' v1.466, 2016/03/27 Text macros taking advantage of TeX-Gyre Termes 
-fonts (msharpe) ("C:\apps\MiKTeX 2.9\tex\latex\fontaxes\fontaxes.sty"
+`newtxtext' v1.29, 2014/09/28 Text macros based on txfonts (msharpe)
+(/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
 LaTeX Info: Redefining \slshape on input line 33.
 LaTeX Info: Redefining \scshape on input line 37.
 )
-\ntx@fs=\dimen115
+(/home/lsb/workspace/DPAC/CU1/docs/common/texmf/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2006/11/18 v2.5f package option processing (HA)
 
-("C:\apps\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-("C:\apps\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-("C:\apps\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+(/home/lsb/workspace/DPAC/CU1/docs/common/texmf/tex/generic/xkeyval/xkeyval.tex
 \XKV@toks=\toks17
-\XKV@tempa@toks=\toks18
-)
 \XKV@depth=\count100
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-("C:\apps\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
-Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count101
+File: xkeyval.tex 2006/11/18 v2.5f key=value parser (HA)
+)) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count101
 )
-("C:\apps\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+\etb@tempcnta=\count102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\apps\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("C:\apps\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -240,277 +236,282 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             only a restricted character set as indicated.
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-Package textcomp Info: Changing ? sub-encoding to TS1/0 on input line 80.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-("C:\apps\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
-LaTeX Info: Redefining \oldstylenums on input line 334.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
 
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
-Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
-Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
-Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
-Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
-Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
-Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
-Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
-Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
-Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
-Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
-Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
-Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
-Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
-Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
-Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-) 
-Babel
-LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 25
-0.
-("C:\apps\MiKTeX 2.9\tex\latex\newtx\t1ntxtlf.fd"
-File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
-)
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 250.
-)
-("C:\apps\MiKTeX 2.9\tex\latex\newtx\newtxmath.sty"
-Package: newtxmath 2016/03/27 v1.466
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxmath.sty
+Package: newtxmath 2014/09/28 v1.29
 
-`newtxmath' v1.466, 2016/03/27 Math macros based on txfonts (msharpe)
-("C:\apps\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2016/03/10 v2.15b AMS math features
+`newtxmath' v1.29, 2014/09/28 Math macros based on txfonts (msharpe)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-("C:\apps\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
-Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
 
-("C:\apps\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
-\ex@=\dimen116
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen115
 ))
-("C:\apps\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen117
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen116
 )
-("C:\apps\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
-Package: amsopn 2016/03/08 v2.02 operator names
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count102
-LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count103
-\leftroot@=\count104
-LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count105
-\DOTSCASE@=\count106
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
+\inf@bad=\count103
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count104
+\leftroot@=\count105
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count106
+\DOTSCASE@=\count107
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen118
-LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count107
-\c@MaxMatrixCols=\count108
+\big@size=\dimen117
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count108
+\c@MaxMatrixCols=\count109
 \dotsspace@=\muskip11
-\c@parentequation=\count109
-\dspbrk@lvl=\count110
-\tag@help=\toks20
-\row@=\count111
-\column@=\count112
-\maxfields@=\count113
-\andhelp@=\toks21
-\eqnshift@=\dimen119
-\alignsep@=\dimen120
-\tagshift@=\dimen121
-\tagwidth@=\dimen122
-\totwidth@=\dimen123
-\lineht@=\dimen124
-\@envbody=\toks22
+\c@parentequation=\count110
+\dspbrk@lvl=\count111
+\tag@help=\toks19
+\row@=\count112
+\column@=\count113
+\maxfields@=\count114
+\andhelp@=\toks20
+\eqnshift@=\dimen118
+\alignsep@=\dimen119
+\tagshift@=\dimen120
+\tagwidth@=\dimen121
+\totwidth@=\dimen122
+\lineht@=\dimen123
+\@envbody=\toks21
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2739.
-LaTeX Info: Redefining \] on input line 2740.
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\apps\MiKTeX 2.9\tex\generic\binhex\binhex.tex")
-\tx@Isdigit=\count114
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 137.
+(/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
+\tx@Isdigit=\count115
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 103.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 103.
+
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/ntxtlf/m/n on input line 137.
+(Font)                  OT1/cmr/m/n --> T1/ntxrx/m/n on input line 103.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 103.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ntxtlf/m/n on input line 137.
+(Font)                  OT1/cmr/bx/n --> T1/ntxrx/m/n on input line 103.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/ntxtlf/m/n --> OT1/ntxtlf/b/n on input line 138.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 144.
+(Font)                  T1/ntxrx/m/n --> T1/ntxrx/b/n on input line 104.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 110.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/qhv/m/n on input line 144.
+(Font)                  OT1/cmss/m/n --> T1/qhv/m/n on input line 110.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/qhv/m/n on input line 144.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 145.
+(Font)                  OT1/cmss/bx/n --> T1/qhv/m/n on input line 110.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/ntxtlf/m/it on input line 145.
+(Font)                  OT1/cmr/m/it --> T1/ntxrx/m/it on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/ntxtlf/m/it on input line 145.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 146.
+(Font)                  OT1/cmr/bx/it --> T1/ntxrx/m/it on input line 111.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/ntxtt/m/n on input line 146.
+(Font)                  OT1/cmtt/m/n --> T1/ntxtt/m/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/ntxtt/m/n on input line 146.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 148.
+(Font)                  OT1/cmtt/m/n --> T1/ntxtt/m/n on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 114.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/ntxtlf/b/n on input line 148.
+(Font)                  OT1/cmr/bx/n --> T1/ntxrx/b/n on input line 114.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ntxtlf/b/n on input line 148.
+(Font)                  OT1/cmr/bx/n --> T1/ntxrx/b/n on input line 114.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/ntxtlf/m/it --> OT1/ntxtlf/b/it on input line 149.
+(Font)                  T1/ntxrx/m/it --> T1/ntxrx/b/it on input line 115.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/qhv/m/n --> T1/qhv/b/n on input line 150.
+(Font)                  T1/qhv/m/n --> T1/qhv/b/n on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/ntxtt/m/n --> T1/ntxtt/b/n on input line 151.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 197.
+(Font)                  T1/ntxtt/m/n --> T1/ntxtt/b/n on input line 117.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 147.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/ntxmi/m/it on input line 197.
+(Font)                  OML/cmm/m/it --> OML/ntxmi/m/it on input line 147.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/ntxmi/m/it on input line 197.
+(Font)                  OML/cmm/b/it --> OML/ntxmi/m/it on input line 147.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/ntxmi/m/it --> OML/ntxmi/b/it on input line 198.
+(Font)                  OML/ntxmi/m/it --> OML/ntxmi/b/it on input line 148.
 \symlettersA=\mathgroup5
 LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
-(Font)                  U/ntxmia/m/it --> U/ntxmia/b/it on input line 213.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 221.
+(Font)                  U/ntxmia/m/it --> U/ntxmia/b/it on input line 161.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 169.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/ntxsy/m/n on input line 221.
+(Font)                  OMS/cmsy/m/n --> OMS/ntxsy/m/n on input line 169.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/ntxsy/m/n on input line 221.
+(Font)                  OMS/cmsy/b/n --> OMS/ntxsy/m/n on input line 169.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/ntxsy/m/n --> OMS/ntxsy/b/n on input line 222.
-\symAMSm=\mathgroup6
-LaTeX Font Info:    Overwriting symbol font `AMSm' in version `bold'
-(Font)                  U/ntxsym/m/n --> U/ntxsym/b/n on input line 242.
-\symsymbolsC=\mathgroup7
+(Font)                  OMS/ntxsy/m/n --> OMS/ntxsy/b/n on input line 170.
+\symAMSa=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/ntxsya/m/n --> U/ntxsya/b/n on input line 186.
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/ntxsyb/m/n --> U/ntxsyb/b/n on input line 195.
+\symsymbolsC=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
-(Font)                  U/ntxsyc/m/n --> U/ntxsyc/b/n on input line 263.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 276.
+(Font)                  U/ntxsyc/m/n --> U/ntxsyc/b/n on input line 206.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 219.
 LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 2
-76.
+19.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 276.
+(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 219.
 LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 276
+(Font)              `largesymbols' in the math version `bold' on input line 219
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 276.
+(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 219.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  LMX/ntxexx/m/n --> LMX/ntxexx/b/n on input line 277.
-\symlargesymbolsTXA=\mathgroup8
+(Font)                  LMX/ntxexx/m/n --> LMX/ntxexx/b/n on input line 220.
+\symlargesymbolsTXA=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
 
-(Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 291.
-LaTeX Info: Redefining \not on input line 1749.
+(Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 234.
+LaTeX Info: Redefining \not on input line 1611.
 )
-("C:\apps\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\apps\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("C:\apps\MiKTeX 2.9\tex\latex\ae\ae.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/ae/ae.sty
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
 
-("C:\apps\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\apps\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
-LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
+LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
-("C:\apps\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
-("C:\apps\MiKTeX 2.9\tex\latex\ae\aecompl.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/ae/aecompl.sty
 Package: aecompl 1998/07/23 0.9 T1 Complements for AE fonts (D. Roegel)
 )
-("C:\apps\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\apps\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\apps\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\apps\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\apps\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count115
+\Gread@gobject=\count116
 ))
-\Gin@req@height=\dimen125
-\Gin@req@width=\dimen126
+\Gin@req@height=\dimen124
+\Gin@req@width=\dimen125
 )
-("C:\apps\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\apps\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup9
-\symAMSb=\mathgroup10
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 59.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
+(Font)                  U/ntxsya/m/n --> U/msa/m/n on input line 59.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/ntxsya/b/n --> U/msa/m/n on input line 59.
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 60.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
+(Font)                  U/ntxsyb/m/n --> U/msb/m/n on input line 60.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/ntxsyb/b/n --> U/msb/m/n on input line 60.
 LaTeX Font Info:    Redeclaring math delimiter \ulcorner on input line 74.
 LaTeX Font Info:    Redeclaring math delimiter \urcorner on input line 75.
 LaTeX Font Info:    Redeclaring math delimiter \llcorner on input line 76.
@@ -732,70 +733,373 @@ LaTeX Font Info:    Redeclaring math symbol \Bbbk on input line 261.
 LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
 LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 265.
 )
-("C:\apps\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
-\bigstrutjot=\dimen127
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2014/09/15 v5423 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2014/09/15 v5423 L3 programming layer (code) 
+L3 Module: l3bootstrap 2014/08/23 v5354 L3 Bootstrap code
+L3 Module: l3names 2014/08/22 v5343 L3 Namespace for primitives
+L3 Module: l3basics 2014/08/24 v5364 L3 Basic definitions
+L3 Module: l3expan 2014/08/22 v5349 L3 Argument expansion
+L3 Module: l3tl 2014/08/24 v5359 L3 Token lists
+L3 Module: l3str 2014/08/24 v5368 L3 Strings
+L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
+L3 Module: l3int 2014/09/14 v5421 L3 Integers
+\c_max_int=\count117
+\l_tmpa_int=\count118
+\l_tmpb_int=\count119
+\g_tmpa_int=\count120
+\g_tmpb_int=\count121
+L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
+L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
+\g__prg_map_int=\count122
+L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
+L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
+L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
+L3 Module: l3msg 2014/08/24 v5358 L3 Messages
+L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
+\l_iow_line_count_int=\count123
+\l__iow_target_count_int=\count124
+\l__iow_current_line_int=\count125
+\l__iow_current_word_int=\count126
+\l__iow_current_indentation_int=\count127
+L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
+\c_zero_dim=\dimen126
+\c_max_dim=\dimen127
+\l_tmpa_dim=\dimen128
+\l_tmpb_dim=\dimen129
+\g_tmpa_dim=\dimen130
+\g_tmpb_dim=\dimen131
+\c_zero_skip=\skip52
+\c_max_skip=\skip53
+\l_tmpa_skip=\skip54
+\l_tmpb_skip=\skip55
+\g_tmpa_skip=\skip56
+\g_tmpb_skip=\skip57
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+L3 Module: l3keys 2014/08/23 v5354 L3 Key-value interfaces
+\g__keyval_level_int=\count128
+\l_keys_choice_int=\count129
+L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
+\c__fp_leading_shift_int=\count130
+\c__fp_middle_shift_int=\count131
+\c__fp_trailing_shift_int=\count132
+\c__fp_big_leading_shift_int=\count133
+\c__fp_big_middle_shift_int=\count134
+\c__fp_big_trailing_shift_int=\count135
+\c__fp_Bigg_leading_shift_int=\count136
+\c__fp_Bigg_middle_shift_int=\count137
+\c__fp_Bigg_trailing_shift_int=\count138
+L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
+\c_empty_box=\box28
+\l_tmpa_box=\box29
+\l_tmpb_box=\box30
+\g_tmpa_box=\box31
+\g_tmpb_box=\box32
+L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
+\l__coffin_internal_box=\box33
+\l__coffin_internal_dim=\dimen132
+\l__coffin_offset_x_dim=\dimen133
+\l__coffin_offset_y_dim=\dimen134
+\l__coffin_x_dim=\dimen135
+\l__coffin_y_dim=\dimen136
+\l__coffin_x_prime_dim=\dimen137
+\l__coffin_y_prime_dim=\dimen138
+\c_empty_coffin=\box34
+\l__coffin_aligned_coffin=\box35
+\l__coffin_aligned_internal_coffin=\box36
+\l_tmpa_coffin=\box37
+\l_tmpb_coffin=\box38
+\l__coffin_display_coffin=\box39
+\l__coffin_display_coord_coffin=\box40
+\l__coffin_display_pole_coffin=\box41
+\l__coffin_display_offset_dim=\dimen139
+\l__coffin_display_x_dim=\dimen140
+\l__coffin_display_y_dim=\dimen141
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3candidates 2014/08/24 v5366 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen142
+\l__box_bottom_dim=\dimen143
+\l__box_left_dim=\dimen144
+\l__box_right_dim=\dimen145
+\l__box_top_new_dim=\dimen146
+\l__box_bottom_new_dim=\dimen147
+\l__box_left_new_dim=\dimen148
+\l__box_right_new_dim=\dimen149
+\l__box_internal_box=\box42
+\l__coffin_bounding_shift_dim=\dimen150
+\l__coffin_left_corner_dim=\dimen151
+\l__coffin_right_corner_dim=\dimen152
+\l__coffin_bottom_corner_dim=\dimen153
+\l__coffin_top_corner_dim=\dimen154
+\l__coffin_scaled_total_height_dim=\dimen155
+\l__coffin_scaled_width_dim=\dimen156
 )
-("C:\apps\MiKTeX 2.9\tex\latex\lineno\lineno.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
+File: l3unicode-data.def 2014/08/12 v5276 L3 Unicode data
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2014/08/24 v5366 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count139
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2014/09/15 v5423 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count140
+\l__xparse_m_args_int=\count141
+\l__xparse_mandatory_args_int=\count142
+\l__xparse_processor_int=\count143
+\l__xparse_v_nesting_int=\count144
+)
+Package: siunitx 2014/10/01 v2.6c A comprehensive (SI) units package
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen157
+\extrarowheight=\dimen158
+\NC@list=\toks23
+\extratabsurround=\skip58
+\backup@length=\skip59
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2014/09/15 v5423 LaTeX2e option processing using LaTeX3 keys
+)
+Variant \tl_if_blank:VTF already defined; not changing it on line 50
+\l__siunitx_tmp_box=\box43
+\l__siunitx_tmp_dim=\dimen159
+\l__siunitx_tmp_int=\count145
+Variant \prop_get:NVNT already defined; not changing it on line 372
+Variant \prop_get:NVNF already defined; not changing it on line 373
+Variant \prop_get:NVNTF already defined; not changing it on line 374
+\l__siunitx_number_mantissa_length_int=\count146
+\l__siunitx_number_uncert_length_int=\count147
+\l__siunitx_round_int=\count148
+\l__siunitx_process_decimal_int=\count149
+\l__siunitx_process_uncertainty_int=\count150
+\l__siunitx_process_fixed_int=\count151
+\l__siunitx_process_integer_min_int=\count152
+\l__siunitx_process_precision_int=\count153
+\l__siunitx_group_min_int=\count154
+\l__siunitx_angle_marker_box=\box44
+\l__siunitx_angle_unit_box=\box45
+\l__siunitx_angle_marker_dim=\dimen160
+\l__siunitx_angle_unit_dim=\dimen161
+\l__siunitx_unit_int=\count155
+\l__siunitx_unit_denominator_int=\count156
+\l__siunitx_unit_numerator_int=\count157
+\l__siunitx_unit_prefix_int=\count158
+\l__siunitx_unit_prefix_base_int=\count159
+\l__siunitx_unit_prefix_gram_int=\count160
+\l__siunitx_number_product_int=\count161
+\c__siunitx_one_fill_skip=\skip60
+\l__siunitx_table_unit_align_skip=\skip61
+\l__siunitx_table_exponent_dim=\dimen162
+\l__siunitx_table_integer_dim=\dimen163
+\l__siunitx_table_mantissa_dim=\dimen164
+\l__siunitx_table_marker_dim=\dimen165
+\l__siunitx_table_result_dim=\dimen166
+\l__siunitx_table_uncert_dim=\dimen167
+\l__siunitx_table_fill_pre_dim=\dimen168
+\l__siunitx_table_fill_post_dim=\dimen169
+\l__siunitx_table_fill_mid_dim=\dimen170
+\l__siunitx_table_pre_box=\box46
+\l__siunitx_table_post_box=\box47
+\l__siunitx_table_mantissa_box=\box48
+\l__siunitx_table_result_box=\box49
+\l__siunitx_table_number_align_skip=\skip62
+\l__siunitx_table_text_align_skip=\skip63
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7168.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7171.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7174.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7177.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7180.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7183.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7186.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7201.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \num with sig. 'om' on line 7209.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7217.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numrange with sig. 'omm' on line 7225.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7236.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIrange with sig. 'ommm' on line 7247.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SI with sig. 'omom' on line 7258.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \sisetup with sig. 'm' on line 7261.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tablenum with sig. 'om' on line 7273.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \si with sig. 'om' on line 7284.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7331.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_numrange:w with sig. 'omm' on line
+. 7333.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7335.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7337.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIrange:w with sig. 'ommm' on line
+. 7339.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7340.
+.................................................
+\g__file_internal_ior=\read1
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-
+mappings.tex))) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen171
+) (/home/lsb/workspace/DPAC/CU1/docs/common/texmf/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count116
+\linenopenalty=\count162
 \output=\toks24
-\linenoprevgraf=\count117
-\linenumbersep=\dimen128
-\linenumberwidth=\dimen129
-\c@linenumber=\count118
-\c@pagewiselinenumber=\count119
-\c@LN@truepage=\count120
-\c@internallinenumber=\count121
-\c@internallinenumbers=\count122
-\quotelinenumbersep=\dimen130
-\bframerule=\dimen131
-\bframesep=\dimen132
-\bframebox=\box28
+\linenoprevgraf=\count163
+\linenumbersep=\dimen172
+\linenumberwidth=\dimen173
+\c@linenumber=\count164
+\c@pagewiselinenumber=\count165
+\c@LN@truepage=\count166
+\c@internallinenumber=\count167
+\c@internallinenumbers=\count168
+\quotelinenumbersep=\dimen174
+\bframerule=\dimen175
+\bframesep=\dimen176
+\bframebox=\box50
 LaTeX Info: Redefining \\ on input line 3056.
-) (main.aux)
+)
+(./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 90.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 90
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 92.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 92
 .
-
-("C:\apps\MiKTeX 2.9\tex\latex\newtx\omlntxmi.fd"
-File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
+File: omlntxmi.fd 2012/03/22 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 90.
-LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 90
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 92.
+LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 92
 .
 
-("C:\apps\MiKTeX 2.9\tex\latex\newtx\omsntxsy.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/omsntxsy.fd
 File: omsntxsy.fd 2012/11/14 Fontinst v1.933 font definitions for OMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 90.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 90.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 92.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 92.
 
 
-("C:\apps\MiKTeX 2.9\tex\latex\newtx\untxexa.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 90.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 92.
 
-("C:\apps\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -831,1064 +1135,612 @@ LaTeX Font Info:    ... okay on input line 90.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box29
-("C:\apps\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
+\AtBeginShipoutBox=\box51
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
 
-("C:\apps\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 143.
+Package color Info: Driver file: pdftex.def on input line 137.
 )
-Package hyperref Info: Link coloring ON on input line 90.
+Package hyperref Info: Link coloring ON on input line 92.
 
-("C:\apps\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\apps\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count123
+\c@section@level=\count169
 )
-LaTeX Info: Redefining \ref on input line 90.
-LaTeX Info: Redefining \pageref on input line 90.
-LaTeX Info: Redefining \nameref on input line 90.
- (main.out)
-(main.out)
+LaTeX Info: Redefining \ref on input line 92.
+LaTeX Info: Redefining \pageref on input line 92.
+LaTeX Info: Redefining \nameref on input line 92.
+
+(./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-\c@mv@tabular=\count124
-\c@mv@boldtabular=\count125
- ("C:\apps\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+\c@mv@tabular=\count170
+\c@mv@boldtabular=\count171
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen133
-\scratchbox=\box30
-\nofMPsegments=\count127
-\nofMParguments=\count128
+\scratchcounter=\count172
+\scratchdimen=\dimen177
+\scratchbox=\box52
+\nofMPsegments=\count173
+\nofMParguments=\count174
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen134
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
+\MPscratchCnt=\count175
+\MPscratchDim=\dimen178
+\MPnumerator=\count176
+\makeMPintoPDFobject=\count177
 \everyMPtoPDFconversion=\toks26
-) ("C:\apps\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-("C:\apps\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
+ic-dictionary/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
 )
-LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 9
-3.
-
-("C:\apps\MiKTeX 2.9\tex\latex\newtx\ot1ntxtlf.fd"
-File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2014/10/01 v2.6c siunitx: Abbreviated units
 )
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 93.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.5pt on input line 93.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.9pt on input line 93.
+\c__siunitx_mathsf_int=\count178
+LaTeX Font Info:    Try loading font information for T1+ntxrx on input line 92.
 
 
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 93.
-
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 93.
-
-("C:\apps\MiKTeX 2.9\tex\latex\newtx\untxmia.fd"
-File: untxmia.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxmia.
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxrx.fd
+File: t1ntxrx.fd 2014/08/14 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 93.
-
-
-("C:\apps\MiKTeX 2.9\tex\latex\newtx\untxsym.fd"
-File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
-)
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 93.
-
-
-("C:\apps\MiKTeX 2.9\tex\latex\newtx\untxsyc.fd"
-File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-)
-LaTeX Font Info:    Try loading font information for U+msa on input line 93.
-
-("C:\apps\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 93.
-
-("C:\apps\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for T1+ntxsups on input line 9
-3.
-
-("C:\apps\MiKTeX 2.9\tex\latex\newtx\t1ntxsups.fd"
-File: t1ntxsups.fd 2015/01/17 v1.0
-)
-LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 14.4pt on input line 93.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 93.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.2pt on input line 93.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 93.
+LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
+(Font)              scaled to size 9.0pt on input line 92.
+LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
+(Font)              scaled to size 7.3pt on input line 92.
+LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
+(Font)              scaled to size 5.5pt on input line 92.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 93.
+(Font)              size <5> substituted on input line 92.
 
-LaTeX Font Info:    Try loading font information for T1+aess on input line 119.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 92.
 
-("C:\apps\MiKTeX 2.9\tex\latex\ae\t1aess.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
+File: untxmia.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 92.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 92.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 92.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+LaTeX Font Info:    Try loading font information for T1+qhv on input line 92.
+
+(/usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd
+File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
+)
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 92.
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 6.56995pt on input line 92.
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 4.94997pt on input line 92.
+\c__siunitx_mathtt_int=\count179
+LaTeX Font Info:    Try loading font information for T1+ntxtt on input line 92.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtt.fd
+File: t1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 9.0pt on input line 92.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 7.3pt on input line 92.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 5.5pt on input line 92.
+LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
+(Font)              scaled to size 14.4pt on input line 95.
+LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
+(Font)              scaled to size 10.5pt on input line 95.
+LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
+(Font)              scaled to size 7.9pt on input line 95.
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 95.
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 9.44994pt on input line 95.
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 7.10994pt on input line 95.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 14.4pt on input line 95.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 10.5pt on input line 95.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 7.9pt on input line 95.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 95.
+
+LaTeX Font Info:    Try loading font information for T1+ntxr1 on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxr1.fd
+File: t1ntxr1.fd 2012/07/29 v1.0
+)
+LaTeX Font Info:    Font shape `T1/ntxr1/m/n' will be
+(Font)              scaled to size 14.4pt on input line 95.
+LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
+(Font)              scaled to size 8.0pt on input line 95.
+LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
+(Font)              scaled to size 6.2pt on input line 95.
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 95.
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 95.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 8.0pt on input line 95.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 6.2pt on input line 95.
+LaTeX Font Info:    Try loading font information for T1+aess on input line 137.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
-
-Package natbib Warning: Citation `2006MNRAS.367..290J' on page 1 undefined on i
-nput line 125.
-
-
-Package natbib Warning: Citation `2012Msngr.147...25G' on page 1 undefined on i
-nput line 125.
-
-
-Package natbib Warning: Citation `2006AJ....132.1645S' on page 1 undefined on i
-nput line 126.
-
-
-Package natbib Warning: Citation `2011AJ....142...72E' on page 1 undefined on i
-nput line 126.
-
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 133.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 133.
-
-Package natbib Warning: Citation `bellman:61' on page 1 undefined on input line
- 142.
-
-
-Package natbib Warning: Citation `2006ApJ...636..804A' on page 1 undefined on i
-nput line 179.
-
-
-Package natbib Warning: Citation `2012ApJ...750L..37M' on page 1 undefined on i
-nput line 179.
-
-
-Package natbib Warning: Citation `2006A&A...456.1109M' on page 1 undefined on i
-nput line 180.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 174.
 
 
-LaTeX Warning: Reference `firstpage' on page 1 undefined on input line 190.
-
-
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 190.
-
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 190.
-
-LaTeX Font Info:    No file TS1aer.fd. on input line 190.
-
-LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textcopyright' on input line 190.
-
-[1{C:/Users/amarcos/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+(/usr/share/texmf/tex/latex/R/tex/latex/ts1aer.fd
+File: ts1aer.fd 
+)
+LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <8> not available
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 174.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-
-Package natbib Warning: Citation `2010PASP..122..608M' on page 2 undefined on i
-nput line 195.
-
-
-Package natbib Warning: Citation `2015MNRAS.452.1394L' on page 2 undefined on i
-nput line 195.
-
-
-Package natbib Warning: Citation `2015ApJS..218....3L' on page 2 undefined on i
-nput line 196.
-
-
-Package natbib Warning: Citation `2014A&A...567A...5R' on page 2 undefined on i
-nput line 200.
-
-
-Package natbib Warning: Citation `2015ApJ...808...16N' on page 2 undefined on i
-nput line 200.
-
-
-Package natbib Warning: Citation `2015MNRAS.448.2717W' on page 2 undefined on i
-nput line 201.
-
-
-Package natbib Warning: Citation `2015arXiv151000111R' on page 2 undefined on i
-nput line 201.
-
-
-Package natbib Warning: Citation `singh:98' on page 2 undefined on input line 2
-10.
-
-
-Package natbib Warning: Citation `fiorentin:08b' on page 2 undefined on input l
-ine 211.
-
-
-Package natbib Warning: Citation `vanderplas:09' on page 2 undefined on input l
-ine 214.
-
-
-Package natbib Warning: Citation `roweisLLE:00' on page 2 undefined on input li
-ne 217.
-
-
-Package natbib Warning: Citation `tenenbaum:00' on page 2 undefined on input li
-ne 218.
-
-
-Package natbib Warning: Citation `vanderplas:09' on page 2 undefined on input l
-ine 220.
-
-
-Package natbib Warning: Citation `daniel:11' on page 2 undefined on input line 
-221.
-
-
-Package natbib Warning: Citation `bu:14' on page 2 undefined on input line 223.
-
-
-
-Package natbib Warning: Citation `fiorentin:08a' on page 2 undefined on input l
-ine 231.
-
-
-Package natbib Warning: Citation `snider:01' on page 2 undefined on input line 
-233.
-
-
-Package natbib Warning: Citation `recio:06' on page 2 undefined on input line 2
-38.
-
-
-Package natbib Warning: Citation `navarro:12' on page 2 undefined on input line
- 244.
-
-
-Underfull \vbox (badness 6380) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `sec:dimred' on page 2 undefined on input line 266.
-
-
-LaTeX Warning: Reference `sec:dataset' on page 2 undefined on input line 268.
-
-
-LaTeX Warning: Reference `sec:comparison1' on page 2 undefined on input line 26
-9.
-
-
-LaTeX Warning: Reference `sec:comparison2' on page 2 undefined on input line 27
-1.
-
-
-LaTeX Warning: Reference `sec:comparison3' on page 2 undefined on input line 27
-3.
-
-
-LaTeX Warning: Reference `sec:conclusions' on page 2 undefined on input line 27
-6.
-
-
-Package natbib Warning: Citation `saxena:04' on page 2 undefined on input line 
-309.
-
-
-Package natbib Warning: Citation `balasubramanianISOMAP:02' on page 2 undefined
- on input line 311.
-
-
-LaTeX Warning: Reference `firstpage' on page 2 undefined on input line 313.
-
-
-LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 313.
-
-[2]
-
-Package natbib Warning: Citation `hotelling:33' on page 3 undefined on input li
-ne 325.
-
-
-Package natbib Warning: Citation `pearson:01' on page 3 undefined on input line
- 325.
-
-
-Package natbib Warning: Citation `comon:94' on page 3 undefined on input line 3
-49.
-
-
-Package natbib Warning: Citation `jutten:91' on page 3 undefined on input line 
-351.
-
-
-Package natbib Warning: Citation `hyvarinen:00' on page 3 undefined on input li
-ne 355.
-
-
-Package natbib Warning: Citation `bell:95' on page 3 undefined on input line 35
-8.
-
-
-Package natbib Warning: Citation `belouchrani:97' on page 3 undefined on input 
-line 358.
-
-
-Package natbib Warning: Citation `ollila:06' on page 3 undefined on input line 
-358.
-
-
-Package natbib Warning: Citation `li:08' on page 3 undefined on input line 358.
-
-
-
-Package natbib Warning: Citation `hyvarinen:00' on page 3 undefined on input li
-ne 359.
-
-
-Package natbib Warning: Citation `zarzoso:10' on page 3 undefined on input line
- 362.
-
-
-Package natbib Warning: Citation `cardoso:93' on page 3 undefined on input line
- 368.
-
-
-Package natbib Warning: Citation `zhang:2008' on page 3 undefined on input line
- 374.
-
-
-Package natbib Warning: Citation `2002cs.......12008Z' on page 3 undefined on i
-nput line 387.
-
-
-Package natbib Warning: Citation `coifman:06' on page 3 undefined on input line
- 410.
-
-
-Package natbib Warning: Citation `nadler:06' on page 3 undefined on input line 
-410.
-
-
-Package natbib Warning: Citation `tenenbaum:00' on page 3 undefined on input li
-ne 425.
-
-
-Package natbib Warning: Citation `mallat:98' on page 3 undefined on input line 
-432.
-
-
-LaTeX Warning: Reference `firstpage' on page 3 undefined on input line 444.
-
-
-LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 444.
-
-[3]
-
-Package natbib Warning: Citation `li:10' on page 4 undefined on input line 461.
-
-
-
-Package natbib Warning: Citation `2015MNRAS.452.1394L' on page 4 undefined on i
-nput line 465.
-
-
-Package natbib Warning: Citation `sholkopf:98' on page 4 undefined on input lin
-e 474.
-
-
-Package natbib Warning: Citation `gustafsson:08' on page 4 undefined on input l
-ine 496.
-
-
-Package natbib Warning: Citation `alvarez:98' on page 4 undefined on input line
- 497.
-
-
-Package natbib Warning: Citation `plez:12' on page 4 undefined on input line 49
-7.
-
-
-Underfull \vbox (badness 4048) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `fig:gridModelos' on page 4 undefined on input line 51
-2.
-
-
-Package natbib Warning: Citation `gustafsson:08' on page 4 undefined on input l
-ine 515.
-
-
-LaTeX Warning: Reference `fig:ejemplosEspectros' on page 4 undefined on input l
-ine 515.
-
-<fig01_grid_modelos.pdf, id=107, 686.565pt x 361.35pt>
-File: fig01_grid_modelos.pdf Graphic file (type pdf)
-
-<use fig01_grid_modelos.pdf>
-Package pdftex.def Info: fig01_grid_modelos.pdf used on input line 519.
-(pdftex.def)             Requested size: 240.0pt x 126.3145pt.
-
-<fig02_espectros_HR10_HR21.pdf, id=108, 578.16pt x 469.755pt>
-File: fig02_espectros_HR10_HR21.pdf Graphic file (type pdf)
-
-<use fig02_espectros_HR10_HR21.pdf>
-Package pdftex.def Info: fig02_espectros_HR10_HR21.pdf used on input line 525.
-(pdftex.def)             Requested size: 504.0pt x 409.5007pt.
-
-
-Package natbib Warning: Citation `jain:00' on page 4 undefined on input line 53
-6.
-
-
-LaTeX Warning: Reference `fig:ejemplosEspectros' on page 4 undefined on input l
-ine 546.
-
-
-Underfull \hbox (badness 1303) in paragraph at lines 550--558
-\T1/aer/m/n/9 sim-i-lar res-o-lu-tions and pa-ram-e-ter sub-spaces). In com-
- []
-
-
-LaTeX Warning: Reference `firstpage' on page 4 undefined on input line 558.
-
-
-LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 558.
-
-[4pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.558 
-       <./fig01_grid_modelos.pdf>]
-
-LaTeX Warning: Reference `eq:rmse' on page 5 undefined on input line 583.
+Underfull \vbox (badness 3471) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [3]
+<fig01_grid_modelos.pdf, id=239, 686.565pt x 361.35pt>
+File: fig01_grid_modelos.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `firstpage' on page 5 undefined on input line 594.
+<use fig01_grid_modelos.pdf>
+Package pdftex.def Info: fig01_grid_modelos.pdf used on input line 403.
+(pdftex.def)             Requested size: 240.0pt x 126.3145pt.
 
+<fig02_espectros_HR10_HR21.pdf, id=240, 578.16pt x 469.755pt>
+File: fig02_espectros_HR10_HR21.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 594.
-
-[5pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
-has been already used, duplicate ignored
+<use fig02_espectros_HR10_HR21.pdf>
+Package pdftex.def Info: fig02_espectros_HR10_HR21.pdf used on input line 412.
+(pdftex.def)             Requested size: 504.0pt x 409.5007pt.
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.594 
-       <./fig02_espectros_HR10_HR21.pdf>]
+l.511 
+       <./fig01_grid_modelos.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:flowchart' on page 6 undefined on input line 601.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
 
-
-
-LaTeX Warning: Reference `tab:parameters' on page 6 undefined on input line 608
-.
-
-
-LaTeX Warning: Reference `itemone' on page 6 undefined on input line 618.
-
-
-Underfull \hbox (badness 4429) in paragraph at lines 617--619
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.543 
+       <./fig02_espectros_HR10_HR21.pdf>] [6]
+Underfull \hbox (badness 4429) in paragraph at lines 775--777
 []\T1/aer/m/n/9 Project the eval-u-a-tion spec-tra onto the low-
  []
 
-
-LaTeX Warning: Reference `itemtwo' on page 6 undefined on input line 620.
-
-
-LaTeX Warning: Reference `itemthree' on page 6 undefined on input line 621.
-
-<flowchart.pdf, id=138, 520.11655pt x 164.9362pt>
+<flowchart.pdf, id=365, 610.62068pt x 169.20956pt>
 File: flowchart.pdf Graphic file (type pdf)
  <use flowchart.pdf>
-Package pdftex.def Info: flowchart.pdf used on input line 627.
-(pdftex.def)             Requested size: 403.20154pt x 127.86449pt.
-
-Overfull \hbox (6.78941pt too wide) in paragraph at lines 638--649
- [][] 
- []
-
-
-LaTeX Warning: Reference `sec:dimred' on page 6 undefined on input line 660.
-
-
-LaTeX Warning: Reference `fig:02' on page 6 undefined on input line 662.
-
-
-LaTeX Warning: Reference `fig:07' on page 6 undefined on input line 662.
-
-<flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf, id=139, 592.2125pt x 361.35pt>
+Package pdftex.def Info: flowchart.pdf used on input line 785.
+(pdftex.def)             Requested size: 428.40308pt x 118.71956pt.
+ [7]
+<flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf, id=390, 592.2125pt x 361.35pt>
 File: flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf used on in
-put line 668.
+put line 823.
 (pdftex.def)             Requested size: 504.0pt x 307.53491pt.
 
-<flamesHR10_Logg_BestSVM_N-RMSE_test.pdf, id=140, 592.2125pt x 361.35pt>
+<flamesHR10_Logg_BestSVM_N-RMSE_test.pdf, id=391, 592.2125pt x 361.35pt>
 File: flamesHR10_Logg_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_Logg_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_Logg_BestSVM_N-RMSE_test.pdf used on input 
-line 676.
+line 831.
 (pdftex.def)             Requested size: 504.0pt x 307.53491pt.
 
-<flamesHR10_Meta_BestSVM_N-RMSE_test.pdf, id=141, 592.2125pt x 361.35pt>
+<flamesHR10_Meta_BestSVM_N-RMSE_test.pdf, id=392, 592.2125pt x 361.35pt>
 File: flamesHR10_Meta_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_Meta_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_Meta_BestSVM_N-RMSE_test.pdf used on input 
-line 684.
+line 839.
 (pdftex.def)             Requested size: 504.0pt x 307.53491pt.
 
-<flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf, id=142, 592.2125pt x 361.35pt>
+<flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf, id=393, 592.2125pt x 361.35pt>
 File: flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
 <use flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf used on input 
-line 692.
+line 847.
 (pdftex.def)             Requested size: 504.0pt x 307.53491pt.
-
-
-LaTeX Warning: Reference `tab:01' on page 6 undefined on input line 747.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `firstpage' on page 6 undefined on input line 790.
-
-
-LaTeX Warning: Reference `lastpage' on page 6 undefined on input line 790.
-
-[6pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
-as been already used, duplicate ignored
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.790 \subsubsection
-                    {Second dataset analysis}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `firstpage' on page 7 undefined on input line 790.
-
-
-LaTeX Warning: Reference `lastpage' on page 7 undefined on input line 790.
-
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.790 \subsubsection
-                    {Second dataset analysis}pdfTeX warning (ext4): destination
- with the same identifier (name{figure.4}) has been already used, duplicate ign
-ored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.790 \subsubsection
-                    {Second dataset analysis}pdfTeX warning (ext4): destination
- with the same identifier (name{table.2}) has been already used, duplicate igno
-red
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.790 \subsubsection
-                    {Second dataset analysis} <./flowchart.pdf> <./flamesHR10_T
-eff_log_BestSVM_N-RMSE_test.pdf>]
-
-LaTeX Warning: Reference `fig:02hr21' on page 8 undefined on input line 793.
-
-
-LaTeX Warning: Reference `tab:hr21' on page 8 undefined on input line 793.
-
-
-Package natbib Warning: Citation `Bailer-Jones1998' on page 8 undefined on inpu
-t line 810.
-
-<flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf, id=178, 592.2125pt x 361.35pt>
-File: flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
-
-<use flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf>
-Package pdftex.def Info: flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf used on in
-put line 821.
-(pdftex.def)             Requested size: 504.0pt x 307.53491pt.
-
-
-LaTeX Warning: Reference `firstpage' on page 8 undefined on input line 869.
-
-
-LaTeX Warning: Reference `lastpage' on page 8 undefined on input line 869.
-
-[8pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.869 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
+l.972 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.869 
-       <./flamesHR10_Logg_BestSVM_N-RMSE_test.pdf>]
+l.972 
+       <./flowchart.pdf>]
+<flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf, id=415, 592.2125pt x 361.35pt>
+File: flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `sec:comparison1' on page 9 undefined on input line 87
-8.
+<use flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf>
+Package pdftex.def Info: flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf used on in
+put line 974.
+(pdftex.def)             Requested size: 504.0pt x 307.53491pt.
 
-
-LaTeX Warning: Reference `itemthree2' on page 9 undefined on input line 886.
-
-
-LaTeX Warning: Reference `itemthree2' on page 9 undefined on input line 890.
-
-
-LaTeX Warning: Reference `itemfour2' on page 9 undefined on input line 890.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-LaTeX Warning: Reference `fig:snrtrain' on page 9 undefined on input line 898.
+Underfull \vbox (badness 1917) has occurred while \output is active []
 
-
-LaTeX Warning: Reference `firstpage' on page 9 undefined on input line 922.
-
-
-LaTeX Warning: Reference `lastpage' on page 9 undefined on input line 922.
-
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) 
-has been already used, duplicate ignored
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.922 \item O
-             nly one ICA+SVM model trained with SNR of 50 would be enough to <.
-/flamesHR10_Meta_BestSVM_N-RMSE_test.pdf>]
-<snr_errors_log_global_2x2.pdf, id=212, 592.2125pt x 361.35pt>
+l.1010 
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1010 
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1010 
+        <./flamesHR10_Teff_log_BestSVM_N-RMSE_test.pdf>] [10pdfTeX warning (ext
+4): destination with the same identifier (name{figure.5}) has been already used
+, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1072 
+        <./flamesHR10_Logg_BestSVM_N-RMSE_test.pdf>]
+Underfull \hbox (badness 2376) in paragraph at lines 1091--1096
+[]\T1/aer/m/n/9 Finally, only one ICA+SVM model trained with
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<snr_errors_log_global_2x2.pdf, id=459, 592.2125pt x 361.35pt>
 File: snr_errors_log_global_2x2.pdf Graphic file (type pdf)
 
 <use snr_errors_log_global_2x2.pdf>
-Package pdftex.def Info: snr_errors_log_global_2x2.pdf used on input line 938.
+Package pdftex.def Info: snr_errors_log_global_2x2.pdf used on input line 1098.
+
 (pdftex.def)             Requested size: 504.0pt x 307.53491pt.
 
-
-LaTeX Warning: Reference `fig:snrtrain' on page 10 undefined on input line 963.
-
-
-
-LaTeX Warning: Reference `fig:snrtrainhr21' on page 10 undefined on input line 
-963.
-
-
-LaTeX Warning: Reference `firstpage' on page 10 undefined on input line 996.
-
-
-LaTeX Warning: Reference `lastpage' on page 10 undefined on input line 996.
-
-[10pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.996 
-       <./flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf>]
-<snr_errors_log_global_HR21.pdf, id=228, 368.37625pt x 252.945pt>
+<snr_errors_log_global_HR21.pdf, id=461, 368.37625pt x 252.945pt>
 File: snr_errors_log_global_HR21.pdf Graphic file (type pdf)
 
 <use snr_errors_log_global_HR21.pdf>
-Package pdftex.def Info: snr_errors_log_global_HR21.pdf used on input line 999.
-
+Package pdftex.def Info: snr_errors_log_global_HR21.pdf used on input line 1124
+.
 (pdftex.def)             Requested size: 240.0pt x 164.7944pt.
-
-
-LaTeX Warning: Reference `tab:grid' on page 11 undefined on input line 1019.
-
-
-LaTeX Warning: Reference `fig:grid50' on page 11 undefined on input line 1043.
-
-
-LaTeX Warning: Reference `fig:grid10' on page 11 undefined on input line 1044.
-
-<bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf, id=229, 592.2125pt x 469.755pt>
-File: bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf Graphic file (type pdf)
-
-<use bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf>
-Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf used on input 
-line 1062.
-(pdftex.def)             Requested size: 504.0pt x 399.7954pt.
-
-<bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf, id=230, 592.2125pt x 469.755pt>
-File: bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf Graphic file (type pdf)
-
-<use bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf>
-Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf used on input 
-line 1070.
-(pdftex.def)             Requested size: 504.0pt x 399.7954pt.
-
-
-LaTeX Warning: Reference `firstpage' on page 11 undefined on input line 1090.
-
-
-LaTeX Warning: Reference `lastpage' on page 11 undefined on input line 1090.
-
-[11pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
- has been already used, duplicate ignored
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1090 
+l.1145 
+        <./flamesHR10_Meta_BestSVM_N-RMSE_test.pdf>] [12pdfTeX warning (ext4): 
+destination with the same identifier (name{figure.7}) has been already used, du
+plicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1213 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1090 
-        <./flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf>] (main.bbl
-
-LaTeX Warning: Reference `firstpage' on page 12 undefined on input line 61.
-
-
-LaTeX Warning: Reference `lastpage' on page 12 undefined on input line 61.
-
-[12pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.61 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-0}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.61 
-      <./snr_errors_log_global_2x2.pdf> <./snr_errors_log_global_HR21.pdf>]
-Underfull \vbox (badness 3375) has occurred while \output is active []
+l.1213 
+        <./flamesHR10_AlFe_BestSVM_N-RMSE_test.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \vbox (badness 7415) has occurred while \output is active []
+<bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf, id=504, 592.2125pt x 469.755pt>
+File: bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf Graphic file (type pdf)
 
+<use bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf>
+Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf used on input 
+line 1243.
+(pdftex.def)             Requested size: 504.0pt x 399.7954pt.
 
+<bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf, id=505, 592.2125pt x 469.755pt>
+File: bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `firstpage' on page 13 undefined on input line 179.
-
-
-LaTeX Warning: Reference `lastpage' on page 13 undefined on input line 179.
-
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+<use bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf>
+Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf used on input 
+line 1251.
+(pdftex.def)             Requested size: 504.0pt x 399.7954pt.
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.179 
-       <./bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf>]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 182.
+l.1288 
+        <./flamesHR21_Teff_log_BestSVM_N-RMSE_test.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1315 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1315 
+        <./snr_errors_log_global_2x2.pdf> <./snr_errors_log_global_HR21.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-("C:\apps\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1361 
+        <./bestSVM_Teff_N-RMSE_HR10_snr=50_all.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./main.bbl [16pdfTeX warning (ext4): destination with the same identifier (nam
+e{figure.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.59 
+      <./bestSVM_Teff_N-RMSE_HR10_snr=10_all.pdf>]
+LaTeX Font Info:    Try loading font information for T1+aett on input line 193.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Underfull \hbox (badness 2717) in paragraph at lines 181--183
+Underfull \hbox (badness 2717) in paragraph at lines 192--194
 []\T1/aer/m/n/8 Plez B., 2012, Tur-bospec-trum: Code for spec-tral syn-the-
  []
 
 
-Package hyperref Warning: Suppressing empty link on input line 210.
+Package hyperref Warning: Suppressing empty link on input line 221.
 
 
-Underfull \vbox (badness 7415) has occurred while \output is active []
-
-
-
-Package hyperref Warning: Suppressing empty link on input line 265.
+Package hyperref Warning: Suppressing empty link on input line 306.
 
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `firstpage' on page 14 undefined on input line 1119.
-
-
-LaTeX Warning: Reference `lastpage' on page 14 undefined on input line 1119.
-
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1119 ...ison of spectrum compression techniques}
-                                                   <./bestSVM_Teff_N-RMSE_HR10_
-snr=10_all.pdf>]
-<flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf, id=382, 592.2125pt x 433.62pt
+<flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf, id=633, 592.2125pt x 433.62pt
 >
 File: flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf Graphic file (type pdf)
  <use flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf used o
-n input line 1122.
+n input line 1392.
 (pdftex.def)             Requested size: 504.0pt x 369.0419pt.
 
-<flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf, id=383, 592.2125pt x 433.62pt
+<flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf, id=634, 592.2125pt x 433.62pt
 >
 File: flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf Graphic file (type pdf)
  <use flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf used o
-n input line 1130.
+n input line 1400.
 (pdftex.def)             Requested size: 504.0pt x 369.0419pt.
 
-<flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf, id=384, 592.2125pt x 433.62pt
+<flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf, id=635, 592.2125pt x 433.62pt
 >
 File: flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf Graphic file (type pdf)
  <use flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf used o
-n input line 1138.
+n input line 1408.
 (pdftex.def)             Requested size: 504.0pt x 369.0419pt.
 
-<flamesHR10_AlFe_log_BestSVM_N-SNR-RMSE_test.pdf, id=385, 592.2125pt x 433.62pt
+<flamesHR10_AlFe_log_BestSVM_N-SNR-RMSE_test.pdf, id=636, 592.2125pt x 433.62pt
 >
 File: flamesHR10_AlFe_log_BestSVM_N-SNR-RMSE_test.pdf Graphic file (type pdf)
  <use flamesHR10_AlFe_log_BestSVM_N-SNR-RMSE_test.pdf>
 Package pdftex.def Info: flamesHR10_AlFe_log_BestSVM_N-SNR-RMSE_test.pdf used o
-n input line 1146.
+n input line 1416.
 (pdftex.def)             Requested size: 504.0pt x 369.0419pt.
 
-<bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf, id=386, 592.2125pt x 469.755pt>
-File: bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf Graphic file (type pdf)
-
-<use bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf>
-Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf used on input
- line 1156.
-(pdftex.def)             Requested size: 504.0pt x 399.7954pt.
-
-<bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf, id=387, 592.2125pt x 469.755pt>
+<bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf, id=637, 592.2125pt x 469.755pt>
 File: bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf Graphic file (type pdf)
 
 <use bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf>
 Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf used on input 
-line 1164.
+line 1428.
 (pdftex.def)             Requested size: 504.0pt x 399.7954pt.
 
+<bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf, id=638, 592.2125pt x 469.755pt>
+File: bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf Graphic file (type pdf)
 
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1177.
-
-LaTeX Warning: Reference `firstpage' on page 15 undefined on input line 1177.
-
-
-LaTeX Warning: Reference `lastpage' on page 15 undefined on input line 1177.
-
-[15
-
-]
+<use bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf>
+Package pdftex.def Info: bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf used on input
+ line 1436.
+(pdftex.def)             Requested size: 504.0pt x 399.7954pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1450.
+ [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-LaTeX Warning: Reference `firstpage' on page 16 undefined on input line 1177.
-
-
-LaTeX Warning: Reference `lastpage' on page 16 undefined on input line 1177.
-
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.A1.
-1}) has been already used, duplicate ignored
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
+.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1177 \end{document}
+l.1450 \end{document}
                       <./flamesHR10_Teff_log_BestSVM_N-SNR-RMSE_test.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-LaTeX Warning: Reference `firstpage' on page 17 undefined on input line 1177.
-
-
-LaTeX Warning: Reference `lastpage' on page 17 undefined on input line 1177.
-
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.A1.
-2}) has been already used, duplicate ignored
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
+.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1177 \end{document}
+l.1450 \end{document}
                       <./flamesHR10_Logg_log_BestSVM_N-SNR-RMSE_test.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-LaTeX Warning: Reference `firstpage' on page 18 undefined on input line 1177.
-
-
-LaTeX Warning: Reference `lastpage' on page 18 undefined on input line 1177.
-
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.A1.
-3}) has been already used, duplicate ignored
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
+.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1177 \end{document}
+l.1450 \end{document}
                       <./flamesHR10_Meta_log_BestSVM_N-SNR-RMSE_test.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-LaTeX Warning: Reference `firstpage' on page 19 undefined on input line 1177.
-
-
-LaTeX Warning: Reference `lastpage' on page 19 undefined on input line 1177.
-
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.A1.
-4}) has been already used, duplicate ignored
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.A1
+.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1177 \end{document}
+l.1450 \end{document}
                       <./flamesHR10_AlFe_log_BestSVM_N-SNR-RMSE_test.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-LaTeX Warning: Reference `firstpage' on page 20 undefined on input line 1177.
-
-
-LaTeX Warning: Reference `lastpage' on page 20 undefined on input line 1177.
-
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.A2.
-1}) has been already used, duplicate ignored
+ [22pdfTeX warning (ext4): destination with the same identifier (name{figure.A2
+.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1177 \end{document}
-                      <./bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf>]
+l.1450 \end{document}
+                      <./bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-LaTeX Warning: Reference `firstpage' on page 21 undefined on input line 1177.
-
-
-LaTeX Warning: Reference `lastpage' on page 21 undefined on input line 1177.
-
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.A2.
-2}) has been already used, duplicate ignored
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.A2
+.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1177 \end{document}
-                      <./bestSVM_Teff_N-RMSE_HR10_snr=25_all.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1177.
- (main.aux
+l.1450 \end{document}
+                      <./bestSVM_Teff_N-RMSE_HR10_snr=100_all.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1450.
+ (./main.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1450.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1450.
 
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 08E6EFA3BD399DAEF902197863BC4D29;1249.
 
-)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1177.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1177.
-
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: AEB8E1FF6D2C4A1D71E7A5CEBECD0046;1129
-(rerunfilecheck)             After:  7B4940B201A1340AD31912E8E4DECE47;1179.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1177.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1450.
  )
-(\end occurred inside a group at level 3)
+(\end occurred inside a group at level 1)
 
-### simple group (level 3) entered at line 459 ({)
-### simple group (level 2) entered at line 457 ({)
-### simple group (level 1) entered at line 380 ({)
+### simple group (level 1) entered at line 551 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10207 strings out of 493340
- 143074 string characters out of 3143200
- 236979 words of memory out of 3000000
- 13282 multiletter control sequences out of 15000+200000
- 107735 words of font info for 236 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 36i,15n,35p,944b,737s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 18419 strings out of 494958
+ 340091 string characters out of 6179386
+ 391690 words of memory out of 5000000
+ 21124 multiletter control sequences out of 15000+600000
+ 142307 words of font info for 252 fonts, out of 8000000 for 9000
+ 40 hyphenation exceptions out of 8191
+ 36i,15n,39p,10371b,977s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced bu
 t does not exist, replaced by a fixed one
 
-{C:/apps/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/apps/MiKTeX 2.9/fonts/e
-nc/dvips/cm-super/cm-super-ts1.enc}{C:/apps/MiKTeX 2.9/fonts/enc/dvips/newtx/nt
-x-ot1-tlf.enc}<C:/apps/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:
-/apps/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/apps/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmbx9.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxt
-i10.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/apps/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/apps/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr6.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/a
-pps/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/apps/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsl9.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmss8.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pf
-b><C:/apps/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/apps/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/apps/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmtt8.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/amsfonts/symb
-ols/msam10.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/app
-s/MiKTeX 2.9/fonts/type1/public/newtx/rntxmi7.pfb><C:/apps/MiKTeX 2.9/fonts/typ
-e1/public/txfonts/rtxmi.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/newtx/rtxmi5
-.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/newtx/rtxmi7.pfb><C:/apps/MiKTeX 2.
-9/fonts/type1/public/txfonts/rtxr.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/cm
--super/sfrm0800.pfb><C:/apps/MiKTeX 2.9/fonts/type1/public/newtx/txex-bar.pfb><
-C:/apps/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><C:/apps/MiKTeX 2.9/font
-s/type1/public/txfonts/txsy.pfb><C:/apps/MiKTeX 2.9/fonts/type1/urw/times/utmr8
-a.pfb><C:/apps/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (21 pages, 841055 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/lsb/.texmf-v
+ar/fonts/pk/ljfour/jknappen/ec/tcrm0800.600pk></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsl9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
+m10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/rntxmi.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/newtx/rntxmi7.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/newtx/rtxmi5.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/newtx/rtxmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (23 pages, 821577 bytes).
 PDF statistics:
- 595 PDF objects out of 1000 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
+ 874 PDF objects out of 1000 (max. 8388607)
+ 777 compressed objects within 8 object streams
+ 139 named destinations out of 1000 (max. 500000)
  227 words of extra memory for PDF output out of 10000 (max. 10000000)
 
